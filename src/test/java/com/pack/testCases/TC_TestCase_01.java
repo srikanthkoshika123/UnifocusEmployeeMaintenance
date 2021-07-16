@@ -1,8 +1,7 @@
 package com.pack.testCases;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
-
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -13,7 +12,7 @@ public class TC_TestCase_01 extends TC_BaseClass {
 	  @Test
 			public void loginTest() {
 		   
-				driver.get(url);
+		      
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		    	
 		    
@@ -39,18 +38,28 @@ public class TC_TestCase_01 extends TC_BaseClass {
 				}
 		    	lp.clickSignIn();
 		    	
+		    
+		    	
 
-		    	if(driver.getTitle().equalsIgnoreCase("main")) {
+		    	if(driver.getTitle().equalsIgnoreCase("mainn")) {
 		    		Assert.assertTrue(true);
-		    		logger.info("login passed");
-
 		    	}
 		    	else {
+		    		try {
+						captureScreen(driver, "loginTest");
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
 		    		Assert.assertTrue(false);
-		    		logger.info("login failed");
-
 		    	}
 		    	
+		    	
+		    	
+
+  
+  	
+
 		    	
 		    	
 		    	

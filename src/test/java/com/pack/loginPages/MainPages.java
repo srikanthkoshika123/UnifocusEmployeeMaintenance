@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class MainPages {
+import com.pack.testCases.TC_TestCase_01;
+
+public class MainPages{
 WebDriver driver;
 	
 	public  MainPages(WebDriver rdriver){
