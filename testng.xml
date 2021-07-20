@@ -4,11 +4,16 @@
    <listeners>
          <listener class-name="com.pack.utils.Reporting"/>
         </listeners>
-  <test name="Test">
+  <test name="openShift">
     <parameter name="browser" value="chrome" />
     <classes>
-      <class name="com.pack.testCases.TC_TestCase_01"/>
-        <class name="com.pack.testCases.TC_TestCase_02"/>
+      
+         
+       
+      
+       <class name="com.pack.testCases.TC_OpenShiftCreation"/>
+        
+        
        
     </classes>
   </test> <!-- Test -->

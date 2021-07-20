@@ -3,10 +3,13 @@ package com.pack.testCases;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.pack.loginPages.LoginPage;
+import com.pack.loginPages.MainPages;
+import com.pack.loginPages.OpenShiftCreation;
 
 public class TC_TestCase_01 extends TC_BaseClass {
 	  @Test
@@ -27,7 +30,8 @@ public class TC_TestCase_01 extends TC_BaseClass {
 				
 
 		        lp.setPassWord(Password);
-		        
+		     
+		        	
 		        logger.info("password entered");
 		    	try {
 		    		
@@ -38,22 +42,21 @@ public class TC_TestCase_01 extends TC_BaseClass {
 				}
 		    	lp.clickSignIn();
 		    	
-		    
+		
+		    	   try {
+						captureScreen(driver,"logintest");
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
 		    	
 
-		    	if(driver.getTitle().equalsIgnoreCase("mainn")) {
+		    	if(driver.getTitle().equalsIgnoreCase("main")) {
 		    		Assert.assertTrue(true);
 		    	}
 		    	else {
-		    		try {
-						captureScreen(driver, "loginTest");
-					} catch (IOException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
 		    		Assert.assertTrue(false);
 		    	}
-		    	
 		    	
 		    	
 

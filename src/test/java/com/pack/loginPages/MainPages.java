@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.pack.testCases.TC_TestCase_01;
 
-public class MainPages{
+public class MainPages {
 WebDriver driver;
 	
 	public  MainPages(WebDriver rdriver){

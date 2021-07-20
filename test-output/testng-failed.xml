@@ -4,23 +4,15 @@
   <listeners>
     <listener class-name="com.pack.utils.Reporting"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="openShift(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.pack.testCases.TC_TestCase_02">
+      <class name="com.pack.testCases.TC_OpenShiftCreation">
         <methods>
           <include name="setup"/>
-          <include name="mainTest"/>
-          <include name="tearDown"/>
+          <include name="openShift"/>
         </methods>
-      </class> <!-- com.pack.testCases.TC_TestCase_02 -->
-      <class name="com.pack.testCases.TC_TestCase_01">
-        <methods>
-          <include name="setup"/>
-          <include name="loginTest"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.pack.testCases.TC_TestCase_01 -->
+      </class> <!-- com.pack.testCases.TC_OpenShiftCreation -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- openShift(failed) -->
 </suite> <!-- Failed suite [UnifocusScheduler] -->
