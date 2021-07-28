@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-20T16:54:42 IST" name="UnifocusScheduler" finished-at="2021-07-20T16:55:57 IST" duration-ms="75544">
+  <suite started-at="2021-07-28T15:24:28 IST" name="UnifocusScheduler" finished-at="2021-07-28T15:26:49 IST" duration-ms="140990">
     <groups>
     </groups>
-    <test started-at="2021-07-20T16:54:42 IST" name="openShift" finished-at="2021-07-20T16:55:57 IST" duration-ms="75544">
+    <test started-at="2021-07-28T15:24:28 IST" name="openShift" finished-at="2021-07-28T15:26:49 IST" duration-ms="140990">
       <class name="com.pack.testCases.TC_OpenShiftCreation">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.pack.testCases.TC_OpenShiftCreation@5a755cc1]" started-at="2021-07-20T16:54:42 IST" name="setup" finished-at="2021-07-20T16:54:49 IST" duration-ms="7408" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.pack.testCases.TC_OpenShiftCreation@5a755cc1]" started-at="2021-07-28T15:24:28 IST" name="setup" finished-at="2021-07-28T15:24:37 IST" duration-ms="8551" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,18 +18,49 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="openShift()[pri:0, instance:com.pack.testCases.TC_OpenShiftCreation@5a755cc1]" started-at="2021-07-20T16:54:49 IST" name="openShift" finished-at="2021-07-20T16:55:57 IST" duration-ms="67597" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="openShift()[pri:0, instance:com.pack.testCases.TC_OpenShiftCreation@5a755cc1]" started-at="2021-07-28T15:24:37 IST" name="openShift" finished-at="2021-07-28T15:26:49 IST" duration-ms="131972" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Cannot invoke "Object.getClass()" because "obj" is null]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="9dbb1b6b-5ab8-4538-e848-bb0cc473bc9d"]/ul/li[3]"}
+  (Session info: chrome=92.0.4515.107)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-83KI589', ip: '192.168.29.89', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57926}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ecb16e08cca873dbe47f771bfd9b237
+*** Element info: {Using=xpath, value=//*[@id="9dbb1b6b-5ab8-4538-e848-bb0cc473bc9d"]/ul/li[3]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "obj" is null
-at java.base/java.lang.reflect.Method.invoke(Method.java:560)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="9dbb1b6b-5ab8-4538-e848-bb0cc473bc9d"]/ul/li[3]"}
+  (Session info: chrome=92.0.4515.107)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-83KI589', ip: '192.168.29.89', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57926}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ecb16e08cca873dbe47f771bfd9b237
+*** Element info: {Using=xpath, value=//*[@id="9dbb1b6b-5ab8-4538-e848-bb0cc473bc9d"]/ul/li[3]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-at com.pack.loginPages.OpenShiftCreation.clickOpenShift(OpenShiftCreation.java:32)
-at com.pack.testCases.TC_OpenShiftCreation.openShift(TC_OpenShiftCreation.java:47)
+at com.pack.loginPages.AssignShift.clickshiftCategory(AssignShift.java:48)
+at com.pack.testCases.TC_OpenShiftCreation.openShift(TC_OpenShiftCreation.java:79)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -60,7 +91,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openShift -->

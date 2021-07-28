@@ -29,10 +29,10 @@ public class TC_BaseClass {
 	public static WebDriver driver ;
     public static Logger logger;	
      
-    
-    @Parameters("browser")
-    @BeforeClass
   
+ @Parameters("browser")
+    
+  @BeforeClass
 	
 	public void setup(String browser) {
 		 logger=logger.getLogger("unifocusScheduler");

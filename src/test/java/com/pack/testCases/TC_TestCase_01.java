@@ -1,9 +1,12 @@
 package com.pack.testCases;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,10 +16,8 @@ import com.pack.loginPages.OpenShiftCreation;
 
 public class TC_TestCase_01 extends TC_BaseClass {
 	  @Test
-			public void loginTest() {
-		   
-		      
-				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			public void loginTest() throws  IOException, InterruptedException {
+		  	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		    	
 		    
 		    	LoginPage lp=new LoginPage(driver);
@@ -33,28 +34,22 @@ public class TC_TestCase_01 extends TC_BaseClass {
 		     
 		        	
 		        logger.info("password entered");
-		    	try {
+		    	
 		    		
 					Thread.sleep(2000);
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+			
 		    	lp.clickSignIn();
-		    	
-		
-		    	   try {
-						captureScreen(driver,"logintest");
-					} catch (IOException e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
-					}
+		    
+		 
+		   
 		    	
 
 		    	if(driver.getTitle().equalsIgnoreCase("main")) {
 		    		Assert.assertTrue(true);
 		    	}
 		    	else {
+		    		captureScreen(driver,"logintest");
+		    		
 		    		Assert.assertTrue(false);
 		    	}
 		    	
