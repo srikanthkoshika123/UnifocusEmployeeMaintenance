@@ -17,6 +17,10 @@ public class ReadConfig {
 			e.printStackTrace();
 		}
 	}
+	public String getPartnerCode() {
+		String partnerCode=pro.getProperty("partnerCode");
+		return partnerCode;
+	}
 	public String getApplicationUrl() {
 		String url=pro.getProperty("url");
 		return url;

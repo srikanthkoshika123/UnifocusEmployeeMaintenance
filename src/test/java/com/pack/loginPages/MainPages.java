@@ -5,14 +5,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.pack.testCases.OpenShift;
-import com.pack.testCases.TC_TestCase_01;
+import com.pack.testCases.TC_BaseClass;
 
-public class MainPages {
-WebDriver driver;
-	
+public class MainPages extends TC_BaseClass {
+
+	WebDriver ldriver;
 	public  MainPages(WebDriver rdriver){
-    	driver=rdriver;
+    	ldriver=rdriver;
     	PageFactory.initElements(rdriver, this);
 	}
 	@FindBy(xpath="//header/div[1]/div[1]/div[1]/button[1]")

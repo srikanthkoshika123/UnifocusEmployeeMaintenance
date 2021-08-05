@@ -22,8 +22,7 @@ public class TC_TestCase_01 extends TC_BaseClass {
 		    
 		    	LoginPage lp=new LoginPage(driver);
 		    	
-		       //  lp.setPartnerCode(partnerCode);
-		    	//lp.clickNext();
+		      
 		    	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			    	
 			    logger.info("enter user name");
@@ -39,10 +38,6 @@ public class TC_TestCase_01 extends TC_BaseClass {
 					Thread.sleep(2000);
 			
 		    	lp.clickSignIn();
-		    
-		 
-		   
-		    	
 
 		    	if(driver.getTitle().equalsIgnoreCase("main")) {
 		    		Assert.assertTrue(true);

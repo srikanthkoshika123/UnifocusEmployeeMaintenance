@@ -12,21 +12,9 @@ public class LoginPage {
 	WebDriver ldriver;
 	public LoginPage(WebDriver 	rdriver){
     	ldriver=rdriver;
-    	PageFactory.initElements(rdriver, this);
-        	  		
+    	PageFactory.initElements(rdriver, this);       	  		
 	
 }
-
-      
-	//@FindBy(xpath="//input[@class='x-input-el x-form-field x-input-text']")
-	//WebElement partnerCode;
-	
-	
-	
-	//@FindBy(xpath="//span[@class='x-button-label']")
-	 //WebElement next;
-    
-
 	@FindBy(xpath="//input[@id='ext-element-36'][@class='x-input-el x-form-field x-input-text']")
 	
 	WebElement txtName;
@@ -36,12 +24,7 @@ public class LoginPage {
 	WebElement signin;
 	
 	
-   /* public void setPartnerCode(String pc) {
-		partnerCode.sendKeys(pc);
-	}
-	public void clickNext() {
-		next.click();
-	}
+   /*
 	*/
 	public void setUserName(String uname) {
 		txtName.sendKeys(uname);

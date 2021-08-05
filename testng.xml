@@ -8,12 +8,11 @@
     <parameter name="browser" value="chrome" />
     <classes>
       
-         
-       
-      
+       <class name="com.pack.testCases.TC_TestCase_01"/>
+       <class name="com.pack.testCases.TC_TestCase_02"/>
        <class name="com.pack.testCases.TC_OpenShiftCreation"/>
-         
-        
+       <class name="com.pack.testCases.TC_EditShift"/>
+       <class name="com.pack.testCases.TC_AssignShift"/>
        
     </classes>
   </test> <!-- Test -->

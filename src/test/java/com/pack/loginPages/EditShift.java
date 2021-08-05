@@ -27,7 +27,7 @@ public class EditShift extends TC_BaseClass {
 	@FindBy(xpath="/html/body/div[3]/div/div[2]/div/div[2]/div[2]/form/div[2]/div[1]/div/div[2]/div/span/div/div/div/div")
 	WebElement job;
 
-	@FindBy(xpath="//li[text()='INTERN-TAC']")
+	@FindBy(xpath="//li[text()='FRONT DESK CLERK - TAC']")
 	WebElement jobsel;
 	@FindBy(xpath="/html/body/div[5]/div/div[2]/div/div[2]/div[2]/form/div[3]/div[1]/div/div[2]/div/span/div/div/div/div")
 	WebElement shiftRole;
