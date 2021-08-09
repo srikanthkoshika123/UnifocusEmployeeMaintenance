@@ -43,7 +43,7 @@ public class OpenShiftCreation extends TC_BaseClass{
 	public void getFrame()throws InterruptedException {
 	driver.switchTo().frame(openShift);
 	WebElement dr=driver.findElement(By.xpath("//*[@id=\"root\"]/div/section/section/main/div/div/section/div/div[2]/div/div/div/div/div/div[2]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/button"));
-	Thread.sleep(6000);
+	Thread.sleep(8000);
 	dr.click();
 	
 	}

@@ -36,7 +36,8 @@ public class AssignShift extends TC_BaseClass{
 	public void clickAssignEmployee() throws InterruptedException {
 		driver.switchTo().activeElement();
 		
-		WebElement ele1=driver.findElement(By.xpath("/html/body/div[5]/div/div[2]/div/div[2]/div[2]/div/div[3]/div/div/div[2]/div[1]/div[3]/div[2]/div/div/div[2]/div[1]"));
+		WebElement ele1=driver.findElement(By.xpath("/html/body/div[4]/div/div[2]/div/div[2]/div[2]/div/div[3]/div/div/div[2]/div[1]/div[3]/div[2]/div/div/div[2]/div[9]"));
+		Thread.sleep(2000);
 	    ele1.click();
 	    WebElement button=driver.findElement(By.xpath("//button[@class='ant-btn ant-btn-primary ant-btn-sm']"));
 	    button.click();

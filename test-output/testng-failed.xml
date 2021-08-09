@@ -7,20 +7,13 @@
   <test thread-count="5" name="openShift(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.pack.testCases.TC_AssignShift">
+      <class name="com.pack.testCases.TC_DeleteAllShifts">
         <methods>
-          <include name="assignShift"/>
+          <include name="deleteAllShift"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.pack.testCases.TC_AssignShift -->
-      <class name="com.pack.testCases.TC_OpenShiftCreation">
-        <methods>
-          <include name="setup"/>
-          <include name="openShift"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.pack.testCases.TC_OpenShiftCreation -->
+      </class> <!-- com.pack.testCases.TC_DeleteAllShifts -->
     </classes>
   </test> <!-- openShift(failed) -->
 </suite> <!-- Failed suite [UnifocusScheduler] -->

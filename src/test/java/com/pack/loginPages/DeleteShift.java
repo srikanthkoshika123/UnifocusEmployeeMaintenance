@@ -17,14 +17,16 @@ public class DeleteShift extends TC_BaseClass{
 
 	@FindBy(className="app-iframe")
 	WebElement deleteFrame;
-	@FindBy(xpath="//*[@id=\"root\"]/div/section/aside/div/section/div/div[3]/div/div/div/div/ul/li[3]/span")
+	@FindBy(xpath="//*[@id=\"root\"]/div/section/aside/div/section/div/div[3]/div/div/div[1]/div/ul/li[3]/span/div/svg")
 	WebElement delete;
 	@FindBy(xpath="//button[@class='ant-btn ant-btn-primary ant-btn-sm']")
 	WebElement deleteShift;
-	public void deleteFrames()  {
-		driver.switchTo().frame(deleteFrame);
+	public void deleteFrames() throws InterruptedException  {
+	driver.switchTo().frame(deleteFrame);
+		
 	}
 	public void deleteShift() throws InterruptedException {
+		
 		delete.click();
 		Thread.sleep(2000);
 		deleteShift.click();
