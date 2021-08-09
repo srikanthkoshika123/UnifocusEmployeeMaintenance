@@ -24,7 +24,7 @@ public class DeleteAllShifts extends TC_BaseClass{
 	WebElement iFrame;
 	//@FindBy(xpath="//button/span[text()='...']")
 	//WebElement clickDelete;
-	@FindBy(xpath="/html/body/div[4]/div/div/ul/li[3]")
+	@FindBy(xpath="//button[@class='ant-btn ant-btn-primary']")
 	WebElement deleteAllShift;
 	
 	public void iFrames() throws InterruptedException  {
@@ -32,18 +32,24 @@ public class DeleteAllShifts extends TC_BaseClass{
 			
 	}
 public void deleteAllShift() throws InterruptedException {
-	Thread.sleep(2000);
-WebElement menu = driver.findElement(By.xpath("//*[@id=\"root\"]/div/section/section/main/div/div/section/div/div[1]/div/div/div[2]/div/div/button[1]"));
-Actions builder = new Actions(driver);
-//builder.moveToElement(menu).perform();
-builder.moveToElement(menu, 150, 150).perform();
-
+	Thread.sleep(6000);
+	WebElement ele=driver.findElement(By.xpath("//*[@id=\"root\"]/div/section/section/header/div/div[1]/div[2]/div/div/div/button[3]/span"));
+    Actions action = new Actions(driver);
+    action.moveToElement(ele).click().build().perform();
+    Thread.sleep(4000);
+    driver.switchTo().activeElement();
+    WebElement das = driver.findElement(By.xpath("//li[text()='Delete All Shifts']"));
+    das.click();
+   Thread.sleep(4000);
+   
+  // driver.switchTo().activeElement();
+   WebElement checkBox=driver.findElement(By.xpath("//button/i[@aria-label='icon: check-square-o']"));
+   Actions viewBox=new Actions(driver);
+   viewBox.moveToElement(checkBox);
+   viewBox.click().build().perform();
+   Thread.sleep(4000);
+   deleteAllShift.click();
  
-//builder.contextClick().perform();
-WebDriverWait wait = new WebDriverWait(driver, 5);
-wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div[3]/div/div/ul/li[3]")));
-WebElement menuOption = driver.findElement(By.xpath("/html/body/div[3]/div/div/ul/li[3]"));
-menuOption.click();
 
 	}
 

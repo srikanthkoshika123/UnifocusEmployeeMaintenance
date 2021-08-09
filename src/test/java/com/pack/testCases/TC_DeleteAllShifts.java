@@ -38,9 +38,9 @@ public class TC_DeleteAllShifts extends TC_BaseClass {
 		MainPages mp = new MainPages(driver);
 		
     	mp.clickUnifocus();
-
+       Thread.sleep(2000);
         mp.getselect_List();
-        Thread.sleep(2000);
+        Thread.sleep(20000);
         DeleteAllShifts deleteAll=new DeleteAllShifts(driver);
         deleteAll.iFrames();
         deleteAll.deleteAllShift();
