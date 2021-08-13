@@ -16,7 +16,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
 import com.pack.utils.ReadConfig;
@@ -33,7 +33,7 @@ public class TC_BaseClass {
   
  @Parameters("browser")
     
-  @BeforeTest
+  @BeforeClass
 	
 	public void setup(String browser) {
 		 logger=logger.getLogger("unifocusScheduler");

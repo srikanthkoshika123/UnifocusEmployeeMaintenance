@@ -9,9 +9,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.pack.testCases.TC_BaseClass;
 
-public class EditShift extends TC_BaseClass {
+public class EditShiftDay1Shift1 extends TC_BaseClass {
 	WebDriver ldriver;
-	public EditShift(WebDriver 	rdriver){
+	public EditShiftDay1Shift1(WebDriver 	rdriver){
     	ldriver=rdriver;
     	PageFactory.initElements(rdriver, this);
 
@@ -50,7 +50,7 @@ public class EditShift extends TC_BaseClass {
 		startTime.sendKeys(Keys.DELETE);
 		Thread.sleep(600);
 	
-		startTime.sendKeys("8:30AM");
+		startTime.sendKeys("6:00AM");
 		clickEndTime();
 		
 	}
@@ -59,7 +59,7 @@ public class EditShift extends TC_BaseClass {
 	
 		endTime.sendKeys(Keys.DELETE);
 		Thread.sleep(600);
-		endTime.sendKeys("4:30PM");
+		endTime.sendKeys("2:00PM");
 		
 	}
 	public void selectJob() throws InterruptedException {

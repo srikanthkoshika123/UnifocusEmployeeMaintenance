@@ -10,10 +10,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.pack.testCases.TC_BaseClass;
 
-public class AssignShift extends TC_BaseClass{
+public class AssignShiftDay1Shift1 extends TC_BaseClass{
   
 	WebDriver ldriver;
-	public AssignShift(WebDriver 	rdriver){
+	public AssignShiftDay1Shift1(WebDriver 	rdriver){
     	ldriver=rdriver;
     	PageFactory.initElements(rdriver, this);
 }
@@ -45,5 +45,3 @@ public class AssignShift extends TC_BaseClass{
 }
 	
 	}
-
-

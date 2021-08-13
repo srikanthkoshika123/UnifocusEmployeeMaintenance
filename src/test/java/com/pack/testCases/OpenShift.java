@@ -5,13 +5,13 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.pack.loginPages.OpenShiftCreation;
+import com.pack.loginPages.OpenShiftCreationDay1Shift1;
 
 public class OpenShift extends TC_BaseClass{
 	@Test
 	public void openShift() throws IOException {
 		 
-		 OpenShiftCreation shift=new OpenShiftCreation(driver);
+		 OpenShiftCreationDay1Shift1 shift=new OpenShiftCreationDay1Shift1(driver);
 		 	   
 		 		   
 		 	   

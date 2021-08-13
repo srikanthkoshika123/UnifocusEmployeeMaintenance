@@ -5,16 +5,15 @@ import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.Test;
 
-import com.pack.loginPages.AssignShift;
-import com.pack.loginPages.EditShift;
+import com.pack.loginPages.EditShiftDay1Shift1;
 import com.pack.loginPages.LoginPage;
 import com.pack.loginPages.MainPages;
-import com.pack.loginPages.OpenShiftCreation;
+import com.pack.loginPages.OpenShiftCreationDay1Shift1;
 
-public class TC_AssignShift extends TC_BaseClass{
+public class TC_EditShiftDay1Shift1 extends TC_BaseClass {
 	@Test
-	public void assignShift() throws IOException, InterruptedException {
-	 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	public void editShift() throws IOException, InterruptedException {
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     	
 	    
     	LoginPage lp=new LoginPage(driver);
@@ -42,20 +41,15 @@ public class TC_AssignShift extends TC_BaseClass{
 
 
        mp.getselect_List();
-       
-       Thread.sleep(4000);
-   	EditShift editShift=new EditShift(driver);
-   	editShift.clickEditShift();
-   	editShift.clickStartTime();
+   
+     Thread.sleep(4000);
+
+	EditShiftDay1Shift1 editShift=new EditShiftDay1Shift1(driver);
+	editShift.clickEditShift();
+	editShift.clickStartTime();
     editShift.clickEndTime();
     editShift.selectJob();
     editShift.selectJobCategory();
     editShift.clickUpdateShift();
-       
-     Thread.sleep(4000);	
-	AssignShift assign=new AssignShift(driver);
-	assign.selectFrame();
-    assign.clickAssignShift();
-    assign.clickAssignEmployee();
 }
 }

@@ -10,15 +10,15 @@ import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.pack.loginPages.AssignShift;
+import com.pack.loginPages.AssignShiftDay1Shift1;
 import com.pack.loginPages.DeleteShift;
 import com.pack.loginPages.DragAndDrop;
-import com.pack.loginPages.EditShift;
+import com.pack.loginPages.EditShiftDay1Shift1;
 import com.pack.loginPages.LoginPage;
 import com.pack.loginPages.MainPages;
-import com.pack.loginPages.OpenShiftCreation;
+import com.pack.loginPages.OpenShiftCreationDay1Shift1;
 
-public class TC_OpenShiftCreation extends TC_BaseClass {
+public class TC_OpenShiftCreationDay1Shift1 extends TC_BaseClass {
 	@Test
 	public void openShift() throws IOException, InterruptedException {
 		 
@@ -55,7 +55,7 @@ public class TC_OpenShiftCreation extends TC_BaseClass {
 		     Thread.sleep(4000);
 		  
 		 
-		    OpenShiftCreation shift=new OpenShiftCreation(driver);
+		    OpenShiftCreationDay1Shift1 shift=new OpenShiftCreationDay1Shift1(driver);
 			      logger.info("openshift");
 			      shift.getFrame();
 			      shift.clickStartTime();

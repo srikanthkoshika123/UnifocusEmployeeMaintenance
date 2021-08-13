@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import com.pack.loginPages.LoginPage;
 import com.pack.loginPages.MainPages;
-import com.pack.loginPages.OpenShiftCreation;
+import com.pack.loginPages.OpenShiftCreationDay1Shift1;
 
 public class TC_TestCase_01 extends TC_BaseClass {
 	  @Test

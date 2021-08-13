@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.testng.annotations.Test;
 
 import com.pack.loginPages.DeleteShift;
-import com.pack.loginPages.EditShift;
+import com.pack.loginPages.EditShiftDay1Shift1;
 import com.pack.loginPages.LoginPage;
 import com.pack.loginPages.MainPages;
 
@@ -44,7 +44,7 @@ public class TC_DeleteShift extends TC_BaseClass{
        
         Thread.sleep(4000);
 
-    	EditShift editShift=new EditShift(driver);
+    	EditShiftDay1Shift1 editShift=new EditShiftDay1Shift1(driver);
     	editShift.clickEditShift();
     	editShift.clickStartTime();
         editShift.clickEndTime();
