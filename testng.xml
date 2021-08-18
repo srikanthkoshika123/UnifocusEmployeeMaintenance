@@ -6,7 +6,7 @@
         </listeners>
   <test name="openShift">
     <parameter name="browser" value="firefox" />
-    <parameter name="browser" value="chrome" />
+    
     <classes>
        
       
