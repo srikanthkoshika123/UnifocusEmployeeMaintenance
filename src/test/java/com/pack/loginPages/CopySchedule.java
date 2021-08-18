@@ -37,7 +37,7 @@ public void CopySchedule() throws InterruptedException {
     //driver.switchTo().activeElement();
     //WebElement das = driver.findElement(By.xpath("//li[text()='Delete All Shifts']"));
     //das.click();
-   //Thread.sleep(4000);
+   
    
   
 
