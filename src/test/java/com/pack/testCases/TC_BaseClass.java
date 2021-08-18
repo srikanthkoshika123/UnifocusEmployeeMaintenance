@@ -19,6 +19,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
+import com.pack.loginPages.PartnerCodeValidation;
 import com.pack.utils.ReadConfig;
 
 public class TC_BaseClass {
@@ -54,6 +55,11 @@ public class TC_BaseClass {
 		  driver.get(url);
 		  driver.manage().window().maximize(); 
 		  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		  
+		  PartnerCodeValidation partCode=new PartnerCodeValidation(driver);
+			partCode.setPartnerCode(partnerCode);
+			partCode.clickNext();
+
     }
 	
 	public void captureScreen(WebDriver driver, String tname) throws IOException {

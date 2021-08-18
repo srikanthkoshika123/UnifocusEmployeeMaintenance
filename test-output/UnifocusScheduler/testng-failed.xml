@@ -7,34 +7,6 @@
   <test thread-count="5" name="openShift(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.pack.testCases.TC_EditShiftDay4Shift1">
-        <methods>
-          <include name="editShift"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.pack.testCases.TC_EditShiftDay4Shift1 -->
-      <class name="com.pack.testCases.TC_AssignShiftDay5Shift1">
-        <methods>
-          <include name="assignShift"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.pack.testCases.TC_AssignShiftDay5Shift1 -->
-      <class name="com.pack.testCases.TC_AssignShiftDay5Shift2">
-        <methods>
-          <include name="assignShift"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.pack.testCases.TC_AssignShiftDay5Shift2 -->
-      <class name="com.pack.testCases.TC_OpenShiftCreationDay5Shift2">
-        <methods>
-          <include name="openShift"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.pack.testCases.TC_OpenShiftCreationDay5Shift2 -->
       <class name="com.pack.testCases.TC_EditShiftDay5Shift1">
         <methods>
           <include name="setup"/>
@@ -42,6 +14,20 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.pack.testCases.TC_EditShiftDay5Shift1 -->
+      <class name="com.pack.testCases.TC_AssignShiftDay5Shift2">
+        <methods>
+          <include name="assignShift"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.pack.testCases.TC_AssignShiftDay5Shift2 -->
+      <class name="com.pack.testCases.TC_AssignShiftDay5Shift1">
+        <methods>
+          <include name="assignShift"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.pack.testCases.TC_AssignShiftDay5Shift1 -->
       <class name="com.pack.testCases.TC_EditShiftDay5Shift2">
         <methods>
           <include name="setup"/>
@@ -49,34 +35,13 @@
           <include name="editShift"/>
         </methods>
       </class> <!-- com.pack.testCases.TC_EditShiftDay5Shift2 -->
-      <class name="com.pack.testCases.TC_AssignShiftDay4Shift2">
+      <class name="com.pack.testCases.TC_OpenShiftCreationDay5Shift2">
         <methods>
-          <include name="setup"/>
-          <include name="assignShift"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.pack.testCases.TC_AssignShiftDay4Shift2 -->
-      <class name="com.pack.testCases.TC_AssignShiftDay4Shift1">
-        <methods>
-          <include name="assignShift"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.pack.testCases.TC_AssignShiftDay4Shift1 -->
-      <class name="com.pack.testCases.TC_EditShiftDay4Shift2">
-        <methods>
-          <include name="editShift"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.pack.testCases.TC_EditShiftDay4Shift2 -->
-      <class name="com.pack.testCases.TC_OpenShiftCreationDay4Shift2">
-        <methods>
-          <include name="setup"/>
           <include name="openShift"/>
+          <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.pack.testCases.TC_OpenShiftCreationDay4Shift2 -->
+      </class> <!-- com.pack.testCases.TC_OpenShiftCreationDay5Shift2 -->
     </classes>
   </test> <!-- openShift(failed) -->
 </suite> <!-- Failed suite [UnifocusScheduler] -->

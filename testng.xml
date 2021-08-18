@@ -5,22 +5,14 @@
          <listener class-name="com.pack.utils.Reporting"/>
         </listeners>
   <test name="openShift">
+    <parameter name="browser" value="firefox" />
     <parameter name="browser" value="chrome" />
     <classes>
        
-       <class name="com.pack.testCases.TC_OpenShiftCreationDay4Shift1"/>
-      <class name="com.pack.testCases.TC_OpenShiftCreationDay4Shift2"/>
-      <class name="com.pack.testCases.TC_EditShiftDay4Shift1"/>
-      <class name="com.pack.testCases.TC_EditShiftDay4Shift2"/>
-      <class name="com.pack.testCases.TC_AssignShiftDay4Shift1"/>
-      <class name="com.pack.testCases.TC_AssignShiftDay4Shift2"/>
       
-      <class name="com.pack.testCases.TC_OpenShiftCreationDay5Shift1"/>
-      <class name="com.pack.testCases.TC_OpenShiftCreationDay5Shift2"/>
-      <class name="com.pack.testCases.TC_EditShiftDay5Shift1"/>
-      <class name="com.pack.testCases.TC_EditShiftDay5Shift2"/>
-      <class name="com.pack.testCases.TC_AssignShiftDay5Shift1"/>
-      <class name="com.pack.testCases.TC_AssignShiftDay5Shift2"/>
+      
+      <class name="com.pack.testCases.TC_DeleteAllShifts"/>
+      
       
       
        

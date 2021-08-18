@@ -33,7 +33,7 @@ public class DeleteAllShifts extends TC_BaseClass{
 	}
 public void deleteAllShift() throws InterruptedException {
 	Thread.sleep(6000);
-	WebElement ele=driver.findElement(By.xpath("//*[@id=\"root\"]/div/section/section/header/div/div[1]/div[2]/div/div/div/button[3]/span"));
+	WebElement ele=driver.findElement(By.cssSelector("#root > div > section > section > header > div > div.ant-row.unifocus-page-header.unifocus-page-header__row > div.ant-col.ant-col-11.unifocus-page-header__col > div > div > div > button.ant-btn.ant-dropdown-trigger"));
     Actions action = new Actions(driver);
     action.moveToElement(ele).click().build().perform();
     Thread.sleep(4000);
