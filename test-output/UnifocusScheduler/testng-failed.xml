@@ -7,13 +7,13 @@
   <test thread-count="5" name="openShift(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.pack.testCases.TC_DeleteAllShifts">
+      <class name="com.pack.testCases.TC_CopySchedule">
         <methods>
-          <include name="deleteAllShift"/>
+          <include name="copySchedule"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.pack.testCases.TC_DeleteAllShifts -->
+      </class> <!-- com.pack.testCases.TC_CopySchedule -->
     </classes>
   </test> <!-- openShift(failed) -->
 </suite> <!-- Failed suite [UnifocusScheduler] -->

@@ -34,9 +34,9 @@ public void CopySchedule() throws InterruptedException {
     Actions action = new Actions(driver);
     action.moveToElement(ele).click().build().perform();
     Thread.sleep(4000);
-    //driver.switchTo().activeElement();
-    //WebElement das = driver.findElement(By.xpath("//li[text()='Delete All Shifts']"));
-    //das.click();
+    driver.switchTo().activeElement();
+    WebElement das = driver.findElement(By.xpath("//li[text()='Delete All Shifts']"));
+    das.click();
    
   //
   
