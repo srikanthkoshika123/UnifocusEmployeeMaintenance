@@ -17,34 +17,32 @@ public class CopySchedule extends TC_BaseClass{
     	PageFactory.initElements(rdriver, this);
 }
 
+
 	@FindBy(className="app-iframe")
 	WebElement iFrame;
-	//@FindBy(xpath="//button/span[text()='...']")
-	//WebElement clickDelete;
-	@FindBy(xpath="//button[@class='ant-btn ant-btn-primary']")
-	WebElement deleteAllShift;
+	@FindBy(xpath="/html/body/div[4]/div/div[2]/div/div[2]/div[2]/section/div/div/div/div/div[1]/section[1]/div/div/div/div/div[1]/div[2]/button[2]")
+	WebElement presentWeek;
+	@FindBy(xpath="/html/body/div[4]/div/div[2]/div/div[2]/div[2]/section/div/div/div/div/div[1]/section[1]/div/div/div/div/div[2]/div[2]/button[2]")
+	WebElement nextWeek;
 	
 	public void iFrames() throws InterruptedException  {
 	driver.switchTo().frame(iFrame);
 			
 	}
-public void CopySchedule() throws InterruptedException {
+public void copyschedule() throws InterruptedException {
 	Thread.sleep(6000);
-	WebElement ele=driver.findElement(By.cssSelector("#root > div > section > section > header > div > div.ant-row.unifocus-page-header.unifocus-page-header__row > div.ant-col.ant-col-11.unifocus-page-header__col > div > div > div > button:nth-child(1)"));
+	WebElement ele=driver.findElement(By.xpath("//*[@id=\"root\"]/div/section/section/header/div/div[1]/div[2]/div/div/div/button[1]"));
     Actions action = new Actions(driver);
     action.moveToElement(ele).click().build().perform();
-    Thread.sleep(4000);
-    driver.switchTo().activeElement();
-    WebElement das = driver.findElement(By.xpath("//li[text()='Delete All Shifts']"));
-    das.click();
    
-  //
-  
-
 	}
 
+public void presentWeekData() throws InterruptedException {
 	
+	 presentWeek.click();
 }
-
-
-
+public void nextWeekData() throws InterruptedException {
+	
+	 nextWeek.click();
+}
+}

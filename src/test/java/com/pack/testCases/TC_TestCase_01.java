@@ -1,18 +1,11 @@
 package com.pack.testCases;
 
 import java.io.IOException;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.pack.loginPages.LoginPage;
-import com.pack.loginPages.MainPages;
-import com.pack.loginPages.OpenShiftCreationDay1Shift1;
+
 
 public class TC_TestCase_01 extends TC_BaseClass {
 	  @Test
@@ -27,13 +20,13 @@ public class TC_TestCase_01 extends TC_BaseClass {
 			    	
 			    logger.info("enter user name");
 		     	lp.setUserName(loginas);
-				
+		     	logger.info("password entered");
 
 		        lp.setPassWord(Password);
 		     
 		        	
-		        logger.info("password entered");
-		    	
+		        
+		        logger.info("signin clicked");
 		    		
 					Thread.sleep(2000);
 			
@@ -41,6 +34,7 @@ public class TC_TestCase_01 extends TC_BaseClass {
 
 		    	if(driver.getTitle().equalsIgnoreCase("main")) {
 		    		Assert.assertTrue(true);
+		    		
 		    	}
 		    	else {
 		    		captureScreen(driver,"logintest");
@@ -48,23 +42,5 @@ public class TC_TestCase_01 extends TC_BaseClass {
 		    		Assert.assertTrue(false);
 		    	}
 		    	
-		    	
-
-  
-  	
-
-		    	
-		    	
-		    	
-		    	
-		    	
-		    	
-		    	
-			
-			
-			
-
 		  }
-		
-
 }

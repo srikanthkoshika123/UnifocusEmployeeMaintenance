@@ -6,11 +6,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.pack.testCases.TC_BaseClass;
 
 public class OpenShiftCreationDay1Shift1 extends TC_BaseClass{
-
+	 String st="5:00AM";
+	 String et="4:00PM";
 	WebDriver ldriver;
 	public OpenShiftCreationDay1Shift1(WebDriver 	rdriver){
     	ldriver=rdriver;
@@ -21,7 +23,10 @@ public class OpenShiftCreationDay1Shift1 extends TC_BaseClass{
 	@FindBy(className="app-iframe")
 	WebElement openShift;
 	
-	@FindBy(xpath="/html/body/div[5]/div/div[2]/div/div[2]/div[2]/form/div[1]/div[1]/div/div[2]/div/span/span")
+	@FindBy(xpath="/html/body/div[3]/div/div[2]/div/div[2]/div[2]/form/div[1]/div[1]/div/div[2]/div/span/span/input")
+	WebElement startTime;
+	
+	@FindBy(xpath="/html/body/div[3]/div/div[2]/div/div[2]/div[2]/form/div[1]/div[2]/div/div[2]/div/span/span/input")
 	WebElement endTime;
 	@FindBy(xpath="/html/body/div[3]/div/div[2]/div/div[2]/div[2]/form/div[2]/div[1]/div/div[2]/div/span/div/div/div/div")
 	WebElement job;
@@ -36,6 +41,8 @@ public class OpenShiftCreationDay1Shift1 extends TC_BaseClass{
 	WebElement noOfShifts;
 	@FindBy(xpath="//button[@class='ant-btn ant-btn-primary']")
 	WebElement addShift;
+	@FindBy(xpath="/html/body/div[3]/div/span/div/div/div")
+	private WebElement toast;
 	
 	public void getFrame()throws InterruptedException {
 	driver.switchTo().frame(openShift);
@@ -46,28 +53,39 @@ public class OpenShiftCreationDay1Shift1 extends TC_BaseClass{
 	}
  
 public void clickStartTime() throws InterruptedException {
-	
-	WebElement starttime=driver.findElement(By.xpath("/html/body/div[3]/div/div[2]/div/div[2]/div[2]/form/div[1]/div[1]/div/div[2]/div/span/span/input"));
 	Thread.sleep(600);
-	starttime.sendKeys("5:00AM");
-	
-	
-	
+	startTime.sendKeys(st);
+	if(st.equalsIgnoreCase("5:00AM")) {
+		Assert.assertTrue(true);
+		System.out.println(st);
+	}
 }
 public void clickEndTime() throws InterruptedException {
-	
-	WebElement endtime=driver.findElement(By.xpath("/html/body/div[3]/div/div[2]/div/div[2]/div[2]/form/div[1]/div[2]/div/div[2]/div/span/span/input"));
 	Thread.sleep(600);
-	endtime.sendKeys("4:00PM");
+	endTime.sendKeys(et);
+	if(et.equalsIgnoreCase("4:00PM")) {
+		Assert.assertTrue(true);
+		System.out.println(et);
+	}
+	else {
+		Assert.assertTrue(false);
+	}
 }
 
 public void selectJob() throws InterruptedException {
 job.click();
+String strng =job.getText();
+System.out.println(strng);
+Assert.assertEquals("FRONT DESK CLERK - TAC", strng);
 
 }
 
 public WebElement selectJobCategory() throws InterruptedException {
 	jobsel.click();
+	String js =jobsel.getText();
+	System.out.println(js);
+	Assert.assertEquals("FRONT DESK CLERK - TAC", js);
+
 	return jobsel;	
 }	
 public WebElement selectShiftCategory() throws InterruptedException {
@@ -75,17 +93,41 @@ public WebElement selectShiftCategory() throws InterruptedException {
 	shiftRole.click();
 	Thread.sleep(2000);
 	shiftCategory.click();
+	String sc =shiftCategory.getText();
+	System.out.println(sc);
+	Assert.assertEquals("Contract Hours", sc);
+
 	return shiftCategory;
 }	
 
 public void selectNoOfShits() throws InterruptedException {
+	String noShifts="1";
 	noOfShifts.sendKeys(Keys.BACK_SPACE);
 	noOfShifts.sendKeys("1");
+	if(noShifts.equalsIgnoreCase("1")) {
+		Assert.assertTrue(true);
+		System.out.println(noShifts);
+	}
+	else {
+		Assert.assertTrue(false);
+	}
+		
+}
+public void clickAddShift() throws InterruptedException {
+	String kk = driver.findElement(By.xpath("//button[@class='ant-btn ant-btn-primary']")).getText();
+	System.out.println(kk);
+	Assert.assertEquals("Add Shifts", kk);
+	addShift.click();
 	
 	
 }
-public void clickAddShift() throws InterruptedException {
-	addShift.click();
+public WebElement getTooltip() throws InterruptedException
+{
+	Thread.sleep(2000);
+	String kk = driver.findElement(By.xpath("/html/body/div[3]/div/span/div/div/div")).getText();
+	System.out.println(kk);
+	Assert.assertEquals("Open Shifts Were Created", kk);
+	return toast;
 }
 	
 }

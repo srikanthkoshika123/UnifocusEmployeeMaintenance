@@ -30,21 +30,24 @@ public class TC_CopySchedule extends TC_BaseClass {
         logger.info("password entered");
     	
     		
-			Thread.sleep(2000);
-	
+       Thread.sleep(2000);
     	lp.clickSignIn();
     	
 
-	    Thread.sleep(2000);
+    	 driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+    		
 		MainPages mp = new MainPages(driver);
 		
     	mp.clickUnifocus();
        Thread.sleep(2000);
         mp.getselect_List();
-        Thread.sleep(20000);
+        
+        driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
         CopySchedule CopySchedule=new CopySchedule(driver);
         CopySchedule.iFrames();
-       CopySchedule.CopySchedule();
+       CopySchedule.copyschedule();
+       CopySchedule.presentWeekData();
+       CopySchedule.nextWeekData();
         
 	}    
 	

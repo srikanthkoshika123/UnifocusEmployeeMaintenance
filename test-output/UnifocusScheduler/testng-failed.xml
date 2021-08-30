@@ -5,7 +5,7 @@
     <listener class-name="com.pack.utils.Reporting"/>
   </listeners>
   <test thread-count="5" name="openShift(failed)">
-    <parameter name="browser" value="firefox"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.pack.testCases.TC_CopySchedule">
         <methods>
