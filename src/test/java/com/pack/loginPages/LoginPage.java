@@ -32,16 +32,16 @@ public class LoginPage extends TC_BaseClass{
 		
 	}
 	
-	
+
 	public void setPassWord(String pwd) {
-			password.sendKeys(pwd);
-		    Assert.assertEquals(true, password.isEnabled());
-			System.out.println(password.isEnabled());
+		password.sendKeys(pwd);
+	    Assert.assertEquals(true, password.isEnabled());
+		System.out.println(password.isEnabled());
 		}
 	public void clickSignIn() {
-				signin.click();
-				Assert.assertEquals(true, signin.isEnabled());
-				System.out.println("signin clicked");
+		signin.click();
+		Assert.assertEquals(true, signin.isEnabled());
+		System.out.println("signin clicked");
 	}
 	
 	

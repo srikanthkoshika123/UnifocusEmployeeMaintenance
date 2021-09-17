@@ -1,10 +1,6 @@
 package com.pack.testCases;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.WebDriver;
-
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -12,11 +8,15 @@ import org.testng.annotations.Test;
 import com.pack.loginPages.LoginPage;
 import com.pack.loginPages.MainPages;
 
+import recordingTests.ScreenRecorderUtil;
+
+
+
 public class TC_TestCase_02 extends TC_BaseClass{
     
 	@Test
-	public void mainTest() throws InterruptedException {
-		
+	public void mainTest() throws Exception {
+		ScreenRecorderUtil.startRecord("maintest");
 		LoginPage lp=new LoginPage(driver);
     	
 	      
@@ -57,17 +57,10 @@ public class TC_TestCase_02 extends TC_BaseClass{
  	}
  	
  	
-
+ 	
 
 	
 	}
-	
-
-	
-	
-
-
-
 }
 
 

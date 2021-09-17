@@ -22,6 +22,8 @@ import org.testng.annotations.Parameters;
 import com.pack.loginPages.PartnerCodeValidation;
 import com.pack.utils.ReadConfig;
 
+import recordingTests.ScreenRecorderUtil;
+
 public class TC_BaseClass {
 	ReadConfig readconfig=new ReadConfig();
 	public String url =readconfig.getApplicationUrl();
@@ -36,7 +38,7 @@ public class TC_BaseClass {
     
   @BeforeClass
 	
-	public void setup(String browser) {
+	public void setup(String browser) throws Exception {
 		 logger=logger.getLogger("unifocusScheduler");
 		PropertyConfigurator.configure("log.properties.txt");
 		
@@ -55,7 +57,7 @@ public class TC_BaseClass {
 		  driver.get(url);
 		  driver.manage().window().maximize(); 
 		  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		  
+		 
 		  PartnerCodeValidation partCode=new PartnerCodeValidation(driver);
 			partCode.setPartnerCode(partnerCode);
 			partCode.clickNext();
@@ -71,7 +73,8 @@ public class TC_BaseClass {
 	}
 	
 	@AfterClass
-	public void tearDown() {
+	public void tearDown() throws Exception {
+		 ScreenRecorderUtil.stopRecord();  
 		driver.quit();
 		
 	}

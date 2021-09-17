@@ -18,8 +18,7 @@ public class OpenShiftCreationDay1Shift1 extends TC_BaseClass{
     	ldriver=rdriver;
     	PageFactory.initElements(rdriver, this);
 }
-	
-	
+
 	@FindBy(className="app-iframe")
 	WebElement openShift;
 	

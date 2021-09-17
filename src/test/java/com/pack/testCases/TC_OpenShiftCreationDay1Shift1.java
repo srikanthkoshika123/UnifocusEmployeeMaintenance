@@ -10,10 +10,12 @@ import com.pack.loginPages.LoginPage;
 import com.pack.loginPages.MainPages;
 import com.pack.loginPages.OpenShiftCreationDay1Shift1;
 
+import recordingTests.ScreenRecorderUtil;
+
 public class TC_OpenShiftCreationDay1Shift1 extends TC_BaseClass {
 	@Test
-	public void openShift() throws IOException, InterruptedException {
-		 
+	public void openShift() throws Exception {
+		 ScreenRecorderUtil.startRecord("openShift");
 			
 		  	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		    	
@@ -61,9 +63,9 @@ public class TC_OpenShiftCreationDay1Shift1 extends TC_BaseClass {
 			        shift.selectNoOfShits();
 			        shift.clickAddShift();
 			        shift.getTooltip();
-			        
-			        	
-		    	if(driver.getTitle().equalsIgnoreCase("singularity")) {
+			       
+			         	
+		    	if(driver.getTitle().equalsIgnoreCase("singularllity")) {
 		    		Assert.assertTrue(true);
 		    	}
 		    	else {
@@ -71,5 +73,6 @@ public class TC_OpenShiftCreationDay1Shift1 extends TC_BaseClass {
 		    		
 		    		Assert.assertTrue(false);
 		    	}
+		    	
 		  }    	
 	}
