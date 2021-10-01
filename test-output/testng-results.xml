@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-26T13:08:17 IST" name="UnifocusScheduler" finished-at="2021-08-26T13:10:58 IST" duration-ms="160801">
+  <suite started-at="2021-09-29T22:24:26 IST" name="Failed suite [UnifocusScheduler]" finished-at="2021-09-29T22:30:38 IST" duration-ms="372555">
     <groups>
     </groups>
-    <test started-at="2021-08-26T13:08:17 IST" name="openShift" finished-at="2021-08-26T13:10:58 IST" duration-ms="160801">
+    <test started-at="2021-09-29T22:24:26 IST" name="openShift(failed)" finished-at="2021-09-29T22:30:38 IST" duration-ms="372555">
       <class name="com.pack.testCases.TC_CopySchedule">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.pack.testCases.TC_CopySchedule@4f5991f6]" started-at="2021-08-26T13:08:17 IST" name="setup" finished-at="2021-08-26T13:08:30 IST" duration-ms="12238" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.pack.testCases.TC_CopySchedule@73a2e526]" started-at="2021-09-29T22:24:26 IST" name="setup" finished-at="2021-09-29T22:24:43 IST" duration-ms="17133" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,29 +18,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="copySchedule()[pri:0, instance:com.pack.testCases.TC_CopySchedule@4f5991f6]" started-at="2021-08-26T13:08:30 IST" name="copySchedule" finished-at="2021-08-26T13:10:58 IST" duration-ms="147947" status="FAIL">
+        <test-method signature="copySchedule()[pri:0, instance:com.pack.testCases.TC_CopySchedule@73a2e526]" started-at="2021-09-29T22:24:43 IST" name="copySchedule" finished-at="2021-09-29T22:30:37 IST" duration-ms="353366" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[4]/div/div[2]/div/div[2]/div[2]/section/div/div/div/div/div[1]/section[1]/div/div/div/div/div[1]/div[2]/button[2]"}
-  (Session info: chrome=92.0.4515.159)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="root"]/div/section/section/header/div/div[1]/div[2]/div/div/div/button[1]"}
+  (Session info: chrome=94.0.4606.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-K93H14H', ip: '192.168.29.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+System info: host: 'DESKTOP-K93H14H', ip: '192.168.0.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\745G6~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a66090503c7eb73fd2b58699a8668875
-*** Element info: {Using=xpath, value=/html/body/div[4]/div/div[2]/div/div[2]/div[2]/section/div/div/div/div/div[1]/section[1]/div/div/div/div/div[1]/div[2]/button[2]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\745G6~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57997}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4777d98241435964071d8d48ec143587
+*** Element info: {Using=xpath, value=//*[@id="root"]/div/section/section/header/div/div[1]/div[2]/div/div/div/button[1]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[4]/div/div[2]/div/div[2]/div[2]/section/div/div/div/div/div[1]/section[1]/div/div/div/div/div[1]/div[2]/button[2]"}
-  (Session info: chrome=92.0.4515.159)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="root"]/div/section/section/header/div/div[1]/div[2]/div/div/div/button[1]"}
+  (Session info: chrome=94.0.4606.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-K93H14H', ip: '192.168.29.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+System info: host: 'DESKTOP-K93H14H', ip: '192.168.0.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\745G6~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a66090503c7eb73fd2b58699a8668875
-*** Element info: {Using=xpath, value=/html/body/div[4]/div/div[2]/div/div[2]/div[2]/section/div/div/div/div/div[1]/section[1]/div/div/div/div/div[1]/div[2]/button[2]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\745G6~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57997}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4777d98241435964071d8d48ec143587
+*** Element info: {Using=xpath, value=//*[@id="root"]/div/section/section/header/div/div[1]/div[2]/div/div/div/button[1]}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -56,11 +56,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
-at com.pack.loginPages.CopySchedule.presentWeekData(CopySchedule.java:42)
-at com.pack.testCases.TC_CopySchedule.copySchedule(TC_CopySchedule.java:49)
+at com.pack.loginPages.CopySchedule.copyschedule(CopySchedule.java:44)
+at com.pack.testCases.TC_CopySchedule.copySchedule(TC_CopySchedule.java:51)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -95,11 +92,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- copySchedule -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pack.testCases.TC_CopySchedule@4f5991f6]" started-at="2021-08-26T13:10:58 IST" name="tearDown" finished-at="2021-08-26T13:10:58 IST" duration-ms="286" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pack.testCases.TC_CopySchedule@73a2e526]" started-at="2021-09-29T22:30:37 IST" name="tearDown" finished-at="2021-09-29T22:30:38 IST" duration-ms="1371" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.pack.testCases.TC_CopySchedule -->
-    </test> <!-- openShift -->
-  </suite> <!-- UnifocusScheduler -->
+    </test> <!-- openShift(failed) -->
+  </suite> <!-- Failed suite [UnifocusScheduler] -->
 </testng-results>
