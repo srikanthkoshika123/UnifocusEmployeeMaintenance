@@ -65,7 +65,7 @@ public class TC_OpenShiftCreationDay1Shift1 extends TC_BaseClass {
 			        shift.getTooltip();
 			       
 			         	
-		    	if(driver.getTitle().equalsIgnoreCase("singularllity")) {
+		    	if(driver.getTitle().equalsIgnoreCase("singularity")) {
 		    		Assert.assertTrue(true);
 		    	}
 		    	else {

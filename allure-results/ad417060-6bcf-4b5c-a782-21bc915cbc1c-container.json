@@ -1,1 +1,0 @@
-{"uuid":"ad417060-6bcf-4b5c-a782-21bc915cbc1c","name":"com.pack.testCases.TC_TestCase_01","children":["c12b861e-792b-409c-87cb-1a97dbbaf120"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1626867526651,"stop":1626867534705}],"afters":[],"links":[],"start":1626867526345,"stop":1626867591090}

@@ -1,1 +1,0 @@
-{"uuid":"1b923e2b-2dde-467f-825c-c5237b9e7534","name":"openShift","children":["40992fdf-70c3-4404-bdaa-3fb4d9a43d21"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1628669335130,"stop":1628669343925}],"afters":[],"links":[],"start":1628669334844,"stop":1628669586560}

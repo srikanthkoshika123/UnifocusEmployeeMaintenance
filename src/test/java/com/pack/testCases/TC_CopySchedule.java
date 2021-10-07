@@ -9,9 +9,12 @@ import com.pack.loginPages.DeleteAllShifts;
 import com.pack.loginPages.LoginPage;
 import com.pack.loginPages.MainPages;
 
+import recordingTests.ScreenRecorderUtil;
+
 public class TC_CopySchedule extends TC_BaseClass {
 	@Test
-	public void copySchedule() throws InterruptedException {
+	public void copySchedule() throws Exception {
+		ScreenRecorderUtil.startRecord("copy");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     	
 	    

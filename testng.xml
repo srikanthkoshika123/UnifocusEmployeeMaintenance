@@ -8,14 +8,9 @@
     <parameter name="browser" value="chrome" />
     
     <classes>
-       
+       <class name="com.pack.testCases.TC_TestCase_02"/>
       
-      <class name="com.pack.testCases.TC_CopySchedule"/>
-       
-      
-      
-      
-       
+ 
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

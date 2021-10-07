@@ -6,10 +6,13 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.pack.loginPages.LoginPage;
 
+import recordingTests.ScreenRecorderUtil;
+
 
 public class TC_TestCase_01 extends TC_BaseClass {
 	  @Test
-			public void loginTest() throws  IOException, InterruptedException {
+			public void loginTest() throws  Exception {
+		    ScreenRecorderUtil.startRecord("loginPage");
 		  	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		    	
 		    

@@ -2128,3 +2128,606 @@
 2021-08-26 13:04:22,972 [main] INFO unifocusScheduler - password entered
 2021-08-26 13:08:30,329 [main] INFO unifocusScheduler - enter user name
 2021-08-26 13:08:40,641 [main] INFO unifocusScheduler - password entered
+2021-08-30 15:04:16,523 [main] INFO unifocusScheduler - enter user name
+2021-08-30 15:04:24,829 [main] INFO unifocusScheduler - password entered
+2021-08-30 15:08:57,998 [main] INFO unifocusScheduler - enter user name
+2021-08-30 15:09:10,296 [main] INFO unifocusScheduler - password entered
+2021-08-30 15:13:10,663 [main] INFO unifocusScheduler - enter user name
+2021-08-30 15:13:28,515 [main] INFO unifocusScheduler - password entered
+2021-08-30 15:16:39,373 [main] INFO unifocusScheduler - enter user name
+2021-08-30 15:16:47,806 [main] INFO unifocusScheduler - password entered
+2021-08-30 15:20:06,771 [main] INFO unifocusScheduler - enter user name
+2021-08-30 15:20:16,032 [main] INFO unifocusScheduler - password entered
+2021-08-30 15:22:58,413 [main] INFO unifocusScheduler - enter user name
+2021-08-30 15:23:07,297 [main] INFO unifocusScheduler - password entered
+2021-08-30 15:45:58,361 [main] INFO unifocusScheduler - enter user name
+2021-08-30 15:46:08,404 [main] INFO unifocusScheduler - password entered
+2021-08-30 16:02:40,038 [main] INFO unifocusScheduler - enter user name
+2021-08-30 16:02:48,944 [main] INFO unifocusScheduler - password entered
+2021-08-30 16:12:58,411 [main] INFO unifocusScheduler - enter user name
+2021-08-30 16:13:07,749 [main] INFO unifocusScheduler - password entered
+2021-08-30 16:14:05,238 [main] INFO unifocusScheduler - openshift
+2021-08-30 16:39:39,399 [main] INFO unifocusScheduler - enter user name
+2021-08-30 16:39:47,836 [main] INFO unifocusScheduler - password entered
+2021-08-30 16:41:02,652 [main] INFO unifocusScheduler - enter user name
+2021-08-30 16:41:10,828 [main] INFO unifocusScheduler - password entered
+2021-08-30 16:42:31,352 [main] INFO unifocusScheduler - enter user name
+2021-08-30 16:42:45,563 [main] INFO unifocusScheduler - password entered
+2021-08-30 17:11:52,429 [main] INFO unifocusScheduler - enter user name
+2021-08-30 17:12:06,437 [main] INFO unifocusScheduler - password entered
+2021-08-30 17:16:08,070 [main] INFO unifocusScheduler - enter user name
+2021-08-30 17:16:16,541 [main] INFO unifocusScheduler - password entered
+2021-08-30 17:24:04,099 [main] INFO unifocusScheduler - enter user name
+2021-08-30 17:24:12,863 [main] INFO unifocusScheduler - password entered
+2021-08-31 15:10:59,775 [main] INFO unifocusScheduler - enter user name
+2021-08-31 15:11:15,617 [main] INFO unifocusScheduler - password entered
+2021-08-31 15:15:27,373 [main] INFO unifocusScheduler - enter user name
+2021-08-31 15:15:41,023 [main] INFO unifocusScheduler - password entered
+2021-08-31 15:25:34,873 [main] INFO unifocusScheduler - enter user name
+2021-08-31 15:25:50,306 [main] INFO unifocusScheduler - password entered
+2021-08-31 15:30:26,556 [main] INFO unifocusScheduler - enter user name
+2021-08-31 15:30:45,158 [main] INFO unifocusScheduler - password entered
+2021-09-01 14:12:28,374 [main] INFO unifocusScheduler - enter user name
+2021-09-01 14:14:45,971 [main] INFO unifocusScheduler - password entered
+2021-09-01 14:17:48,681 [main] INFO unifocusScheduler - enter user name
+2021-09-01 14:18:36,642 [main] INFO unifocusScheduler - password entered
+2021-09-01 14:38:54,512 [main] INFO unifocusScheduler - enter user name
+2021-09-01 14:39:09,723 [main] INFO unifocusScheduler - password entered
+2021-09-01 14:40:42,585 [main] INFO unifocusScheduler - enter user name
+2021-09-01 14:40:57,109 [main] INFO unifocusScheduler - password entered
+2021-09-01 14:43:14,741 [main] INFO unifocusScheduler - enter user name
+2021-09-01 14:43:29,631 [main] INFO unifocusScheduler - password entered
+2021-09-01 15:34:13,718 [main] INFO unifocusScheduler - enter user name
+2021-09-01 15:34:30,267 [main] INFO unifocusScheduler - password entered
+2021-09-01 15:36:11,690 [main] INFO unifocusScheduler - enter user name
+2021-09-01 15:37:12,844 [main] INFO unifocusScheduler - password entered
+2021-09-01 15:44:01,540 [main] INFO unifocusScheduler - enter user name
+2021-09-01 15:44:29,361 [main] INFO unifocusScheduler - password entered
+2021-09-01 15:53:23,316 [main] INFO unifocusScheduler - enter user name
+2021-09-01 15:53:35,865 [main] INFO unifocusScheduler - password entered
+2021-09-01 15:54:50,711 [main] INFO unifocusScheduler - openshift
+2021-09-01 15:56:47,296 [main] INFO unifocusScheduler - enter user name
+2021-09-01 15:57:25,542 [main] INFO unifocusScheduler - password entered
+2021-09-01 16:01:02,923 [main] INFO unifocusScheduler - enter user name
+2021-09-01 16:01:15,035 [main] INFO unifocusScheduler - password entered
+2021-09-01 16:37:55,462 [main] INFO unifocusScheduler - enter user name
+2021-09-01 16:38:07,873 [main] INFO unifocusScheduler - password entered
+2021-09-01 16:42:17,508 [main] INFO unifocusScheduler - enter user name
+2021-09-01 16:43:01,038 [main] INFO unifocusScheduler - password entered
+2021-09-01 16:49:45,377 [main] INFO unifocusScheduler - enter user name
+2021-09-01 16:50:06,077 [main] INFO unifocusScheduler - password entered
+2021-09-02 10:08:09,882 [main] INFO unifocusScheduler - enter user name
+2021-09-02 10:08:26,491 [main] INFO unifocusScheduler - password entered
+2021-09-02 10:13:06,726 [main] INFO unifocusScheduler - enter user name
+2021-09-02 10:13:20,076 [main] INFO unifocusScheduler - password entered
+2021-09-02 10:23:01,301 [main] INFO unifocusScheduler - enter user name
+2021-09-02 10:23:16,264 [main] INFO unifocusScheduler - password entered
+2021-09-02 10:31:59,022 [main] INFO unifocusScheduler - enter user name
+2021-09-02 10:32:11,664 [main] INFO unifocusScheduler - password entered
+2021-09-02 10:38:04,245 [main] INFO unifocusScheduler - enter user name
+2021-09-02 10:38:16,380 [main] INFO unifocusScheduler - password entered
+2021-09-02 11:19:28,632 [main] INFO unifocusScheduler - enter user name
+2021-09-02 11:19:46,981 [main] INFO unifocusScheduler - password entered
+2021-09-02 11:37:11,454 [main] INFO unifocusScheduler - enter user name
+2021-09-02 11:37:32,501 [main] INFO unifocusScheduler - password entered
+2021-09-02 11:41:55,003 [main] INFO unifocusScheduler - enter user name
+2021-09-02 11:42:06,819 [main] INFO unifocusScheduler - password entered
+2021-09-02 11:43:55,937 [main] INFO unifocusScheduler - enter user name
+2021-09-02 11:44:09,033 [main] INFO unifocusScheduler - password entered
+2021-09-02 12:02:34,216 [main] INFO unifocusScheduler - enter user name
+2021-09-02 12:02:49,558 [main] INFO unifocusScheduler - password entered
+2021-09-02 12:04:47,997 [main] INFO unifocusScheduler - enter user name
+2021-09-02 12:05:07,829 [main] INFO unifocusScheduler - password entered
+2021-09-02 12:09:16,705 [main] INFO unifocusScheduler - enter user name
+2021-09-02 12:09:37,936 [main] INFO unifocusScheduler - password entered
+2021-09-02 14:16:34,826 [main] INFO unifocusScheduler - enter user name
+2021-09-02 14:16:51,053 [main] INFO unifocusScheduler - password entered
+2021-09-02 14:16:51,200 [main] INFO unifocusScheduler - signin clicked
+2021-09-02 16:42:19,516 [main] INFO unifocusScheduler - enter user name
+2021-09-02 16:42:30,759 [main] INFO unifocusScheduler - password entered
+2021-09-02 16:45:58,354 [main] INFO unifocusScheduler - enter user name
+2021-09-02 16:46:06,889 [main] INFO unifocusScheduler - password entered
+2021-09-02 16:54:34,748 [main] INFO unifocusScheduler - enter user name
+2021-09-02 16:54:46,131 [main] INFO unifocusScheduler - password entered
+2021-09-02 17:00:01,034 [main] INFO unifocusScheduler - enter user name
+2021-09-02 17:00:09,613 [main] INFO unifocusScheduler - password entered
+2021-09-02 17:07:50,147 [main] INFO unifocusScheduler - enter user name
+2021-09-02 17:07:58,537 [main] INFO unifocusScheduler - password entered
+2021-09-02 17:23:24,176 [main] INFO unifocusScheduler - enter user name
+2021-09-02 17:23:33,173 [main] INFO unifocusScheduler - password entered
+2021-09-03 09:59:05,433 [main] INFO unifocusScheduler - enter user name
+2021-09-03 09:59:18,104 [main] INFO unifocusScheduler - password entered
+2021-09-03 10:01:04,087 [main] INFO unifocusScheduler - enter user name
+2021-09-03 10:01:18,595 [main] INFO unifocusScheduler - password entered
+2021-09-03 10:38:14,533 [main] INFO unifocusScheduler - enter user name
+2021-09-03 10:38:28,394 [main] INFO unifocusScheduler - password entered
+2021-09-03 10:40:33,491 [main] INFO unifocusScheduler - enter user name
+2021-09-03 10:40:45,592 [main] INFO unifocusScheduler - password entered
+2021-09-03 10:43:02,883 [main] INFO unifocusScheduler - enter user name
+2021-09-03 10:43:15,543 [main] INFO unifocusScheduler - password entered
+2021-09-03 10:50:05,860 [main] INFO unifocusScheduler - enter user name
+2021-09-03 10:50:18,792 [main] INFO unifocusScheduler - password entered
+2021-09-03 11:04:43,122 [main] INFO unifocusScheduler - enter user name
+2021-09-03 11:04:57,390 [main] INFO unifocusScheduler - password entered
+2021-09-03 11:15:10,915 [main] INFO unifocusScheduler - enter user name
+2021-09-03 11:15:23,633 [main] INFO unifocusScheduler - password entered
+2021-09-03 11:22:52,862 [main] INFO unifocusScheduler - enter user name
+2021-09-03 11:23:05,941 [main] INFO unifocusScheduler - password entered
+2021-09-03 11:28:27,834 [main] INFO unifocusScheduler - enter user name
+2021-09-03 11:28:41,296 [main] INFO unifocusScheduler - password entered
+2021-09-03 11:38:04,896 [main] INFO unifocusScheduler - enter user name
+2021-09-03 11:38:25,675 [main] INFO unifocusScheduler - password entered
+2021-09-03 11:43:15,688 [main] INFO unifocusScheduler - enter user name
+2021-09-03 11:43:28,480 [main] INFO unifocusScheduler - password entered
+2021-09-03 11:54:50,610 [main] INFO unifocusScheduler - enter user name
+2021-09-03 11:55:03,287 [main] INFO unifocusScheduler - password entered
+2021-09-03 11:59:54,740 [main] INFO unifocusScheduler - enter user name
+2021-09-03 12:00:07,338 [main] INFO unifocusScheduler - password entered
+2021-09-03 12:19:16,515 [main] INFO unifocusScheduler - enter user name
+2021-09-03 12:19:31,977 [main] INFO unifocusScheduler - password entered
+2021-09-03 12:26:23,877 [main] INFO unifocusScheduler - enter user name
+2021-09-03 12:26:37,385 [main] INFO unifocusScheduler - password entered
+2021-09-03 12:37:17,966 [main] INFO unifocusScheduler - enter user name
+2021-09-03 12:37:36,310 [main] INFO unifocusScheduler - password entered
+2021-09-03 12:44:29,927 [main] INFO unifocusScheduler - enter user name
+2021-09-03 12:44:46,909 [main] INFO unifocusScheduler - password entered
+2021-09-03 12:51:18,882 [main] INFO unifocusScheduler - enter user name
+2021-09-03 12:51:34,393 [main] INFO unifocusScheduler - password entered
+2021-09-03 12:56:05,284 [main] INFO unifocusScheduler - enter user name
+2021-09-03 12:56:21,251 [main] INFO unifocusScheduler - password entered
+2021-09-03 13:12:24,467 [main] INFO unifocusScheduler - enter user name
+2021-09-03 13:13:00,306 [main] INFO unifocusScheduler - enter user name
+2021-09-03 13:13:13,828 [main] INFO unifocusScheduler - password entered
+2021-09-03 13:19:49,107 [main] INFO unifocusScheduler - enter user name
+2021-09-03 13:20:03,941 [main] INFO unifocusScheduler - password entered
+2021-09-03 13:27:36,717 [main] INFO unifocusScheduler - enter user name
+2021-09-03 13:27:49,494 [main] INFO unifocusScheduler - password entered
+2021-09-03 14:30:32,863 [main] INFO unifocusScheduler - enter user name
+2021-09-03 14:30:50,094 [main] INFO unifocusScheduler - password entered
+2021-09-03 14:37:09,169 [main] INFO unifocusScheduler - enter user name
+2021-09-03 14:37:31,744 [main] INFO unifocusScheduler - password entered
+2021-09-03 14:55:40,686 [main] INFO unifocusScheduler - enter user name
+2021-09-03 14:55:49,708 [main] INFO unifocusScheduler - password entered
+2021-09-03 14:57:09,895 [main] INFO unifocusScheduler - enter user name
+2021-09-03 14:57:18,338 [main] INFO unifocusScheduler - password entered
+2021-09-03 15:41:25,444 [main] INFO unifocusScheduler - enter user name
+2021-09-06 14:08:51,668 [main] INFO unifocusScheduler - enter user name
+2021-09-06 14:09:25,852 [main] INFO unifocusScheduler - password entered
+2021-09-06 15:08:19,471 [main] INFO unifocusScheduler - enter user name
+2021-09-06 15:08:49,445 [main] INFO unifocusScheduler - password entered
+2021-09-07 09:56:20,708 [main] INFO unifocusScheduler - enter user name
+2021-09-07 09:56:29,895 [main] INFO unifocusScheduler - password entered
+2021-09-07 10:10:00,388 [main] INFO unifocusScheduler - enter user name
+2021-09-07 10:10:08,951 [main] INFO unifocusScheduler - password entered
+2021-09-07 10:31:19,360 [main] INFO unifocusScheduler - enter user name
+2021-09-07 10:31:28,080 [main] INFO unifocusScheduler - password entered
+2021-09-07 10:35:47,603 [main] INFO unifocusScheduler - enter user name
+2021-09-07 10:35:59,461 [main] INFO unifocusScheduler - password entered
+2021-09-07 10:38:40,617 [main] INFO unifocusScheduler - enter user name
+2021-09-07 10:38:54,667 [main] INFO unifocusScheduler - password entered
+2021-09-07 10:42:04,691 [main] INFO unifocusScheduler - enter user name
+2021-09-07 10:42:12,779 [main] INFO unifocusScheduler - password entered
+2021-09-07 10:44:09,609 [main] INFO unifocusScheduler - enter user name
+2021-09-07 10:44:18,469 [main] INFO unifocusScheduler - password entered
+2021-09-07 11:05:23,776 [main] INFO unifocusScheduler - enter user name
+2021-09-07 11:05:48,404 [main] INFO unifocusScheduler - password entered
+2021-09-07 11:12:18,183 [main] INFO unifocusScheduler - enter user name
+2021-09-07 11:12:36,203 [main] INFO unifocusScheduler - password entered
+2021-09-07 11:14:35,974 [main] INFO unifocusScheduler - enter user name
+2021-09-07 11:14:48,422 [main] INFO unifocusScheduler - password entered
+2021-09-07 11:41:00,750 [main] INFO unifocusScheduler - enter user name
+2021-09-07 11:41:15,395 [main] INFO unifocusScheduler - password entered
+2021-09-07 11:51:14,218 [main] INFO unifocusScheduler - enter user name
+2021-09-07 11:51:28,267 [main] INFO unifocusScheduler - password entered
+2021-09-07 12:01:17,001 [main] INFO unifocusScheduler - enter user name
+2021-09-07 12:01:30,848 [main] INFO unifocusScheduler - password entered
+2021-09-07 12:06:55,677 [main] INFO unifocusScheduler - enter user name
+2021-09-07 12:07:35,036 [main] INFO unifocusScheduler - password entered
+2021-09-07 12:10:09,685 [main] INFO unifocusScheduler - enter user name
+2021-09-07 12:10:22,876 [main] INFO unifocusScheduler - password entered
+2021-09-07 12:18:39,093 [main] INFO unifocusScheduler - enter user name
+2021-09-07 12:18:55,064 [main] INFO unifocusScheduler - password entered
+2021-09-07 12:20:39,945 [main] INFO unifocusScheduler - enter user name
+2021-09-07 12:20:52,818 [main] INFO unifocusScheduler - password entered
+2021-09-07 12:23:15,608 [main] INFO unifocusScheduler - enter user name
+2021-09-07 12:23:26,959 [main] INFO unifocusScheduler - password entered
+2021-09-07 12:28:57,929 [main] INFO unifocusScheduler - enter user name
+2021-09-07 12:29:11,937 [main] INFO unifocusScheduler - password entered
+2021-09-07 12:30:53,643 [main] INFO unifocusScheduler - enter user name
+2021-09-07 12:31:08,466 [main] INFO unifocusScheduler - password entered
+2021-09-07 12:40:35,037 [main] INFO unifocusScheduler - enter user name
+2021-09-07 12:40:50,781 [main] INFO unifocusScheduler - password entered
+2021-09-07 12:43:29,279 [main] INFO unifocusScheduler - enter user name
+2021-09-07 15:46:27,890 [main] INFO unifocusScheduler - enter user name
+2021-09-07 15:46:49,129 [main] INFO unifocusScheduler - password entered
+2021-09-07 15:49:01,415 [main] INFO unifocusScheduler - enter user name
+2021-09-07 15:49:10,223 [main] INFO unifocusScheduler - password entered
+2021-09-07 15:52:52,917 [main] INFO unifocusScheduler - enter user name
+2021-09-07 15:53:05,162 [main] INFO unifocusScheduler - password entered
+2021-09-07 15:59:50,085 [main] INFO unifocusScheduler - enter user name
+2021-09-07 16:00:01,348 [main] INFO unifocusScheduler - password entered
+2021-09-07 16:22:45,958 [main] INFO unifocusScheduler - enter user name
+2021-09-07 16:22:55,191 [main] INFO unifocusScheduler - password entered
+2021-09-07 16:42:31,816 [main] INFO unifocusScheduler - enter user name
+2021-09-07 16:42:45,349 [main] INFO unifocusScheduler - password entered
+2021-09-07 16:46:15,767 [main] INFO unifocusScheduler - enter user name
+2021-09-07 16:46:26,502 [main] INFO unifocusScheduler - password entered
+2021-09-07 17:06:40,402 [main] INFO unifocusScheduler - enter user name
+2021-09-08 10:30:49,221 [main] INFO unifocusScheduler - enter user name
+2021-09-08 10:31:12,941 [main] INFO unifocusScheduler - password entered
+2021-09-08 10:44:55,965 [main] INFO unifocusScheduler - enter user name
+2021-09-08 10:45:11,813 [main] INFO unifocusScheduler - password entered
+2021-09-08 10:56:40,461 [main] INFO unifocusScheduler - enter user name
+2021-09-08 10:56:50,055 [main] INFO unifocusScheduler - password entered
+2021-09-08 11:18:54,624 [main] INFO unifocusScheduler - enter user name
+2021-09-08 11:19:11,162 [main] INFO unifocusScheduler - password entered
+2021-09-08 11:30:34,576 [main] INFO unifocusScheduler - enter user name
+2021-09-08 11:30:48,958 [main] INFO unifocusScheduler - password entered
+2021-09-08 11:33:14,987 [main] INFO unifocusScheduler - enter user name
+2021-09-08 11:33:28,133 [main] INFO unifocusScheduler - password entered
+2021-09-08 11:35:51,771 [main] INFO unifocusScheduler - enter user name
+2021-09-08 11:36:04,892 [main] INFO unifocusScheduler - password entered
+2021-09-08 11:45:22,262 [main] INFO unifocusScheduler - enter user name
+2021-09-08 11:45:36,877 [main] INFO unifocusScheduler - password entered
+2021-09-08 11:47:16,692 [main] INFO unifocusScheduler - enter user name
+2021-09-08 11:47:28,933 [main] INFO unifocusScheduler - password entered
+2021-09-08 11:49:11,317 [main] INFO unifocusScheduler - enter user name
+2021-09-08 11:49:23,848 [main] INFO unifocusScheduler - password entered
+2021-09-08 11:54:18,565 [main] INFO unifocusScheduler - enter user name
+2021-09-08 11:54:31,928 [main] INFO unifocusScheduler - password entered
+2021-09-08 11:56:18,426 [main] INFO unifocusScheduler - enter user name
+2021-09-08 11:56:31,433 [main] INFO unifocusScheduler - password entered
+2021-09-08 14:30:30,022 [main] INFO unifocusScheduler - enter user name
+2021-09-08 14:30:38,817 [main] INFO unifocusScheduler - password entered
+2021-09-08 14:31:56,108 [main] INFO unifocusScheduler - enter user name
+2021-09-08 14:32:09,477 [main] INFO unifocusScheduler - password entered
+2021-09-08 15:22:00,797 [main] INFO unifocusScheduler - enter user name
+2021-09-08 15:22:15,618 [main] INFO unifocusScheduler - password entered
+2021-09-08 15:27:28,558 [main] INFO unifocusScheduler - enter user name
+2021-09-08 15:27:42,521 [main] INFO unifocusScheduler - password entered
+2021-09-08 15:51:35,270 [main] INFO unifocusScheduler - enter user name
+2021-09-08 15:51:58,994 [main] INFO unifocusScheduler - password entered
+2021-09-08 16:01:16,396 [main] INFO unifocusScheduler - enter user name
+2021-09-08 16:01:31,301 [main] INFO unifocusScheduler - password entered
+2021-09-08 16:23:08,039 [main] INFO unifocusScheduler - enter user name
+2021-09-08 16:23:23,067 [main] INFO unifocusScheduler - password entered
+2021-09-08 16:41:27,675 [main] INFO unifocusScheduler - enter user name
+2021-09-08 16:41:49,799 [main] INFO unifocusScheduler - password entered
+2021-09-08 16:49:34,855 [main] INFO unifocusScheduler - enter user name
+2021-09-08 16:49:47,695 [main] INFO unifocusScheduler - password entered
+2021-09-08 17:00:37,882 [main] INFO unifocusScheduler - enter user name
+2021-09-08 17:00:51,527 [main] INFO unifocusScheduler - password entered
+2021-09-08 17:05:01,038 [main] INFO unifocusScheduler - enter user name
+2021-09-08 17:05:16,671 [main] INFO unifocusScheduler - password entered
+2021-09-08 17:13:21,578 [main] INFO unifocusScheduler - enter user name
+2021-09-08 17:13:41,202 [main] INFO unifocusScheduler - password entered
+2021-09-08 17:19:32,843 [main] INFO unifocusScheduler - enter user name
+2021-09-08 17:19:48,117 [main] INFO unifocusScheduler - password entered
+2021-09-08 17:26:41,113 [main] INFO unifocusScheduler - enter user name
+2021-09-08 17:26:57,778 [main] INFO unifocusScheduler - password entered
+2021-09-09 10:16:16,608 [main] INFO unifocusScheduler - enter user name
+2021-09-09 10:16:33,049 [main] INFO unifocusScheduler - password entered
+2021-09-09 10:23:15,259 [main] INFO unifocusScheduler - enter user name
+2021-09-09 10:23:28,351 [main] INFO unifocusScheduler - password entered
+2021-09-09 10:33:52,238 [main] INFO unifocusScheduler - enter user name
+2021-09-09 10:34:07,419 [main] INFO unifocusScheduler - password entered
+2021-09-09 10:42:55,158 [main] INFO unifocusScheduler - enter user name
+2021-09-09 10:43:10,831 [main] INFO unifocusScheduler - password entered
+2021-09-09 10:54:30,783 [main] INFO unifocusScheduler - enter user name
+2021-09-09 10:54:46,547 [main] INFO unifocusScheduler - password entered
+2021-09-09 15:41:20,580 [main] INFO unifocusScheduler - enter user name
+2021-09-09 15:41:31,064 [main] INFO unifocusScheduler - password entered
+2021-09-09 15:44:35,214 [main] INFO unifocusScheduler - enter user name
+2021-09-09 15:44:50,926 [main] INFO unifocusScheduler - password entered
+2021-09-09 15:51:59,404 [main] INFO unifocusScheduler - enter user name
+2021-09-09 15:52:10,233 [main] INFO unifocusScheduler - password entered
+2021-09-09 15:59:57,223 [main] INFO unifocusScheduler - enter user name
+2021-09-09 16:00:10,515 [main] INFO unifocusScheduler - password entered
+2021-09-09 16:07:31,680 [main] INFO unifocusScheduler - enter user name
+2021-09-09 16:08:14,193 [main] INFO unifocusScheduler - password entered
+2021-09-13 10:24:54,435 [main] INFO unifocusScheduler - enter user name
+2021-09-13 10:25:12,344 [main] INFO unifocusScheduler - password entered
+2021-09-13 11:50:11,209 [main] INFO unifocusScheduler - enter user name
+2021-09-13 11:50:55,658 [main] INFO unifocusScheduler - password entered
+2021-09-13 11:57:09,740 [main] INFO unifocusScheduler - enter user name
+2021-09-13 11:57:43,720 [main] INFO unifocusScheduler - password entered
+2021-09-13 12:02:25,118 [main] INFO unifocusScheduler - enter user name
+2021-09-13 12:02:42,235 [main] INFO unifocusScheduler - password entered
+2021-09-13 12:04:50,371 [main] INFO unifocusScheduler - enter user name
+2021-09-13 12:05:11,705 [main] INFO unifocusScheduler - password entered
+2021-09-13 12:08:08,705 [main] INFO unifocusScheduler - enter user name
+2021-09-13 12:08:24,597 [main] INFO unifocusScheduler - password entered
+2021-09-13 12:11:50,547 [main] INFO unifocusScheduler - enter user name
+2021-09-13 12:12:07,810 [main] INFO unifocusScheduler - password entered
+2021-09-13 12:19:38,751 [main] INFO unifocusScheduler - enter user name
+2021-09-13 12:19:56,111 [main] INFO unifocusScheduler - password entered
+2021-09-13 12:24:23,927 [main] INFO unifocusScheduler - enter user name
+2021-09-13 12:24:34,286 [main] INFO unifocusScheduler - password entered
+2021-09-13 12:28:24,768 [main] INFO unifocusScheduler - enter user name
+2021-09-13 12:29:01,276 [main] INFO unifocusScheduler - password entered
+2021-09-13 12:30:31,208 [main] INFO unifocusScheduler - enter user name
+2021-09-13 12:31:05,304 [main] INFO unifocusScheduler - password entered
+2021-09-13 12:32:54,884 [main] INFO unifocusScheduler - enter user name
+2021-09-13 12:33:31,036 [main] INFO unifocusScheduler - password entered
+2021-09-13 12:35:37,145 [main] INFO unifocusScheduler - enter user name
+2021-09-13 12:35:47,042 [main] INFO unifocusScheduler - password entered
+2021-09-13 12:42:49,600 [main] INFO unifocusScheduler - enter user name
+2021-09-13 12:42:58,943 [main] INFO unifocusScheduler - password entered
+2021-09-13 12:48:13,888 [main] INFO unifocusScheduler - enter user name
+2021-09-13 12:48:24,023 [main] INFO unifocusScheduler - password entered
+2021-09-13 12:54:12,107 [main] INFO unifocusScheduler - enter user name
+2021-09-13 12:54:20,758 [main] INFO unifocusScheduler - password entered
+2021-09-13 12:57:54,464 [main] INFO unifocusScheduler - enter user name
+2021-09-13 12:58:04,436 [main] INFO unifocusScheduler - password entered
+2021-09-13 13:03:16,700 [main] INFO unifocusScheduler - enter user name
+2021-09-13 13:03:27,027 [main] INFO unifocusScheduler - password entered
+2021-09-13 13:06:57,976 [main] INFO unifocusScheduler - enter user name
+2021-09-13 13:07:08,352 [main] INFO unifocusScheduler - password entered
+2021-09-13 14:21:02,606 [main] INFO unifocusScheduler - enter user name
+2021-09-13 14:21:16,527 [main] INFO unifocusScheduler - password entered
+2021-09-13 14:27:52,346 [main] INFO unifocusScheduler - enter user name
+2021-09-13 14:28:04,141 [main] INFO unifocusScheduler - password entered
+2021-09-13 14:30:13,577 [main] INFO unifocusScheduler - enter user name
+2021-09-13 14:30:27,817 [main] INFO unifocusScheduler - password entered
+2021-09-13 14:39:21,147 [main] INFO unifocusScheduler - enter user name
+2021-09-13 14:39:33,338 [main] INFO unifocusScheduler - password entered
+2021-09-13 14:44:01,838 [main] INFO unifocusScheduler - enter user name
+2021-09-13 14:44:46,055 [main] INFO unifocusScheduler - password entered
+2021-09-13 14:46:43,624 [main] INFO unifocusScheduler - enter user name
+2021-09-13 14:46:57,327 [main] INFO unifocusScheduler - password entered
+2021-09-13 14:57:39,590 [main] INFO unifocusScheduler - enter user name
+2021-09-13 14:58:10,671 [main] INFO unifocusScheduler - password entered
+2021-09-13 15:00:03,701 [main] INFO unifocusScheduler - enter user name
+2021-09-13 15:00:17,386 [main] INFO unifocusScheduler - password entered
+2021-09-13 15:03:05,554 [main] INFO unifocusScheduler - enter user name
+2021-09-13 15:03:17,848 [main] INFO unifocusScheduler - password entered
+2021-09-13 15:17:09,764 [main] INFO unifocusScheduler - enter user name
+2021-09-13 15:17:22,840 [main] INFO unifocusScheduler - password entered
+2021-09-13 15:26:15,630 [main] INFO unifocusScheduler - enter user name
+2021-09-13 15:26:30,658 [main] INFO unifocusScheduler - password entered
+2021-09-13 16:18:49,550 [main] INFO unifocusScheduler - enter user name
+2021-09-13 16:19:05,531 [main] INFO unifocusScheduler - password entered
+2021-09-13 17:05:39,782 [main] INFO unifocusScheduler - enter user name
+2021-09-13 17:05:55,008 [main] INFO unifocusScheduler - password entered
+2021-09-13 17:13:36,076 [main] INFO unifocusScheduler - enter user name
+2021-09-13 17:13:52,267 [main] INFO unifocusScheduler - password entered
+2021-09-14 10:20:25,584 [main] INFO unifocusScheduler - enter user name
+2021-09-14 10:30:46,059 [main] INFO unifocusScheduler - enter user name
+2021-09-14 10:31:05,047 [main] INFO unifocusScheduler - password entered
+2021-09-14 10:53:34,916 [main] INFO unifocusScheduler - enter user name
+2021-09-14 10:53:51,369 [main] INFO unifocusScheduler - password entered
+2021-09-14 10:58:32,214 [main] INFO unifocusScheduler - enter user name
+2021-09-14 10:58:50,973 [main] INFO unifocusScheduler - password entered
+2021-09-14 11:04:01,314 [main] INFO unifocusScheduler - enter user name
+2021-09-14 11:04:24,458 [main] INFO unifocusScheduler - password entered
+2021-09-14 11:18:12,804 [main] INFO unifocusScheduler - enter user name
+2021-09-14 11:18:25,974 [main] INFO unifocusScheduler - password entered
+2021-09-14 11:24:06,483 [main] INFO unifocusScheduler - enter user name
+2021-09-14 11:24:19,513 [main] INFO unifocusScheduler - password entered
+2021-09-14 11:31:54,614 [main] INFO unifocusScheduler - enter user name
+2021-09-14 11:32:07,136 [main] INFO unifocusScheduler - password entered
+2021-09-14 11:34:49,814 [main] INFO unifocusScheduler - enter user name
+2021-09-14 11:35:02,416 [main] INFO unifocusScheduler - password entered
+2021-09-14 11:41:17,139 [main] INFO unifocusScheduler - enter user name
+2021-09-14 11:41:32,480 [main] INFO unifocusScheduler - password entered
+2021-09-14 11:48:29,229 [main] INFO unifocusScheduler - enter user name
+2021-09-14 11:48:42,255 [main] INFO unifocusScheduler - password entered
+2021-09-14 11:55:28,151 [main] INFO unifocusScheduler - enter user name
+2021-09-14 11:55:45,154 [main] INFO unifocusScheduler - password entered
+2021-09-14 12:08:18,842 [main] INFO unifocusScheduler - enter user name
+2021-09-14 12:08:33,656 [main] INFO unifocusScheduler - password entered
+2021-09-14 12:10:32,408 [main] INFO unifocusScheduler - enter user name
+2021-09-14 12:10:48,308 [main] INFO unifocusScheduler - password entered
+2021-09-14 12:15:49,034 [main] INFO unifocusScheduler - enter user name
+2021-09-14 12:16:01,055 [main] INFO unifocusScheduler - password entered
+2021-09-14 12:22:32,021 [main] INFO unifocusScheduler - enter user name
+2021-09-14 12:22:44,611 [main] INFO unifocusScheduler - password entered
+2021-09-14 12:26:02,289 [main] INFO unifocusScheduler - enter user name
+2021-09-14 12:26:14,744 [main] INFO unifocusScheduler - password entered
+2021-09-14 12:29:38,675 [main] INFO unifocusScheduler - enter user name
+2021-09-14 12:29:56,078 [main] INFO unifocusScheduler - password entered
+2021-09-14 12:42:14,855 [main] INFO unifocusScheduler - enter user name
+2021-09-14 12:44:00,019 [main] INFO unifocusScheduler - enter user name
+2021-09-14 12:45:53,738 [main] INFO unifocusScheduler - enter user name
+2021-09-14 12:48:53,073 [main] INFO unifocusScheduler - enter user name
+2021-09-14 12:49:40,154 [main] INFO unifocusScheduler - password entered
+2021-09-14 12:51:24,473 [main] INFO unifocusScheduler - enter user name
+2021-09-14 13:00:00,994 [main] INFO unifocusScheduler - enter user name
+2021-09-14 13:06:01,305 [main] INFO unifocusScheduler - enter user name
+2021-09-14 13:06:58,367 [main] INFO unifocusScheduler - password entered
+2021-09-14 13:15:02,364 [main] INFO unifocusScheduler - enter user name
+2021-09-14 13:16:02,269 [main] INFO unifocusScheduler - password entered
+2021-09-14 14:16:51,454 [main] INFO unifocusScheduler - enter user name
+2021-09-14 14:17:07,977 [main] INFO unifocusScheduler - password entered
+2021-09-14 14:50:22,329 [main] INFO unifocusScheduler - enter user name
+2021-09-14 14:50:36,448 [main] INFO unifocusScheduler - password entered
+2021-09-14 15:04:03,246 [main] INFO unifocusScheduler - enter user name
+2021-09-14 15:04:22,924 [main] INFO unifocusScheduler - password entered
+2021-09-14 15:08:21,623 [main] INFO unifocusScheduler - enter user name
+2021-09-14 15:08:41,768 [main] INFO unifocusScheduler - password entered
+2021-09-14 15:11:07,032 [main] INFO unifocusScheduler - enter user name
+2021-09-14 15:11:22,499 [main] INFO unifocusScheduler - password entered
+2021-09-14 15:15:38,085 [main] INFO unifocusScheduler - enter user name
+2021-09-14 15:15:55,162 [main] INFO unifocusScheduler - password entered
+2021-09-14 15:20:24,835 [main] INFO unifocusScheduler - enter user name
+2021-09-14 15:20:44,303 [main] INFO unifocusScheduler - password entered
+2021-09-14 15:26:21,750 [main] INFO unifocusScheduler - enter user name
+2021-09-14 15:26:37,299 [main] INFO unifocusScheduler - password entered
+2021-09-14 15:38:45,770 [main] INFO unifocusScheduler - enter user name
+2021-09-14 15:39:05,041 [main] INFO unifocusScheduler - password entered
+2021-09-14 15:50:55,592 [main] INFO unifocusScheduler - enter user name
+2021-09-14 15:51:09,195 [main] INFO unifocusScheduler - password entered
+2021-09-14 16:05:47,845 [main] INFO unifocusScheduler - enter user name
+2021-09-14 16:06:02,826 [main] INFO unifocusScheduler - password entered
+2021-09-14 16:10:34,146 [main] INFO unifocusScheduler - enter user name
+2021-09-14 16:10:48,178 [main] INFO unifocusScheduler - password entered
+2021-09-14 16:16:01,971 [main] INFO unifocusScheduler - enter user name
+2021-09-14 16:16:14,361 [main] INFO unifocusScheduler - password entered
+2021-09-14 16:31:38,339 [main] INFO unifocusScheduler - enter user name
+2021-09-14 16:31:57,724 [main] INFO unifocusScheduler - password entered
+2021-09-14 16:39:32,329 [main] INFO unifocusScheduler - enter user name
+2021-09-14 16:39:45,285 [main] INFO unifocusScheduler - password entered
+2021-09-14 16:44:30,289 [main] INFO unifocusScheduler - enter user name
+2021-09-14 16:44:48,903 [main] INFO unifocusScheduler - password entered
+2021-09-14 16:55:54,583 [main] INFO unifocusScheduler - enter user name
+2021-09-14 16:56:08,767 [main] INFO unifocusScheduler - password entered
+2021-09-14 17:14:08,762 [main] INFO unifocusScheduler - enter user name
+2021-09-14 17:14:22,275 [main] INFO unifocusScheduler - password entered
+2021-09-15 10:36:40,681 [main] INFO unifocusScheduler - enter user name
+2021-09-15 11:06:58,569 [main] INFO unifocusScheduler - enter user name
+2021-09-15 11:10:23,049 [main] INFO unifocusScheduler - enter user name
+2021-09-15 11:11:29,124 [main] INFO unifocusScheduler - password entered
+2021-09-15 11:39:14,351 [main] INFO unifocusScheduler - enter user name
+2021-09-15 11:39:25,596 [main] INFO unifocusScheduler - password entered
+2021-09-15 11:43:17,483 [main] INFO unifocusScheduler - enter user name
+2021-09-15 11:43:30,808 [main] INFO unifocusScheduler - password entered
+2021-09-15 11:46:54,713 [main] INFO unifocusScheduler - enter user name
+2021-09-15 11:47:13,171 [main] INFO unifocusScheduler - password entered
+2021-09-15 11:50:43,658 [main] INFO unifocusScheduler - enter user name
+2021-09-15 11:50:52,154 [main] INFO unifocusScheduler - password entered
+2021-09-15 11:55:08,158 [main] INFO unifocusScheduler - enter user name
+2021-09-15 11:55:17,481 [main] INFO unifocusScheduler - password entered
+2021-09-15 11:57:23,136 [main] INFO unifocusScheduler - enter user name
+2021-09-15 11:57:32,385 [main] INFO unifocusScheduler - password entered
+2021-09-15 12:02:52,212 [main] INFO unifocusScheduler - enter user name
+2021-09-15 12:03:00,540 [main] INFO unifocusScheduler - password entered
+2021-09-15 12:13:54,259 [main] INFO unifocusScheduler - enter user name
+2021-09-15 12:14:03,411 [main] INFO unifocusScheduler - password entered
+2021-09-15 12:21:37,422 [main] INFO unifocusScheduler - enter user name
+2021-09-15 12:21:50,531 [main] INFO unifocusScheduler - password entered
+2021-09-15 14:20:10,388 [main] INFO unifocusScheduler - enter user name
+2021-09-15 14:20:22,874 [main] INFO unifocusScheduler - password entered
+2021-09-15 15:56:44,522 [main] INFO unifocusScheduler - enter user name
+2021-09-15 15:57:00,392 [main] INFO unifocusScheduler - password entered
+2021-09-15 15:58:38,031 [main] INFO unifocusScheduler - enter user name
+2021-09-15 15:58:50,136 [main] INFO unifocusScheduler - password entered
+2021-09-15 16:00:22,855 [main] INFO unifocusScheduler - openshift
+2021-09-15 16:03:33,675 [main] INFO unifocusScheduler - enter user name
+2021-09-15 16:03:55,137 [main] INFO unifocusScheduler - password entered
+2021-09-15 16:47:47,179 [main] INFO unifocusScheduler - enter user name
+2021-09-15 16:48:01,920 [main] INFO unifocusScheduler - password entered
+2021-09-15 16:49:25,161 [main] INFO unifocusScheduler - openshift
+2021-09-15 17:03:17,761 [main] INFO unifocusScheduler - enter user name
+2021-09-15 17:03:31,070 [main] INFO unifocusScheduler - password entered
+2021-09-15 17:06:08,135 [main] INFO unifocusScheduler - enter user name
+2021-09-15 17:06:21,670 [main] INFO unifocusScheduler - password entered
+2021-09-15 17:18:05,800 [main] INFO unifocusScheduler - enter user name
+2021-09-15 17:18:18,200 [main] INFO unifocusScheduler - password entered
+2021-09-15 17:22:16,071 [main] INFO unifocusScheduler - enter user name
+2021-09-15 17:22:34,005 [main] INFO unifocusScheduler - password entered
+2021-09-15 17:26:11,342 [main] INFO unifocusScheduler - enter user name
+2021-09-15 17:26:23,898 [main] INFO unifocusScheduler - password entered
+2021-09-15 17:29:52,107 [main] INFO unifocusScheduler - enter user name
+2021-09-15 17:30:04,261 [main] INFO unifocusScheduler - password entered
+2021-09-16 10:22:50,506 [main] INFO unifocusScheduler - enter user name
+2021-09-16 10:23:07,592 [main] INFO unifocusScheduler - password entered
+2021-09-16 10:52:06,690 [main] INFO unifocusScheduler - enter user name
+2021-09-16 10:52:20,017 [main] INFO unifocusScheduler - password entered
+2021-09-16 11:03:21,740 [main] INFO unifocusScheduler - enter user name
+2021-09-16 11:03:39,469 [main] INFO unifocusScheduler - password entered
+2021-09-16 12:12:40,590 [main] INFO unifocusScheduler - enter user name
+2021-09-16 12:12:49,976 [main] INFO unifocusScheduler - password entered
+2021-09-16 12:26:56,152 [main] INFO unifocusScheduler - enter user name
+2021-09-16 12:27:03,798 [main] INFO unifocusScheduler - password entered
+2021-09-16 12:29:48,120 [main] INFO unifocusScheduler - enter user name
+2021-09-16 12:29:57,035 [main] INFO unifocusScheduler - password entered
+2021-09-16 12:40:11,429 [main] INFO unifocusScheduler - enter user name
+2021-09-16 12:40:23,236 [main] INFO unifocusScheduler - password entered
+2021-09-16 12:42:35,936 [main] INFO unifocusScheduler - enter user name
+2021-09-16 12:42:52,146 [main] INFO unifocusScheduler - password entered
+2021-09-16 12:44:28,345 [main] INFO unifocusScheduler - openshift
+2021-09-16 15:28:12,808 [main] INFO unifocusScheduler - enter user name
+2021-09-16 15:28:26,969 [main] INFO unifocusScheduler - password entered
+2021-09-16 16:04:31,793 [main] INFO unifocusScheduler - enter user name
+2021-09-16 16:08:40,684 [main] INFO unifocusScheduler - enter user name
+2021-09-16 16:08:52,763 [main] INFO unifocusScheduler - password entered
+2021-09-17 10:47:29,198 [main] INFO unifocusScheduler - enter user name
+2021-09-17 10:47:37,488 [main] INFO unifocusScheduler - password entered
+2021-09-17 10:48:37,386 [main] INFO unifocusScheduler - openshift
+2021-09-17 10:51:14,450 [main] INFO unifocusScheduler - enter user name
+2021-09-17 10:51:23,132 [main] INFO unifocusScheduler - password entered
+2021-09-17 10:52:49,015 [main] INFO unifocusScheduler - openshift
+2021-09-17 11:36:13,864 [main] INFO unifocusScheduler - enter user name
+2021-09-17 11:36:26,825 [main] INFO unifocusScheduler - password entered
+2021-09-17 11:38:21,941 [main] INFO unifocusScheduler - enter user name
+2021-09-17 11:38:35,117 [main] INFO unifocusScheduler - password entered
+2021-09-17 11:43:45,181 [main] INFO unifocusScheduler - enter user name
+2021-09-17 11:43:58,228 [main] INFO unifocusScheduler - password entered
+2021-09-17 12:09:38,777 [main] INFO unifocusScheduler - enter user name
+2021-09-17 12:09:51,558 [main] INFO unifocusScheduler - password entered
+2021-09-17 12:14:51,202 [main] INFO unifocusScheduler - enter user name
+2021-09-17 12:15:03,574 [main] INFO unifocusScheduler - password entered
+2021-09-17 12:22:11,259 [main] INFO unifocusScheduler - enter user name
+2021-09-17 12:22:24,937 [main] INFO unifocusScheduler - password entered
+2021-09-17 12:31:41,739 [main] INFO unifocusScheduler - enter user name
+2021-09-17 12:31:55,518 [main] INFO unifocusScheduler - password entered
+2021-09-17 12:38:14,788 [main] INFO unifocusScheduler - enter user name
+2021-09-17 12:38:28,481 [main] INFO unifocusScheduler - password entered
+2021-09-17 12:40:13,519 [main] INFO unifocusScheduler - enter user name
+2021-09-17 12:40:25,344 [main] INFO unifocusScheduler - password entered
+2021-09-17 12:45:37,502 [main] INFO unifocusScheduler - enter user name
+2021-09-17 12:45:50,711 [main] INFO unifocusScheduler - password entered
+2021-09-17 12:47:39,786 [main] INFO unifocusScheduler - enter user name
+2021-09-17 12:47:53,601 [main] INFO unifocusScheduler - password entered
+2021-09-17 15:15:39,614 [main] INFO unifocusScheduler - enter user name
+2021-09-17 15:15:47,048 [main] INFO unifocusScheduler - password entered
+2021-09-17 15:16:46,619 [main] INFO unifocusScheduler - enter user name
+2021-09-17 15:16:55,266 [main] INFO unifocusScheduler - password entered
+2021-09-17 15:17:47,166 [main] INFO unifocusScheduler - openshift
+2021-09-17 16:13:09,470 [main] INFO unifocusScheduler - enter user name
+2021-09-17 16:13:25,666 [main] INFO unifocusScheduler - password entered
+2021-09-17 16:15:16,844 [main] INFO unifocusScheduler - enter user name
+2021-09-17 16:15:29,319 [main] INFO unifocusScheduler - password entered
+2021-09-17 16:21:52,078 [main] INFO unifocusScheduler - enter user name
+2021-09-17 16:22:07,106 [main] INFO unifocusScheduler - password entered
+2021-09-17 16:29:37,684 [main] INFO unifocusScheduler - enter user name
+2021-09-17 16:29:49,017 [main] INFO unifocusScheduler - password entered
+2021-09-17 16:34:17,934 [main] INFO unifocusScheduler - enter user name
+2021-09-17 16:34:30,285 [main] INFO unifocusScheduler - password entered
+2021-09-17 16:38:02,108 [main] INFO unifocusScheduler - enter user name
+2021-09-17 16:38:14,451 [main] INFO unifocusScheduler - password entered
+2021-09-20 11:47:02,793 [main] INFO unifocusScheduler - enter user name
+2021-09-20 11:47:14,702 [main] INFO unifocusScheduler - password entered
+2021-09-21 11:12:40,532 [main] INFO unifocusScheduler - enter user name
+2021-09-21 11:12:56,390 [main] INFO unifocusScheduler - password entered
+2021-09-27 14:36:57,147 [main] INFO unifocusScheduler - enter user name
+2021-09-27 14:37:13,822 [main] INFO unifocusScheduler - password entered
+2021-09-27 16:32:55,740 [main] INFO unifocusScheduler - enter user name
+2021-09-27 16:33:09,788 [main] INFO unifocusScheduler - password entered
+2021-09-28 12:54:22,431 [main] INFO unifocusScheduler - enter user name
+2021-09-28 12:54:40,443 [main] INFO unifocusScheduler - password entered
+2021-09-28 12:54:40,691 [main] INFO unifocusScheduler - signin clicked
+2021-09-28 13:06:38,988 [main] INFO unifocusScheduler - enter user name
+2021-09-28 13:07:06,167 [main] INFO unifocusScheduler - password entered
+2021-09-28 13:07:06,444 [main] INFO unifocusScheduler - signin clicked
+2021-09-28 13:17:03,773 [main] INFO unifocusScheduler - enter user name
+2021-09-28 13:17:16,018 [main] INFO unifocusScheduler - password entered
+2021-09-28 13:17:16,275 [main] INFO unifocusScheduler - signin clicked
+2021-09-28 18:28:10,740 [main] INFO unifocusScheduler - enter user name
+2021-09-28 18:28:34,773 [main] INFO unifocusScheduler - password entered
+2021-09-28 18:28:35,053 [main] INFO unifocusScheduler - signin clicked
+2021-09-28 18:40:02,681 [main] INFO unifocusScheduler - enter user name
+2021-09-28 18:40:21,041 [main] INFO unifocusScheduler - password entered
+2021-09-28 18:40:21,294 [main] INFO unifocusScheduler - signin clicked
+2021-09-28 18:43:29,219 [main] INFO unifocusScheduler - enter user name
+2021-09-28 18:44:03,081 [main] INFO unifocusScheduler - password entered
+2021-09-28 18:44:03,350 [main] INFO unifocusScheduler - signin clicked
+2021-09-29 11:07:12,598 [main] INFO unifocusScheduler - enter user name
+2021-09-29 11:07:30,229 [main] INFO unifocusScheduler - password entered
+2021-09-29 11:07:30,513 [main] INFO unifocusScheduler - signin clicked
+2021-09-29 11:17:33,686 [main] INFO unifocusScheduler - enter user name
+2021-09-29 11:17:47,701 [main] INFO unifocusScheduler - password entered
+2021-09-29 11:17:48,009 [main] INFO unifocusScheduler - signin clicked
+2021-09-29 11:22:46,030 [main] INFO unifocusScheduler - enter user name
+2021-09-29 11:22:59,702 [main] INFO unifocusScheduler - password entered
+2021-09-29 11:37:15,532 [main] INFO unifocusScheduler - enter user name
+2021-09-29 11:37:28,147 [main] INFO unifocusScheduler - password entered
+2021-09-29 22:24:44,596 [main] INFO unifocusScheduler - enter user name
+2021-09-29 22:25:11,035 [main] INFO unifocusScheduler - password entered
+2021-10-01 21:07:26,336 [main] INFO unifocusScheduler - enter user name
+2021-10-01 21:07:59,236 [main] INFO unifocusScheduler - password entered
+2021-10-01 21:07:59,555 [main] INFO unifocusScheduler - signin clicked
+2021-10-01 21:25:05,233 [main] INFO unifocusScheduler - enter user name
+2021-10-01 21:25:25,979 [main] INFO unifocusScheduler - password entered
+2021-10-07 15:01:09,023 [main] INFO unifocusScheduler - enter user name
+2021-10-07 15:01:17,006 [main] INFO unifocusScheduler - password entered

@@ -73,9 +73,6 @@ public void clickEndTime() throws InterruptedException {
 
 public void selectJob() throws InterruptedException {
 job.click();
-String strng =job.getText();
-System.out.println(strng);
-Assert.assertEquals("FRONT DESK CLERK - TAC", strng);
 
 }
 

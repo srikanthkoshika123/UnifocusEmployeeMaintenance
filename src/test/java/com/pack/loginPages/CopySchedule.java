@@ -51,11 +51,11 @@ public class CopySchedule extends TC_BaseClass{
 	 Thread.sleep(4000);
 	 WebElement eleme=driver.findElement(By.xpath("//button/i[@aria-label='icon: check-square-o']"));
 	 Actions viewBox=new Actions(driver);
-	   viewBox.moveToElement(eleme);
-	   viewBox.click().build().perform();
-	   String select =selectAll.getText();
-	    System.out.println(select);
-	    Assert.assertEquals("Select All", select); 
+	 viewBox.moveToElement(eleme);
+	 viewBox.click().build().perform();
+	 String select =selectAll.getText();
+	 System.out.println(select);
+	 Assert.assertEquals("Select All", select); 
 	 
    }
    public void nextWeekData() throws InterruptedException {
@@ -80,11 +80,11 @@ public void selectDay() throws InterruptedException {
     System.out.println(selDay2.getAttribute("checked"));
 }
  public void clickCopy() throws InterruptedException {
-   Thread.sleep(3000);
-	copy.click();
+    Thread.sleep(3000);
+    copy.click();
 	
-	 String Copy =copy.getText();
-	    System.out.println(Copy);
-	    Assert.assertEquals("Copy", Copy); 
+	String Copy =copy.getText();
+	System.out.println(Copy);
+	Assert.assertEquals("Copy", Copy); 
 }
     }
