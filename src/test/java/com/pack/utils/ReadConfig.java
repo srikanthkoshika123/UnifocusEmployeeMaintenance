@@ -13,7 +13,7 @@ public class ReadConfig {
 			pro=new Properties();
 			pro.load(fis);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
+		// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
