@@ -5,7 +5,6 @@ package com.pack.testCases;
 import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -18,8 +17,6 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
-
-import com.pack.loginPages.PartnerCodeValidation;
 import com.pack.utils.ReadConfig;
 
 import recordingTests.ScreenRecorderUtil;
@@ -28,8 +25,8 @@ public class TC_BaseClass {
 	ReadConfig readconfig=new ReadConfig();
 	public String url =readconfig.getApplicationUrl();
 	public String partnerCode = readconfig.getPartnerCode();
-	public String loginas = readconfig.getUserName();
-	public String Password = readconfig.getPassword();
+	public String loginas =readconfig.getUserName();
+	public String Password =readconfig.getPassword();
 	public static WebDriver driver ;
     public static Logger logger;	
      
@@ -58,10 +55,6 @@ public class TC_BaseClass {
 		  driver.manage().window().maximize(); 
 		  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		 
-		  PartnerCodeValidation partCode=new PartnerCodeValidation(driver);
-			partCode.setPartnerCode(partnerCode);
-			partCode.clickNext();
-
     }
 	
 	public void captureScreen(WebDriver driver, String tname) throws IOException {

@@ -43,18 +43,8 @@ public class TC_TestCase_02 extends TC_BaseClass{
 
         mp.getselect_List();
 
- 	  
- 	if(driver.getTitle().equalsIgnoreCase("singularity")) {
- 		Assert.assertTrue(true);
- 	}
- 	else {
- 		 try {
-				captureScreen(driver,"mainTest");
-			} catch (IOException e1) {
-				e1.printStackTrace();
-			}
- 		Assert.assertTrue(false);
- 	}
+        captureScreen(driver,"mainTest");
+ 	
  	
  	
  	

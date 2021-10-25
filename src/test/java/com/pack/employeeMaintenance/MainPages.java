@@ -17,9 +17,9 @@ public class MainPages extends TC_BaseClass {
 	}
 	@FindBy(xpath="//header/div[1]/div[1]/div[1]/button[1]")
 	WebElement unifocus;
-	@FindBy(xpath="//span[contains(text(),'Labor')]")
-	 WebElement labor;
-	@FindBy(xpath="//*[@id=\"LABOR$Menu\"]/li[4]")
+	@FindBy(xpath="//span[contains(text(),'Administration')]")
+	 WebElement adminstration;
+	@FindBy(xpath="//*[@id=\"MOST_USED_APPS$Menu\"]/li[1]")
 	  WebElement schedule;
 	 
 	 
@@ -28,10 +28,10 @@ public class MainPages extends TC_BaseClass {
 		String un =unifocus.getText();
 		System.out.println(un);
 		Assert.assertEquals("UniFocus", un);
-		labor.click();
-		String sc =labor.getText();
+		adminstration.click();
+		String sc =adminstration.getText();
 		System.out.println(sc);
-		Assert.assertEquals("Labor", sc);
+		Assert.assertEquals("Administration", sc);
 		
 		
 	}
