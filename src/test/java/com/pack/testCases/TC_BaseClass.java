@@ -17,6 +17,8 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
+
+import com.pack.loginPages.LoginPage;
 import com.pack.utils.ReadConfig;
 
 import recordingTests.ScreenRecorderUtil;
@@ -27,7 +29,9 @@ public class TC_BaseClass {
 	public String partnerCode = readconfig.getPartnerCode();
 	public String loginas =readconfig.getUserName();
 	public String Password =readconfig.getPassword();
+	public String emp="001234";
 	public static WebDriver driver ;
+	
     public static Logger logger;	
      
   
@@ -54,6 +58,23 @@ public class TC_BaseClass {
 		  driver.get(url);
 		  driver.manage().window().maximize(); 
 		  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		  
+		  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	    	LoginPage lp=new LoginPage(driver);
+	    	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	    	lp.setPartnerCode(partnerCode);
+	    	lp.clickNext();
+		    logger.info("enter user name");
+		    driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+	     	lp.setUserName(loginas);
+	     	logger.info("password entered");
+	        lp.setPassWord(Password);
+			Thread.sleep(2000);
+	    	lp.clickSignIn();
+	    	logger.info("signin clicked");
+	    	Thread.sleep(2000);
+	    	lp.clickUnifocus();
+	        lp.getselect_List();
 		 
     }
 	
