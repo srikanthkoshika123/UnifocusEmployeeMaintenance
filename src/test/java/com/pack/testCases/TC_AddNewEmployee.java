@@ -17,6 +17,7 @@ public class TC_AddNewEmployee extends TC_BaseClass{
 	    AddNewEmployee emp=new AddNewEmployee(driver);
 	    Thread.sleep(8000);
 	    emp.addNewemployee();
-	   // emp.displayName();
-	   // emp.getValues();
-}}
+	    emp.selectWorkClass();
+	    emp.selectJob();
+}
+}

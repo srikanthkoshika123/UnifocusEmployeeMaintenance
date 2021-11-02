@@ -23,7 +23,7 @@ public class TC_TestCase_01 extends TC_BaseClass {
 	     	lp.setUserName(loginas);
 	     	logger.info("password entered");
 	        lp.setPassWord(Password);
-			Thread.sleep(2000);
+			Thread.sleep(4000);
 	    	lp.clickSignIn();
 	    	logger.info("signin clicked");
 	    	Thread.sleep(2000);
