@@ -59,7 +59,7 @@ public class LoginPage extends TC_BaseClass {
 		rms.click();
 	}
 	 
-		public void clickUnifocus(){
+		    public void clickUnifocus(){
 			unifocus.click();
 			String un =unifocus.getText();
 			System.out.println(un);
@@ -69,7 +69,7 @@ public class LoginPage extends TC_BaseClass {
 			System.out.println(sc);
 			Assert.assertEquals("Administration", sc);	
 		}
-		public WebElement getselect_List() {
+		   public WebElement getselect_List() {
 		
 			schedule.click();
 			
