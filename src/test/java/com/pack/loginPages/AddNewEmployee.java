@@ -21,7 +21,6 @@ public class AddNewEmployee extends TC_BaseClass{
 }
 	@FindBy(className="app-iframe")
 	WebElement frame;
-	
 	@FindBy(xpath="//body//div//div[@class='ant-modal-body']//div//div//div//div[1]//div[1]//div[2]//div[1]//span[1]//input[1]")
     WebElement Empid;
 	@FindBy(xpath="//div[@class='ant-modal-body']//div//div//div//div[2]//div[1]//div[2]//div[1]//span[1]//input[1]")
@@ -50,20 +49,31 @@ public class AddNewEmployee extends TC_BaseClass{
 	WebElement jobrank;
 	@FindBy(xpath="//div[@class='AddEditJobModal-module___payTypeSelect___3RptZ ant-select ant-select-enabled']")
 	WebElement paytype;
-	@FindBy(xpath="//li[text()='Salaried Exempt']")
+	@FindBy(xpath="//li[text()='Salaried Non Exempt']")
 	WebElement pay;
+	@FindBy(xpath="//input[@value='40.00']")
+	WebElement weeklyContractHours;
+	@FindBy(xpath="//input[@value='5.00']")
+	WebElement contractDays;
+	@FindBy(xpath="//label[@class='AddEditJobModal-module___wageCheckbox___TQnIf ant-checkbox-wrapper']//input[@type='checkbox']")
+	WebElement ar;
+	@FindBy(xpath="//body//div//div[@class='AddEditJobModal-module___initialWageContent___IWN61']//div//div//div[1]//input[1]")
+	WebElement hr;
+	@FindBy(xpath="//button[@class='ant-btn ant-btn-primary']")
+	WebElement save;
+	
 	public void addNewemployee() throws InterruptedException {
 	driver.switchTo().frame(frame);
 	WebElement addnew = driver.findElement(By.xpath("//button[normalize-space()='Add New']"));
 	Thread.sleep(4000);
 	addnew.click();
-	Empid.sendKeys("003734");
-	DisplayName.sendKeys("srikanthkoshika");
-	FirstName.sendKeys("srikanth");
-	middleName.sendKeys("yadav");
-	lastName.sendKeys("koshika");
-	hireDate.sendKeys("10/31/2021");
-	seniority.sendKeys("11/6/2021");
+	Empid.sendKeys("003589");
+	DisplayName.sendKeys("vishal,narvate");
+	FirstName.sendKeys("vishal");
+	middleName.sendKeys("patil");
+	lastName.sendKeys("narvate");
+	hireDate.sendKeys("10/16/2021");
+	seniority.sendKeys("11/1/2021");
 	}
 	public void selectWorkClass() throws InterruptedException {
 	Thread.sleep(2000);
@@ -79,7 +89,7 @@ public class AddNewEmployee extends TC_BaseClass{
 	Type.click();
 	jobdate.sendKeys(Keys.CONTROL+ "a");
 	jobdate.sendKeys(Keys.DELETE);
-	jobdate.sendKeys("10/19/2012");
+	jobdate.sendKeys("11/8/2021");
 	jobrank.sendKeys(Keys.CONTROL+ "a");
 	jobrank.sendKeys(Keys.DELETE);
 	jobrank.sendKeys("4");
@@ -91,9 +101,17 @@ public class AddNewEmployee extends TC_BaseClass{
 		ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='input-field uf-input-field AddEditJobModal-module___wageField___5cszH ant-input-affix-wrapper']/input")));
 		effectivedate.sendKeys(Keys.CONTROL+ "a");
 		effectivedate.sendKeys(Keys.DELETE);
-		effectivedate.sendKeys("9/15/2011");
+		effectivedate.sendKeys("11/14/2021");
 		paytype.click();
 		pay.click();
 		}	
-	
+	public void selectWorkingHours() throws InterruptedException {
+		weeklyContractHours.sendKeys(Keys.CONTROL+ "a");
+		weeklyContractHours.sendKeys(Keys.DELETE,"35.00");
+		contractDays.sendKeys(Keys.CONTROL+ "a");
+		contractDays.sendKeys(Keys.DELETE,"7.00");
+	    ar.click();
+	    save.click();
+	   
+	}
 }

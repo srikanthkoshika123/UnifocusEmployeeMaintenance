@@ -20,5 +20,6 @@ public class TC_AddNewEmployee extends TC_BaseClass{
 	    emp.selectWorkClass();
 	    emp.selectJob();
 	    emp.selectpayType();
+	    emp.selectWorkingHours();
 }
 }
