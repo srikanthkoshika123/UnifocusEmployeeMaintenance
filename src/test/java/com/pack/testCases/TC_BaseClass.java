@@ -5,6 +5,7 @@ package com.pack.testCases;
 import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -46,6 +47,7 @@ public class TC_BaseClass {
 		if(browser.equals("chrome")) {
 		System.setProperty("webdriver.chrome.driver",readconfig.getChromepath());
 		 driver = new ChromeDriver();
+		 
 		}
 		else if(browser.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver",readconfig.getFirefoxpath());
@@ -58,7 +60,7 @@ public class TC_BaseClass {
 		  driver.get(url);
 		  driver.manage().window().maximize(); 
 		  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		  
+		  ScreenRecorderUtil.startRecord("AddEmployee");
 		  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	    	LoginPage lp=new LoginPage(driver);
 	    	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -88,7 +90,7 @@ public class TC_BaseClass {
 	
 	@AfterClass
 	public void tearDown() throws Exception {
-		 ScreenRecorderUtil.stopRecord();  
+		ScreenRecorderUtil.stopRecord();  
 		driver.quit();
 		
 	}
