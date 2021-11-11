@@ -1,9 +1,11 @@
 package com.pack.testCases;
 
 import java.util.concurrent.TimeUnit;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.pack.loginPages.EmployeeMaintenance;
 import com.pack.loginPages.LoginPage;
 
 import recordingTests.ScreenRecorderUtil;
@@ -27,9 +29,7 @@ public class TC_TestCase_01 extends TC_BaseClass {
 	    	lp.clickSignIn();
 	    	logger.info("signin clicked");
 	    	Thread.sleep(2000);
-	    	lp.clickUnifocus();
-	        lp.getselect_List();
-	        Thread.sleep(2000);
+	       
 	    	if(driver.getTitle().equalsIgnoreCase("singularity")) {
 	    		Assert.assertTrue(true);
 	    		

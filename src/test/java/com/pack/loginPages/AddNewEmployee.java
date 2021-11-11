@@ -1,14 +1,16 @@
 package com.pack.loginPages;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import com.pack.testCases.TC_BaseClass;
 
@@ -37,12 +39,13 @@ public class AddNewEmployee extends TC_BaseClass{
 	WebElement seniority;
 	@FindBy(xpath="//div[@class='ant-modal-body']//div//div//div//div[8]//div[1]//div[2]//div[1]//span[1]//div//div//div")
 	WebElement workClass;
-	@FindBy(xpath="//li[text()='EXE']")
-	WebElement workType;
+	//@FindBy(xpath="//div[@class='ant-modal-body']//div//div//form[@class='ant-form ant-form-horizontal']//div//div[@id='TIPPED']")
+	//WebElement tipped;
 	@FindBy(xpath="//button[@class='ant-btn ant-btn-primary']")
 	WebElement next;
 	@FindBy(xpath="//div[@title='Expand All']//button")
 	WebElement selectjob;
+	
 	@FindBy(xpath="//div[contains(@class,'AddEditJobModal-module___jobField___17X0F')]//input")
 	WebElement jobdate;
 	@FindBy(xpath="//input[@class='ant-input input-field uf-input-field AddEditJobModal-module___jobField___17X0F']")
@@ -61,49 +64,73 @@ public class AddNewEmployee extends TC_BaseClass{
 	WebElement hr;
 	@FindBy(xpath="//button[@class='ant-btn ant-btn-primary']")
 	WebElement save;
-	
-	public void addNewemployee() throws InterruptedException {
+	public void switchFrame() throws InterruptedException {
 	driver.switchTo().frame(frame);
 	WebElement addnew = driver.findElement(By.xpath("//button[normalize-space()='Add New']"));
 	Thread.sleep(4000);
-	addnew.click();
-	Empid.sendKeys("003589");
-	DisplayName.sendKeys("vishal,narvate");
-	FirstName.sendKeys("vishal");
-	middleName.sendKeys("patil");
-	lastName.sendKeys("narvate");
-	hireDate.sendKeys("10/16/2021");
-	seniority.sendKeys("11/1/2021");
+	addnew.click();	
 	}
-	public void selectWorkClass() throws InterruptedException {
+	public void addNewemployee(String id,String dname,String fname,String mname,String lname,String jdate,String sdate) throws InterruptedException {
+	Empid.sendKeys(id);
+	Assert.assertEquals(true, Empid.isEnabled());
+	System.out.println(Empid.isEnabled());
+	DisplayName.sendKeys(dname);
+	Assert.assertEquals(true, DisplayName.isEnabled());
+	System.out.println(DisplayName.isEnabled());
+	FirstName.sendKeys(fname);
+	middleName.sendKeys(mname);
+	lastName.sendKeys(lname);
+	hireDate.sendKeys(jdate);
+	seniority.sendKeys(sdate);
+	}
+	public void selectWorkClass(String option) throws InterruptedException {
 	Thread.sleep(2000);
 	workClass.click();
-	workType.click();
+     List<WebElement> allOptions = driver.findElements(By.xpath("//ul[@class='ant-select-dropdown-menu  ant-select-dropdown-menu-root ant-select-dropdown-menu-vertical']/li"));
+             
+     for(int i = 0; i<=allOptions.size()-1; i++) {
+         if(allOptions.get(i).getText().contains(option)) { 
+             allOptions.get(i).click();
+             break;
+              
+         }
+     }
+	
 	next.click();
 	}
-	public void selectJob() throws InterruptedException {
+	public void selectJob(String jobName,String job,String jobDate,String jobRank) throws InterruptedException {
 	Thread.sleep(4000);
 	selectjob.click();
-	WebElement Type =driver.findElement(By.xpath("//label[@class='uf-tree-selector-tree-item-single-select-cell-renderer__selection ant-radio-wrapper']//input"));
+	WebElement Type =driver.findElement(By.xpath(jobName));
 	Thread.sleep(4000);
 	Type.click();
 	jobdate.sendKeys(Keys.CONTROL+ "a");
 	jobdate.sendKeys(Keys.DELETE);
-	jobdate.sendKeys("11/8/2021");
+	jobdate.sendKeys(jobDate);
 	jobrank.sendKeys(Keys.CONTROL+ "a");
 	jobrank.sendKeys(Keys.DELETE);
-	jobrank.sendKeys("4");
+	jobrank.sendKeys(jobRank);
 		
 	}
-	public void selectpayType() throws InterruptedException {
+	public void selectEffectiveDate(String effectiveDate) throws InterruptedException {
 		WebDriverWait wait=new WebDriverWait(driver, 20);
 		WebElement effectivedate = wait.until(
 		ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='input-field uf-input-field AddEditJobModal-module___wageField___5cszH ant-input-affix-wrapper']/input")));
 		effectivedate.sendKeys(Keys.CONTROL+ "a");
 		effectivedate.sendKeys(Keys.DELETE);
-		effectivedate.sendKeys("11/14/2021");
+		effectivedate.sendKeys(effectiveDate);
+	}
+		public void selectpayType(String payType) throws InterruptedException {
 		paytype.click();
-		pay.click();
+		 List<WebElement> allOptions = driver.findElements(By.xpath("//ul[@class='ant-select-dropdown-menu  ant-select-dropdown-menu-root ant-select-dropdown-menu-vertical']/li"));
+	     
+	     for(int i = 0; i<=allOptions.size()-1; i++) {
+	         if(allOptions.get(i).getText().contains(payType)) { 
+	             allOptions.get(i).click();
+	             break;
+	              
+	         }
+	     }
 		}	
 	public void selectWorkingHours() throws InterruptedException {
 		weeklyContractHours.sendKeys(Keys.CONTROL+ "a");

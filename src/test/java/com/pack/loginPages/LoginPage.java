@@ -27,12 +27,7 @@ public class LoginPage extends TC_BaseClass {
 	WebElement signin;
 	@FindBy(xpath="//a[normalize-space()='RMS Modern']")
 	WebElement rms;
-	@FindBy(xpath="//header/div[1]/div[1]/div[1]/button[1]")
-	WebElement unifocus;
-	@FindBy(xpath="//span[contains(text(),'Administration')]")
-    WebElement adminstration;
-	@FindBy(xpath="//*[@id=\"MOST_USED_APPS$Menu\"]/li[1]")
-	WebElement schedule;
+
 	
 	 public void setPartnerCode(String pc) {
 			partnerCode.sendKeys(pc);
@@ -57,25 +52,9 @@ public class LoginPage extends TC_BaseClass {
 		Assert.assertEquals(true, signin.isEnabled());
 		System.out.println("signin clicked");
 		rms.click();
+		
 	}
 	 
-		    public void clickUnifocus(){
-			unifocus.click();
-			String un =unifocus.getText();
-			System.out.println(un);
-			Assert.assertEquals("UniFocus", un);
-			adminstration.click();
-			String sc =adminstration.getText();
-			System.out.println(sc);
-			Assert.assertEquals("Administration", sc);	
-		}
-		   public WebElement getselect_List() {
-		
-			schedule.click();
-			
-			return schedule;
-			
-		}
 	}
 	
 
