@@ -19,7 +19,7 @@ public class TC_AddNewEmployee extends TC_BaseClass{
 	
 	
     @Test(dataProvider="AddEmpData")
-	public void addNewEmployee(String eid,String display,String first,String middle,String last,String hire,String sen,String opt,String job,String jobName,String jdate,String jrank,String edate,String payType) throws  Exception {
+	public void addNewEmployee(String eid,String display,String first,String middle,String last,String hire,String sen,String opt,String job,String jobName,String jdate,String jrank,String edate,String payType,String hourly,String wch,String ch,String annual,String se,String sar,String piece) throws  Exception {
     driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
     AddNewEmployee emp=new AddNewEmployee(driver);
     emp.switchFrame();
@@ -28,7 +28,7 @@ public class TC_AddNewEmployee extends TC_BaseClass{
    // emp.selectTipped(tip);
     emp.selectJob(job,jobName,jdate,jrank);
     emp.selectEffectiveDate(edate);
-    emp.selectpayType(payType);
+    emp.selectpayType(payType,hourly,wch,ch,annual,se,sar,piece);
     emp.selectWorkingHours();
     }
    

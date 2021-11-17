@@ -1,9 +1,12 @@
 package com.pack.loginPages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.pack.testCases.TC_BaseClass;
@@ -78,7 +81,16 @@ public class TandAPage extends TC_BaseClass{
 	reviewPayPeriod.click();
 	Thread.sleep(3000);
 	return  reviewPayPeriod;
-}
+    }
+    public void approveShifts() {
+    	WebElement frame =driver.findElement(By.className("app-iframe"));
+    	driver.switchTo().frame(frame);
+    	WebDriverWait wait=new WebDriverWait(driver, 60);
+    	WebElement as = wait.until(
+    	ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='ant-btn ant-btn-primary']")));
+    	driver.switchTo().defaultContent();
+    }
+  
     public WebElement clickWhoIsInOut() throws InterruptedException{
     	unifocus1.click();
     	String un =unifocus1.getText();
@@ -88,11 +100,20 @@ public class TandAPage extends TC_BaseClass{
     	String sc =tANDa1.getText();
     	System.out.println(sc);
     	Assert.assertEquals("T&A", sc);	
-        Thread.sleep(3000);
-    	reviewPayPeriod.click();
+        WhoIsInOut.click();
     	Thread.sleep(3000);
-    	return  reviewPayPeriod;
-    }public WebElement clickAttendancePointsandEvents() throws InterruptedException{
+    	
+    	return  WhoIsInOut;
+    }
+    public void viewAsOf() {
+    	WebElement frame =driver.findElement(By.className("app-iframe"));
+    	driver.switchTo().frame(frame);
+    	WebDriverWait wait=new WebDriverWait(driver, 100);
+    	WebElement as = wait.until(
+    	ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='uf-tri-area-inner-middle']")));
+    	driver.switchTo().defaultContent();
+    }
+    public WebElement clickAttendancePointsandEvents() throws InterruptedException{
     	unifocus1.click();
     	String un =unifocus1.getText();
     	System.out.println(un);
@@ -102,9 +123,28 @@ public class TandAPage extends TC_BaseClass{
     	System.out.println(sc);
     	Assert.assertEquals("T&A", sc);	
         Thread.sleep(3000);
-    	reviewPayPeriod.click();
+        AttendancePointsandEvents.click();
     	Thread.sleep(3000);
-    	return  reviewPayPeriod;
+    	
+    	return AttendancePointsandEvents;
+    }
+    public void viewSelectAll() {
+    	WebElement frame =driver.findElement(By.className("app-iframe"));
+    	driver.switchTo().frame(frame);
+    	     String toast = new WebDriverWait(driver, 100).until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='ant-message-notice-content']"))).getText();
+    	
+    	    if (toast.contains("Previous filters restored")) {
+    	    	 WebDriverWait ca=new WebDriverWait(driver, 80);
+    		     WebElement calculate = ca.until(
+    		     ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div[class='AttendanceToolbar-module___buttonGroup___22W8J'] button[type='button']")));
+    	    	driver.switchTo().defaultContent();
+    	    } else {
+    	        System.out.println(toast);
+    	    }
+    	 WebDriverWait ca=new WebDriverWait(driver, 80);
+	     WebElement calculate = ca.until(
+	     ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div:nth-child(3) div:nth-child(1) div:nth-child(1) span:nth-child(1) button:nth-child(1)")));
+    	driver.switchTo().defaultContent();
     }
     public WebElement clickBenefits() throws InterruptedException{
     	unifocus1.click();
@@ -115,10 +155,18 @@ public class TandAPage extends TC_BaseClass{
     	String sc =tANDa1.getText();
     	System.out.println(sc);
     	Assert.assertEquals("T&A", sc);	
-        Thread.sleep(3000);
-    	reviewPayPeriod.click();
+    	Benefits.click();
     	Thread.sleep(3000);
-    	return  reviewPayPeriod;
+    	
+    	return  Benefits;
+    }
+    public void viewEmployees() {
+    	WebElement frame =driver.findElement(By.className("app-iframe"));
+    	driver.switchTo().frame(frame);
+    	WebDriverWait wait=new WebDriverWait(driver, 120);
+    	WebElement as = wait.until(
+    	ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='uf-section-panel-titlebar']")));
+    	driver.switchTo().defaultContent();
     }
     public WebElement clickEnterEarnings() throws InterruptedException{
     	unifocus1.click();
@@ -130,9 +178,18 @@ public class TandAPage extends TC_BaseClass{
     	System.out.println(sc);
     	Assert.assertEquals("T&A", sc);	
         Thread.sleep(3000);
-    	reviewPayPeriod.click();
+        EnterEarnings.click();
     	Thread.sleep(3000);
-    	return  reviewPayPeriod;
+    
+    	return  EnterEarnings;
+    }
+    public void viewBulkEarnings() {
+    	WebElement frame =driver.findElement(By.className("app-iframe"));
+    	driver.switchTo().frame(frame);
+    	WebDriverWait wait=new WebDriverWait(driver, 60);
+    	WebElement as = wait.until(
+    	ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='unifocus-section-toolbar-content']//div[@class='uf-tri-area-outer-right']//button[@type='button']")));
+    	driver.switchTo().defaultContent();
     }
     public WebElement clickHolidayPay() throws InterruptedException{
     	unifocus1.click();
@@ -144,9 +201,18 @@ public class TandAPage extends TC_BaseClass{
     	System.out.println(sc);
     	Assert.assertEquals("T&A", sc);	
         Thread.sleep(3000);
-    	reviewPayPeriod.click();
+        HolidayPay.click();
     	Thread.sleep(3000);
-    	return  reviewPayPeriod;
+    	
+    	return  HolidayPay;
+    }
+    public void viewApplyEarnings() {
+    	WebElement frame =driver.findElement(By.className("app-iframe"));
+    	driver.switchTo().frame(frame);
+    	WebDriverWait wait=new WebDriverWait(driver, 60);
+    	WebElement as = wait.until(
+    	ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='uf-tri-area-outer-right']//div[2]//div[1]//div[1]//span[1]//button[1]")));
+    	driver.switchTo().defaultContent();
     }
     public WebElement clickPunchImageReview() throws InterruptedException{
     	unifocus1.click();
@@ -158,9 +224,18 @@ public class TandAPage extends TC_BaseClass{
     	System.out.println(sc);
     	Assert.assertEquals("T&A", sc);	
         Thread.sleep(3000);
-    	reviewPayPeriod.click();
+        PunchImageReview.click();
     	Thread.sleep(3000);
-    	return  reviewPayPeriod;
+    	
+    	return  PunchImageReview;
+    }
+    public void viewNames() {
+    	WebElement frame =driver.findElement(By.className("app-iframe"));
+    	driver.switchTo().frame(frame);
+    	WebDriverWait wait=new WebDriverWait(driver, 60);
+    	WebElement as = wait.until(
+    	ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='uf-section-panel-titlebar']/h3[@title='Employees']")));
+    	driver.switchTo().defaultContent();
     }
     public WebElement clickApproveEarnings() throws InterruptedException{
     	unifocus1.click();
@@ -172,8 +247,17 @@ public class TandAPage extends TC_BaseClass{
     	System.out.println(sc);
     	Assert.assertEquals("T&A", sc);	
         Thread.sleep(3000);
-    	reviewPayPeriod.click();
+        ApproveEarnings.click();
     	Thread.sleep(3000);
-    	return  reviewPayPeriod;
+    	
+    	return  ApproveEarnings;
+    }
+    public void viewApproveAllEarnings() {
+    	WebElement frame =driver.findElement(By.className("app-iframe"));
+    	driver.switchTo().frame(frame);
+    	WebDriverWait wait=new WebDriverWait(driver, 60);
+    	WebElement as = wait.until(
+    	ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='uf-page-panel-header-action']//button[@type='button']")));
+    	driver.switchTo().defaultContent();
     }
 }

@@ -120,24 +120,63 @@ public class AddNewEmployee extends TC_BaseClass{
 		effectivedate.sendKeys(Keys.DELETE);
 		effectivedate.sendKeys(effectiveDate);
 	}
-		public void selectpayType(String payType) throws InterruptedException {
+		public void selectpayType(String payType,String hr,String wch,String ch,String annual,String sd,String sAr,String Piece) throws InterruptedException {
 		paytype.click();
 		 List<WebElement> allOptions = driver.findElements(By.xpath("//ul[@class='ant-select-dropdown-menu  ant-select-dropdown-menu-root ant-select-dropdown-menu-vertical']/li"));
 	     
 	     for(int i = 0; i<=allOptions.size()-1; i++) {
 	         if(allOptions.get(i).getText().contains(payType)) { 
 	             allOptions.get(i).click();
-	             break;
-	              
+	             break;     
 	         }
 	     }
+	       if(payType.equals("Hourly")) {
+        	 WebElement hourly=driver.findElement(By.xpath("//input[@class='ant-input input-field uf-input-field AddEditJobModal-module___wageField___5cszH']"));
+        	 hourly.sendKeys(Keys.CONTROL+ "a");
+        	 hourly.sendKeys(Keys.DELETE,hr);
+        	 Thread.sleep(5000);
+        	 
+         }
+	      else if(payType.equals("Salaried Non Exempt")) {
+	        	 weeklyContractHours.sendKeys(Keys.CONTROL+ "a");
+	     		weeklyContractHours.sendKeys(Keys.DELETE,wch);
+	     		contractDays.sendKeys(Keys.CONTROL+ "a");
+	     		contractDays.sendKeys(Keys.DELETE,ch);
+	     		 ar.click();
+	     		WebElement aRate=driver.findElement(By.xpath("//body//div//div[@class='AddEditJobModal-module___initialWageContent___IWN61']//div//div//div[1]//input[1]"));
+	     		aRate.sendKeys(Keys.CONTROL+ "a");
+	     		aRate.sendKeys(Keys.DELETE,annual);
+	     		 Thread.sleep(5000);
+	         }
+	        
+          
+           else if(payType.equals("Salaried  Exempt")) {
+        	   WebElement salary=driver.findElement(By.xpath("//div[text()='Salary 8']"));
+        	   salary.click();
+        	   List<WebElement> salaryexempt = driver.findElements(By.xpath("//ul[@class='ant-select-dropdown-menu  ant-select-dropdown-menu-root ant-select-dropdown-menu-vertical']/li"));
+      	     
+      	     for(int i = 0; i<=salaryexempt.size()-1; i++) {
+      	         if(salaryexempt.get(i).getText().contains(sd)) { 
+      	        	salaryexempt.get(i).click();
+      	             break;     
+      	         }
+      	     }
+      	   WebElement ear=driver.findElement(By.xpath("//label[@class='AddEditJobModal-module___wageCheckbox___TQnIf ant-checkbox-wrapper']//input[@type='checkbox']"));
+      	   ear.click();
+      	 WebElement er=driver.findElement(By.xpath("//input[@class='ant-input input-field uf-input-field AddEditJobModal-module___wageField___5cszH']"));
+      	er.sendKeys(Keys.CONTROL+ "a");
+ 		er.sendKeys(Keys.DELETE,sAr);
+    	   Thread.sleep(7000);
+	         }
+           else if(payType.equals("Piece")) {
+        	   WebElement piece=driver.findElement(By.xpath("//input[@class='ant-input input-field uf-input-field AddEditJobModal-module___wageField___5cszH']"));
+        	   Thread.sleep(2000);
+	           piece.sendKeys(Piece); 
+	           Thread.sleep(5000);
+	         }
 		}	
 	public void selectWorkingHours() throws InterruptedException {
-		weeklyContractHours.sendKeys(Keys.CONTROL+ "a");
-		weeklyContractHours.sendKeys(Keys.DELETE,"35.00");
-		contractDays.sendKeys(Keys.CONTROL+ "a");
-		contractDays.sendKeys(Keys.DELETE,"7.00");
-	    ar.click();
+		
 	    save.click();
 	   
 	}
