@@ -32,7 +32,6 @@ public class TC_BaseClass {
 	public String partnerCode = readconfig.getPartnerCode();
 	public String loginas =readconfig.getUserName();
 	public String Password =readconfig.getPassword();
-	public String emp="001234";
 	public static WebDriver driver ;
 	
     public static Logger logger;	
@@ -63,7 +62,7 @@ public class TC_BaseClass {
 		  driver.get(url);
 		  driver.manage().window().maximize(); 
 		  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		  ScreenRecorderUtil.startRecord("AddNewEmployee");
+		 /* ScreenRecorderUtil.startRecord("AddNewEmployee");
 		  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		  LoginPage lp=new LoginPage(driver);
 		  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -80,7 +79,7 @@ public class TC_BaseClass {
 		  Thread.sleep(2000);
 		   EmployeeMaintenance employeemaintenance=new EmployeeMaintenance(driver);
 		   employeemaintenance.clickUnifocus();
-		   employeemaintenance.getselect_List();
+		   employeemaintenance.getselect_List();*/
     }
 	
 	public void captureScreen(WebDriver driver, String tname) throws IOException {

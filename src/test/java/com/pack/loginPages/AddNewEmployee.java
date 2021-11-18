@@ -150,7 +150,7 @@ public class AddNewEmployee extends TC_BaseClass{
 	         }
 	        
           
-           else if(payType.equals("Salaried  Exempt")) {
+           else if(payType.equals("Salaried Exempt")) {
         	   WebElement salary=driver.findElement(By.xpath("//div[text()='Salary 8']"));
         	   salary.click();
         	   List<WebElement> salaryexempt = driver.findElements(By.xpath("//ul[@class='ant-select-dropdown-menu  ant-select-dropdown-menu-root ant-select-dropdown-menu-vertical']/li"));
