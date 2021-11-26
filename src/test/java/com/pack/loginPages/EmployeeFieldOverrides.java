@@ -63,10 +63,11 @@ public class EmployeeFieldOverrides  extends TC_BaseClass {
 	  }    	
 	  }
 	  public void checkHoursAvaliable() throws InterruptedException {
-	  WebElement tipped =driver.findElement(By.xpath("//div[@row-index='21'][@aria-rowindex='23'][@row-id='94']/div[3]/div/label/span/input"));
-	  if(tipped .getAttribute("checked") == null) {
+	  WebElement hoursAvaliable =driver.findElement(By.xpath("//div[@row-index='21'][@aria-rowindex='23'][@row-id='94']/div[3]/div/label/span/input"));
+	  if(hoursAvaliable .getAttribute("checked") == null) {
 	  Thread.sleep(5000);
-	  tipped .click();
+	  hoursAvaliable .click();
+	  Thread.sleep(5000);
 	  }
 	  }
 }

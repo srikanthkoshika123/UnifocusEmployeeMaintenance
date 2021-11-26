@@ -37,7 +37,8 @@ public class TC_BaseClass {
     public static Logger logger;	
      
   
- @Parameters("browser")
+ @SuppressWarnings("deprecation")
+@Parameters("browser")
     
   @BeforeMethod
 	
@@ -52,7 +53,7 @@ public class TC_BaseClass {
 		 
 		}
 		else if(browser.equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver",readconfig.getFirefoxpath());
+			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"//Drivers//geckodriver.exe");
 			 driver = new FirefoxDriver();
 			}
 		else if(browser.equals("ie")) {
@@ -76,10 +77,11 @@ public class TC_BaseClass {
 		  Thread.sleep(4000);
 		  lp.clickSignIn();
 		  logger.info("signin clicked");
-		  Thread.sleep(2000);
+		  Thread.sleep(6000);
 		   EmployeeMaintenance employeemaintenance=new EmployeeMaintenance(driver);
 		   employeemaintenance.clickUnifocus();
 		   employeemaintenance.getselect_List();*/
+		 
     }
 	
 	public void captureScreen(WebDriver driver, String tname) throws IOException {

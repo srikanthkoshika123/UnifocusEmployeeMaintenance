@@ -8,9 +8,9 @@
     <parameter name="browser" value="chrome" />
     
     <classes>
-       <class name="com.pack.testCases.TC_EmployeeFieldOverrides"/>
-      
- 
+       <class name="com.pack.testCases.TC_LaborPage"/>
+       
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+   

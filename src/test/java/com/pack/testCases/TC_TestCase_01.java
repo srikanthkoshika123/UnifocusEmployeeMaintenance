@@ -21,7 +21,7 @@ public class TC_TestCase_01 extends TC_BaseClass {
 	    	lp.setPartnerCode(partnerCode);
 	    	lp.clickNext();
 		    logger.info("enter user name");
-		    driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		    driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	     	lp.setUserName(loginas);
 	     	logger.info("password entered");
 	        lp.setPassWord(Password);

@@ -30,20 +30,20 @@ public class TC_TandAPage extends TC_BaseClass{
     	Thread.sleep(2000);	
 	    TandAPage tANDa=new TandAPage(driver);
 	    tANDa.clickReviewPayPeriod();
-	    //tANDa.approveShifts();
+	    tANDa.approveShifts();
 	    tANDa.clickWhoIsInOut();
-	    //tANDa.viewAsOf();
-	   tANDa.clickAttendancePointsandEvents();
-	    //tANDa.viewSelectAll();
-	     tANDa.clickBenefits();
-	   // tANDa.viewEmployees();
+	    tANDa.viewAsOf();
+	    tANDa.clickAttendancePointsandEvents();
+	    tANDa.viewSelectAll();
+	    tANDa.clickBenefits();
+	    tANDa.viewEmployees();
 	    tANDa.clickEnterEarnings();
 	    tANDa.viewBulkEarnings();
-	    //tANDa.clickHolidayPay();
+	    tANDa.clickHolidayPay();
 	    tANDa.viewApplyEarnings();
 	    tANDa.clickPunchImageReview();
 	    tANDa.viewNames();
-	    tANDa.clickApproveEarnings();
-	    tANDa.viewApproveAllEarnings();
+	   // tANDa.clickApproveEarnings();
+	   // tANDa.viewApproveAllEarnings();
 }
 }

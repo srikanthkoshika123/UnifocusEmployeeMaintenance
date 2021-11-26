@@ -33,19 +33,20 @@ public class AddNewEmployee extends TC_BaseClass{
 	WebElement middleName;
 	@FindBy(xpath="//div[@class='ant-modal-body']//div//div//div//div[5]//div[1]//div[2]//div[1]//span[1]//input[1]")
 	WebElement lastName;
-	@FindBy(xpath="//div[@class='ant-modal-body']//div//div//div//div[6]//div[1]//div[2]//div[1]//span//span//input[1]")
-	WebElement hireDate;
+	@FindBy(xpath="//div[@class='ant-modal-body']//div//div//div//div[6]//div[1]//div[2]//div[1]//span[1]//input[1]")
+	WebElement Email;
 	@FindBy(xpath="//div[@class='ant-modal-body']//div//div//div//div[7]//div[1]//div[2]//div[1]//span//span//input[1]")
+	WebElement hireDate;
+	@FindBy(xpath="//div[@class='ant-modal-body']//div//div//div//div[8]//div[1]//div[2]//div[1]//span//span//input[1]")
 	WebElement seniority;
-	@FindBy(xpath="//div[@class='ant-modal-body']//div//div//div//div[8]//div[1]//div[2]//div[1]//span[1]//div//div//div")
+	@FindBy(xpath="//div[@class='ant-modal-body']//div//div//div//div[9]//div[1]//div[2]//div[1]//span[1]//div//div//div")
 	WebElement workClass;
-	//@FindBy(xpath="//div[@class='ant-modal-body']//div//div//form[@class='ant-form ant-form-horizontal']//div//div[@id='TIPPED']")
-	//WebElement tipped;
+	@FindBy(xpath="//div[@class='ant-modal-body']//div//div//form[@class='ant-form ant-form-horizontal']//div//div[@id='TIPPED']")
+	WebElement tipped;
 	@FindBy(xpath="//button[@class='ant-btn ant-btn-primary']")
 	WebElement next;
 	@FindBy(xpath="//div[@title='Expand All']//button")
 	WebElement selectjob;
-	
 	@FindBy(xpath="//div[contains(@class,'AddEditJobModal-module___jobField___17X0F')]//input")
 	WebElement jobdate;
 	@FindBy(xpath="//input[@class='ant-input input-field uf-input-field AddEditJobModal-module___jobField___17X0F']")
@@ -70,7 +71,7 @@ public class AddNewEmployee extends TC_BaseClass{
 	Thread.sleep(4000);
 	addnew.click();	
 	}
-	public void addNewemployee(String id,String dname,String fname,String mname,String lname,String jdate,String sdate) throws InterruptedException {
+	public void addNewemployee(String id,String dname,String fname,String mname,String lname,String email,String jdate,String sdate) throws InterruptedException {
 	Empid.sendKeys(id);
 	Assert.assertEquals(true, Empid.isEnabled());
 	System.out.println(Empid.isEnabled());
@@ -80,6 +81,7 @@ public class AddNewEmployee extends TC_BaseClass{
 	FirstName.sendKeys(fname);
 	middleName.sendKeys(mname);
 	lastName.sendKeys(lname);
+	Email.sendKeys(email);
 	hireDate.sendKeys(jdate);
 	seniority.sendKeys(sdate);
 	}
@@ -96,8 +98,20 @@ public class AddNewEmployee extends TC_BaseClass{
          }
      }
 	
-	next.click();
+	
 	}
+	public void selectTipped(String tip) throws InterruptedException {
+		tipped.click();
+		List<WebElement> Options = driver.findElements(By.xpath("//ul[@class='ant-select-dropdown-menu  ant-select-dropdown-menu-root ant-select-dropdown-menu-vertical']/li"));
+		 
+		   for (WebElement item: Options ) {
+		        if(item.getText().equalsIgnoreCase(tip)){
+		                item.click();
+		                 break;
+		                 }
+		   }
+		   next.click();
+		     }
 	public void selectJob(String jobName,String job,String jobDate,String jobRank) throws InterruptedException {
 	Thread.sleep(4000);
 	selectjob.click();
@@ -162,10 +176,11 @@ public class AddNewEmployee extends TC_BaseClass{
       	         }
       	     }
       	   WebElement ear=driver.findElement(By.xpath("//label[@class='AddEditJobModal-module___wageCheckbox___TQnIf ant-checkbox-wrapper']//input[@type='checkbox']"));
+      	   Thread.sleep(3000);
       	   ear.click();
-      	 WebElement er=driver.findElement(By.xpath("//input[@class='ant-input input-field uf-input-field AddEditJobModal-module___wageField___5cszH']"));
-      	er.sendKeys(Keys.CONTROL+ "a");
- 		er.sendKeys(Keys.DELETE,sAr);
+      	  WebElement er=driver.findElement(By.xpath("//input[@class='ant-input input-field uf-input-field AddEditJobModal-module___wageField___5cszH']"));
+      	  er.sendKeys(Keys.CONTROL+ "a");
+ 		  er.sendKeys(Keys.DELETE,sAr);
     	   Thread.sleep(7000);
 	         }
            else if(payType.equals("Piece")) {
@@ -175,9 +190,9 @@ public class AddNewEmployee extends TC_BaseClass{
 	           Thread.sleep(5000);
 	         }
 		}	
-	public void selectWorkingHours() throws InterruptedException {
+	    public void selectWorkingHours() throws InterruptedException {
 		
 	    save.click();
 	   
-	}
+	   }
 }

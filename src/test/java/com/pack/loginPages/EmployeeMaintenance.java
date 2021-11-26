@@ -23,7 +23,6 @@ public class EmployeeMaintenance extends TC_BaseClass {
 	WebElement employeeMaintenance;
 
     public void clickUnifocus(){
-    	
 	unifocus.click();
 	String un =unifocus.getText();
 	System.out.println(un);

@@ -9,10 +9,21 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">UnifocusScheduler</th></tr>
-<tr><td><a href="#t0">openShift</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">94,507</td><td></td><td></td></tr>
+<tr><td><a href="#t0">openShift</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">167,115</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">UnifocusScheduler</th></tr></tbody><tbody id="t0"><tr><th colspan="4">openShift &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.pack.testCases.TC_EmployeeFieldOverrides</td><td><a href="#m0">employeeFieldOverrides</a></td><td rowspan="1">1637235617699</td><td rowspan="1">87405</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">UnifocusScheduler</th></tr></tbody><tbody id="t0"><tr><th colspan="4">openShift &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.pack.testCases.TC_LaborPage</td><td><a href="#m0">labor</a></td><td rowspan="1">1637841052885</td><td rowspan="1">161866</td></tr></tbody>
 </table>
-<h2>openShift</h2><h3 id="m0">com.pack.testCases.TC_EmployeeFieldOverrides#employeeFieldOverrides</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>openShift</h2><h3 id="m0">com.pack.testCases.TC_LaborPage#labor</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[text()=&apos;Multiple KBIs/Days&apos;] (tried for 80 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;DESKTOP-K93H14H&apos;, ip: &apos;192.168.29.147&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\745G6~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65009}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65009/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f633e3f302757293cc1b3470d43965b0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.pack.loginPages.LaborPage.clickActuals(LaborPage.java:56)
+	at com.pack.testCases.TC_LaborPage.labor(TC_LaborPage.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-UnifocusScheduler" class="navigator-link">
-              <span class="suite-name border-passed">UnifocusScheduler</span>
+              <span class="suite-name border-failed">UnifocusScheduler</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-UnifocusScheduler" class="hide-methods passed suite-UnifocusScheduler"> (hide)</a> <!-- hide-methods passed suite-UnifocusScheduler -->
-                      <a href="#" panel-name="suite-UnifocusScheduler" class="show-methods passed suite-UnifocusScheduler"> (show)</a> <!-- show-methods passed suite-UnifocusScheduler -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-UnifocusScheduler" class="hide-methods failed suite-UnifocusScheduler"> (hide)</a> <!-- hide-methods failed suite-UnifocusScheduler -->
+                      <a href="#" panel-name="suite-UnifocusScheduler" class="show-methods failed suite-UnifocusScheduler"> (show)</a> <!-- show-methods failed suite-UnifocusScheduler -->
                     </span>
-                    <div class="method-list-content passed suite-UnifocusScheduler">
+                    <div class="method-list-content failed suite-UnifocusScheduler">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-UnifocusScheduler" title="com.pack.testCases.TC_EmployeeFieldOverrides" class="method navigator-link" hash-for-method="employeeFieldOverrides">employeeFieldOverrides</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-UnifocusScheduler" title="com.pack.testCases.TC_LaborPage" class="method navigator-link" hash-for-method="labor">labor</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-UnifocusScheduler -->
+                    </div> <!-- method-list-content failed suite-UnifocusScheduler -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,21 +119,34 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-UnifocusScheduler" class="panel UnifocusScheduler">
-          <div class="suite-UnifocusScheduler-class-passed">
+          <div class="suite-UnifocusScheduler-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.pack.testCases.TC_EmployeeFieldOverrides</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.pack.testCases.TC_LaborPage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="employeeFieldOverrides">
-                  </a> <!-- employeeFieldOverrides -->
-                  <span class="method-name">employeeFieldOverrides</span>
+                  <a name="labor">
+                  </a> <!-- labor -->
+                  <span class="method-name">labor</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[text()=&apos;Multiple KBIs/Days&apos;] (tried for 80 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;DESKTOP-K93H14H&apos;, ip: &apos;192.168.29.147&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\745G6~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65009}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65009/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f633e3f302757293cc1b3470d43965b0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.pack.loginPages.LaborPage.clickActuals(LaborPage.java:56)
+	at com.pack.testCases.TC_LaborPage.labor(TC_LaborPage.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-UnifocusScheduler-class-passed -->
+          </div> <!-- suite-UnifocusScheduler-class-failed -->
         </div> <!-- panel UnifocusScheduler -->
         <div panel-name="test-xml-UnifocusScheduler" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -150,7 +163,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;openShift&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.pack.testCases.TC_EmployeeFieldOverrides&quot;/&gt;
+      &lt;class name=&quot;com.pack.testCases.TC_LaborPage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- openShift --&gt;
 &lt;/suite&gt; &lt;!-- UnifocusScheduler --&gt;
@@ -192,14 +205,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'employeeFieldOverrides')
-data.setCell(0, 2, 'com.pack.testCases.TC_EmployeeFieldOverrides')
-data.setCell(0, 3, 87405);
+data.setCell(0, 1, 'labor')
+data.setCell(0, 2, 'com.pack.testCases.TC_LaborPage')
+data.setCell(0, 3, 161866);
 window.suiteTableData['UnifocusScheduler']= { tableData: data, tableDiv: 'times-div-UnifocusScheduler'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-UnifocusScheduler">
               </div> <!-- times-div-UnifocusScheduler -->
             </div> <!-- times-div -->
@@ -225,18 +238,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.pack.testCases.TC_EmployeeFieldOverrides</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.pack.testCases.TC_LaborPage</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">employeeFieldOverrides</span>
-                <span class="method-start">4935 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">labor</span>
+                <span class="method-start">4444 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">92624 ms</span>
+                <span class="method-start">166354 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

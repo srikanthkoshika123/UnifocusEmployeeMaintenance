@@ -13,7 +13,7 @@ import recordingTests.ScreenRecorderUtil;
 public class TC_EmployeeFieldOverrides extends TC_BaseClass{
 	 @Test
 		public void employeeFieldOverrides() throws  Exception {
-	    ScreenRecorderUtil.startRecord("loginPage");
+	    ScreenRecorderUtil.startRecord("EmployeeFieldOverrides");
 	    	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	    	LoginPage lp=new LoginPage(driver);
 	    	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -27,7 +27,7 @@ public class TC_EmployeeFieldOverrides extends TC_BaseClass{
 			Thread.sleep(4000);
 	    	lp.clickSignIn();
 	    	logger.info("signin clicked");
-	    	Thread.sleep(2000);
+	    	Thread.sleep(6000);
 	    	EmployeeMaintenance employeemaintenance=new EmployeeMaintenance(driver);
 			employeemaintenance.clickUnifocus();
 			EmployeeFieldOverrides efo=new EmployeeFieldOverrides(driver);

@@ -7,13 +7,13 @@
   <test thread-count="5" name="openShift(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.pack.testCases.TC_EmployeeFieldOverrides">
+      <class name="com.pack.testCases.TC_LaborPage">
         <methods>
+          <include name="labor"/>
           <include name="setup"/>
-          <include name="employeeFieldOverrides"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.pack.testCases.TC_EmployeeFieldOverrides -->
+      </class> <!-- com.pack.testCases.TC_LaborPage -->
     </classes>
   </test> <!-- openShift(failed) -->
 </suite> <!-- Failed suite [UnifocusScheduler] -->

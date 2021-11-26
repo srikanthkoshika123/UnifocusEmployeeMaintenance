@@ -1,6 +1,7 @@
 package com.pack.loginPages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -57,9 +58,18 @@ public class TandAPage extends TC_BaseClass{
     public void approveShifts() {
     	WebElement frame =driver.findElement(By.className("app-iframe"));
     	driver.switchTo().frame(frame);
-    	WebDriverWait wait=new WebDriverWait(driver, 60);
+    	try {
+    	@SuppressWarnings("deprecation")
+		WebDriverWait wait=new WebDriverWait(driver, 120);
     	WebElement as = wait.until(
     	ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='ant-btn ant-btn-primary']")));
+    	//WebElement close =driver.findElement(By.xpath("//div[@class='ant-tabs-tab-active ant-tabs-tab']//i[@aria-label='aria-label']"));
+    	//close.click();
+    }
+    	catch(NoSuchElementException e) {
+    		System.out.println("nosuchelement");
+    		
+    	}
     	driver.switchTo().defaultContent();
     }
   
@@ -70,12 +80,18 @@ public class TandAPage extends TC_BaseClass{
     	Thread.sleep(3000);
     	return  WhoIsInOut;
     }
-    public void viewAsOf() {
+    public void viewAsOf() throws InterruptedException {
     	WebElement frame =driver.findElement(By.className("app-iframe"));
     	driver.switchTo().frame(frame);
-    	WebDriverWait wait=new WebDriverWait(driver, 100);
-    	WebElement as = wait.until(
-    	ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='Filter by Name or Emp. Id']")));
+    	try {
+    	Thread.sleep(80000);
+    	WebElement asof =driver.findElement(By.xpath("//input[@placeholder='Filter by Name or Emp. Id']"));
+    }
+    	catch(NoSuchElementException e) {
+    		System.out.println("nosuchelement");
+    		
+    	}
+        Thread.sleep(5000);
     	driver.switchTo().defaultContent();
     }
     public WebElement clickAttendancePointsandEvents() throws InterruptedException{
@@ -86,13 +102,18 @@ public class TandAPage extends TC_BaseClass{
     	Thread.sleep(3000);
     	return AttendancePointsandEvents;
     }
-    public void viewSelectAll() {
+    public void viewSelectAll() throws InterruptedException {
     	WebElement frame =driver.findElement(By.className("app-iframe"));
     	driver.switchTo().frame(frame);
-    	 WebDriverWait ca=new WebDriverWait(driver, 120);
-	     WebElement addpoint = ca.until(
-	     ExpectedConditions.visibilityOfElementLocated(By.xpath("//label[@class='ant-radio-button-wrapper ant-radio-button-wrapper-checked']")));
-    	driver.switchTo().defaultContent();
+    	try {
+    	Thread.sleep(80000);
+	     WebElement addpoint = driver.findElement(By.xpath("//label[@class='ant-radio-button-wrapper ant-radio-button-wrapper-checked']"));
+    	}
+	     catch(NoSuchElementException e) {
+	    		System.out.println("nosuchelement");
+	    		
+	    	}
+	     driver.switchTo().defaultContent();
     }
     public WebElement clickBenefits() throws InterruptedException{
     	unifocus1.click();
@@ -101,13 +122,17 @@ public class TandAPage extends TC_BaseClass{
     	Thread.sleep(3000);
     	return  Benefits;
     }
-    public void viewEmployees() {
+    public void viewEmployees() throws InterruptedException {
     	WebElement frame =driver.findElement(By.className("app-iframe"));
     	driver.switchTo().frame(frame);
-    	WebDriverWait wait=new WebDriverWait(driver, 120);
-    	WebElement as = wait.until(
-    	ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='uf-page-panel-header-action']/button[1]")));
-    	as.click();
+    	try {
+    	Thread.sleep(60000);
+    	WebElement as =driver.findElement(By.xpath("//div[@class='uf-section-panel-titlebar']"));
+    	}
+    	catch(NoSuchElementException e) {
+    		System.out.println("nosuchelement");
+    		
+    	}
     	driver.switchTo().defaultContent();
     }
     public WebElement clickEnterEarnings() throws InterruptedException{
@@ -124,10 +149,16 @@ public class TandAPage extends TC_BaseClass{
     public void viewBulkEarnings() throws InterruptedException {
     	WebElement frame =driver.findElement(By.className("app-iframe"));
     	driver.switchTo().frame(frame);
+    	try {
     	//WebDriverWait wait=new WebDriverWait(driver, 100);
-    	Thread.sleep(80000);
-    	WebElement as = driver.findElement(By.xpath("//div[@title='T - Tips Declared (D)']"));
+    		Thread.sleep(60000);
+    	WebElement as =driver.findElement(By.cssSelector("span[class='ant-form-item-children'] button[type='button']"));
     	as.click();
+    	}
+    	catch(NoSuchElementException e) {
+    		System.out.println("nosuchelement");
+    		
+    	}
     	driver.switchTo().defaultContent();
     }
     public WebElement clickHolidayPay() throws InterruptedException{
@@ -137,12 +168,17 @@ public class TandAPage extends TC_BaseClass{
     	Thread.sleep(3000);
     	return  HolidayPay;
     }
-    public void viewApplyEarnings() {
+    public void viewApplyEarnings() throws InterruptedException {
     	WebElement frame =driver.findElement(By.className("app-iframe"));
     	driver.switchTo().frame(frame);
-    	WebDriverWait wait=new WebDriverWait(driver, 60);
-    	WebElement as = wait.until(
-    	ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='uf-tri-area-outer-right']//div[2]//div[1]//div[1]//span[1]//button[1]")));
+    	try {
+    	Thread.sleep(10000);
+    	WebElement as =driver.findElement(By.xpath("//span[text()='Calculate']"));
+    	}
+    	catch(NoSuchElementException e) {
+    		System.out.println("nosuchelement");
+    		
+    	}
     	driver.switchTo().defaultContent();
     }
     public WebElement clickPunchImageReview() throws InterruptedException{
@@ -152,12 +188,17 @@ public class TandAPage extends TC_BaseClass{
     	Thread.sleep(3000);
     	return  PunchImageReview;
     }
-    public void viewNames() {
+    public void viewNames() throws InterruptedException {
     	WebElement frame =driver.findElement(By.className("app-iframe"));
     	driver.switchTo().frame(frame);
-    	WebDriverWait wait=new WebDriverWait(driver, 60);
-    	WebElement as = wait.until(
-    	ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='uf-section-panel-titlebar']/h3[@title='Employees']")));
+    	try{
+    	Thread.sleep(10000);
+    	WebElement as =driver.findElement(By.xpath("//h3[@title='Employees']"));
+    	}
+    	catch(NoSuchElementException e) {
+    		System.out.println("nosuchelement");
+    		
+    	}
     	driver.switchTo().defaultContent();
     }
     public WebElement clickApproveEarnings() throws InterruptedException{
@@ -167,12 +208,11 @@ public class TandAPage extends TC_BaseClass{
     	Thread.sleep(3000);
     	return  ApproveEarnings;
     }
-    public void viewApproveAllEarnings() {
+    public void viewApproveAllEarnings() throws InterruptedException {
     	WebElement frame =driver.findElement(By.className("app-iframe"));
     	driver.switchTo().frame(frame);
-    	WebDriverWait wait=new WebDriverWait(driver, 60);
-    	WebElement as = wait.until(
-    	ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='uf-page-panel-header-action']//button[@type='button']")));
+    	Thread.sleep(10000);
+    	WebElement as =driver.findElement(By.xpath("//div[@class='uf-page-panel-header-action']//button[@type='button']"));
     	driver.switchTo().defaultContent();
     }
 }
