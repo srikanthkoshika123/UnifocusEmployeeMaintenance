@@ -17,7 +17,7 @@ public class TC_TestCase_01 extends TC_BaseClass {
 	    ScreenRecorderUtil.startRecord("loginPage");
 	    	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	    	LoginPage lp=new LoginPage(driver);
-	    	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	    	driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	    	lp.setPartnerCode(partnerCode);
 	    	lp.clickNext();
 		    logger.info("enter user name");

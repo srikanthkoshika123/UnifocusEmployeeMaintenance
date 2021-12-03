@@ -29,9 +29,25 @@ public class TC_LaborPage extends TC_BaseClass  {
     	logger.info("signin clicked");
     	Thread.sleep(2000);	
     	LaborPage labor=new LaborPage(driver);
-    	labor.clickUnifocus();
-    	labor.clickActuals();
-    	//labor.clickEnterActualEnvironments();
-
+    	/*labor.clickUnifocus();
+    	labor.clickEnterActualEnvironments();
+    	labor.clickEnterActualKBIs();
+    	labor.clickEnterEmployeeProductivity();
+    	labor.clickEnterActualHours();*/
+    	labor.clickPlanning();
+    	labor.clickForecastEnvironments();
+    	labor.clickEnterPreWork();
+    	labor.clickEnterInputKBIForecast();
+    	labor.clickViewEditRevenueCenterForecast();
+    	//labor.clickManageSchedules();
+    	//labor.clickEnterScheduledHours();
+    	labor.clickReProjectLabor();
+    	labor.clickScheduling();
+    	labor.clickEmployeeRequests();
+    	labor.clickShiftRequests();
+    	labor.clickCallIns();
+    	labor.clickAvailabilityRequests();
+    	labor.clickTimeLineScheduling();
+    	
 }
 }
