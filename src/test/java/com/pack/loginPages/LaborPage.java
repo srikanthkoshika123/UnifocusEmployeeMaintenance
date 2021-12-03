@@ -266,8 +266,9 @@ public class LaborPage extends TC_BaseClass {
 		     click().build().perform();
 		    
 		     driver.switchTo().activeElement();
-		     WebElement industries = driver.findElement(By.xpath("//div[3]/div/div/ul[@role='menu']"));
-	 		    List<WebElement> start = driver.findElements(By.tagName("li"));
+		     WebElement industries = driver.findElement(By.cssSelector("//div[3]/div/div/ul[@role='menu']"));
+		    
+	 		   List<WebElement> start = industries.findElements(By.tagName("li"));
 	     	     
 	     	     for(int i = 0; i<=start.size()-1; i++) {
 	     	      if(start.get(i).getText().contains("Start")) { 

@@ -130,15 +130,15 @@
                   <a name="labor">
                   </a> <!-- labor -->
                   <span class="method-name">labor</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class=&apos;x-input-el x-form-field x-input-text&apos;]&quot;}
   (Session info: chrome=96.0.4664.45)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
-System info: host: &apos;DESKTOP-K93H14H&apos;, ip: &apos;10.20.12.3&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+System info: host: &apos;DESKTOP-K93H14H&apos;, ip: &apos;192.168.29.147&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d21c0ed3533214b4e0b8f838f33e42ff, clickElement {id=050dd2ff-9b59-4284-aa2a-6801d8e76580}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\745G6~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55997}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55997/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (d21c0ed3533214b4e0b8f838f33e42ff)] -&gt; xpath: //li[@title=&apos;Scheduling&apos;]]
-Session ID: d21c0ed3533214b4e0b8f838f33e42ff
+Command: [edc25b5c32fbef1ffd895505b701a0da, findElement {using=xpath, value=//input[@class=&apos;x-input-el x-form-field x-input-text&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\745G6~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63187}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63187/devtoo..., se:cdpVersion: 96.0.4664.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: edc25b5c32fbef1ffd895505b701a0da
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -146,14 +146,17 @@ Session ID: d21c0ed3533214b4e0b8f838f33e42ff
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
-	at com.pack.loginPages.LaborPage.clickScheduling(LaborPage.java:477)
-	at com.pack.testCases.TC_LaborPage.labor(TC_LaborPage.java:45)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.sendKeys(Unknown Source)
+	at com.pack.loginPages.LoginPage.setPartnerCode(LoginPage.java:33)
+	at com.pack.testCases.TC_LaborPage.labor(TC_LaborPage.java:20)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -219,12 +222,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'labor')
 data.setCell(0, 2, 'com.pack.testCases.TC_LaborPage')
-data.setCell(0, 3, 651837);
+data.setCell(0, 3, 50538);
 window.suiteTableData['UnifocusScheduler']= { tableData: data, tableDiv: 'times-div-UnifocusScheduler'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 minutes</span>
+              <span class="suite-total-time">Total running time: 50 seconds</span>
               <div id="times-div-UnifocusScheduler">
               </div> <!-- times-div-UnifocusScheduler -->
             </div> <!-- times-div -->
@@ -259,11 +262,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">labor</span>
-                <span class="method-start">7356 ms</span>
+                <span class="method-start">7373 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">659293 ms</span>
+                <span class="method-start">58009 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
