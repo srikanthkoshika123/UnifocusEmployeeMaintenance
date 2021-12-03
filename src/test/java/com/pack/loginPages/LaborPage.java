@@ -460,9 +460,9 @@ public class LaborPage extends TC_BaseClass {
     	   driver.switchTo().frame(frame);
 		    try {
 		     driver.switchTo().activeElement();
-		     WebDriverWait kbi=new WebDriverWait(driver, 80);
-		  	WebElement  ProjectedHours = kbi.until(
-		  	ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='ant-form-item-control']/span[@class='ant-form-item-children']/button[1]")));
+		     driver.manage().timeouts().implicitlyWait(70,TimeUnit.SECONDS);
+		    // WebDriverWait kbi=new WebDriverWait(driver, 80);
+		  	WebElement  ProjectedHours = driver.findElement(By.xpath("//div[@class='ant-form-item-control']/span[@class='ant-form-item-children']/button[1]"));
 		  	Thread.sleep(4000);
 		 }
 		   	catch(NoSuchElementException e) {
@@ -479,9 +479,9 @@ public class LaborPage extends TC_BaseClass {
     	   driver.switchTo().frame(frame);
 		    try {
 		     driver.switchTo().activeElement();
-		     WebDriverWait kbi=new WebDriverWait(driver, 80);
-		  	WebElement selectKBIs = kbi.until(
-		  	ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='Footer-module___footer___1k53u']//button[@type='button']")));
+		     driver.manage().timeouts().implicitlyWait(70,TimeUnit.SECONDS);
+		     //WebDriverWait kbi=new WebDriverWait(driver, 80);
+		  	WebElement selectKBIs =driver.findElement(By.xpath("//div[@class='Footer-module___footer___1k53u']//button[@type='button']"));
 		  	Thread.sleep(4000);
 		 }
 		 	catch(NoSuchElementException e) {

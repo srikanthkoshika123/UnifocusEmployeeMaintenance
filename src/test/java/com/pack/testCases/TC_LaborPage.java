@@ -14,7 +14,7 @@ public class TC_LaborPage extends TC_BaseClass  {
 	public void labor() throws  Exception {
 		
 		ScreenRecorderUtil.startRecord("Labor");
-    	driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+    	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
     	LoginPage lp=new LoginPage(driver);
     	driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
     	lp.setPartnerCode(partnerCode);
