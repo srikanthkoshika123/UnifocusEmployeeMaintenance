@@ -19,10 +19,10 @@ public class TC_AddNewEmployee extends TC_BaseClass{
 	
     @Test(dataProvider="AddEmpData")
 	public void addNewEmployee(String eid,String display,String first,String middle,String last,String Email,String hire,String sen,String wc,String tip,String job,String jobName,String jdate,String jrank,String edate,String payType,String hourly,String wch,String ch,String annual,String se,String sar,String piece) throws  Exception {
-    	driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-		   EmployeeMaintenance employeemaintenance=new EmployeeMaintenance(driver);
-		   employeemaintenance.clickUnifocus();
-		   employeemaintenance.getselect_List();
+    driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+	 EmployeeMaintenance employeemaintenance=new EmployeeMaintenance(driver);
+	employeemaintenance.clickUnifocus();
+	employeemaintenance.getselect_List();
     driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
     AddNewEmployee emp=new AddNewEmployee(driver);
     emp.switchFrame();
