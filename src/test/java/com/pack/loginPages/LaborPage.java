@@ -460,10 +460,8 @@ public class LaborPage extends TC_BaseClass {
     	   driver.switchTo().frame(frame);
 		    try {
 		     driver.switchTo().activeElement();
-		     driver.manage().timeouts().implicitlyWait(70,TimeUnit.SECONDS);
-		    // WebDriverWait kbi=new WebDriverWait(driver, 80);
-		  	WebElement  ProjectedHours = driver.findElement(By.xpath("//div[@class='ant-form-item-control']/span[@class='ant-form-item-children']/button[1]"));
-		  	Thread.sleep(4000);
+		     driver.manage().timeouts().implicitlyWait(40,TimeUnit.SECONDS);
+	    	WebElement  ProjectedHours = driver.findElement(By.xpath("//div[@class='ant-form-item-control']/span[@class='ant-form-item-children']/button[1]"));
 		 }
 		   	catch(NoSuchElementException e) {
 		 	System.out.println("nosuchelement");
@@ -479,10 +477,8 @@ public class LaborPage extends TC_BaseClass {
     	   driver.switchTo().frame(frame);
 		    try {
 		     driver.switchTo().activeElement();
-		     driver.manage().timeouts().implicitlyWait(70,TimeUnit.SECONDS);
-		     //WebDriverWait kbi=new WebDriverWait(driver, 80);
+		     driver.manage().timeouts().implicitlyWait(40,TimeUnit.SECONDS);
 		  	WebElement selectKBIs =driver.findElement(By.xpath("//div[@class='Footer-module___footer___1k53u']//button[@type='button']"));
-		  	Thread.sleep(4000);
 		 }
 		 	catch(NoSuchElementException e) {
 		 	System.out.println("nosuchelement");
@@ -498,7 +494,7 @@ public class LaborPage extends TC_BaseClass {
 		 	
 		    try {
 		     driver.switchTo().activeElement();
-		     Thread.sleep(25000);
+		     Thread.sleep(20000);
 		     WebElement addRequest=driver.findElement(By.xpath("//button[@class='ant-btn ToolbarLeft-module___addRequestButton___2bP5a']"));
 		     
 		 }
@@ -517,7 +513,7 @@ public class LaborPage extends TC_BaseClass {
     	   WebDriverWait wait=new WebDriverWait(driver, 120);
 		  	WebElement addRequest = wait.until(
 		  	ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[@title='Shift Requests']")));
-		  	Thread.sleep(4000);
+		  	Thread.sleep(6000);
 		  	addRequest.click();
 		    try {
 		     driver.switchTo().activeElement();

@@ -1,9 +1,12 @@
 package com.pack.loginPages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.pack.testCases.TC_BaseClass;
@@ -19,30 +22,39 @@ public class LoginPage extends TC_BaseClass {
 	WebElement partnerCode;
 	@FindBy(xpath="//span[@class='x-button-label']")
     WebElement next;
-	@FindBy(xpath="//input[@id='ext-element-36'][@class='x-input-el x-form-field x-input-text']")
-	WebElement txtName;
-	@FindBy(xpath="//input[@class='x-input-el x-form-field x-input-password']")
-	WebElement password;
+	//@FindBy(xpath="//input[@id='ext-element-36'][@class='x-input-el x-form-field x-input-text']")
+	//WebElement txtName;
+	//@FindBy(xpath="//input[@class='x-input-el x-form-field x-input-password']")
+	//WebElement password;
 	@FindBy(css="#ext-button-1")
 	WebElement signin;
-	@FindBy(xpath="//a[normalize-space()='RMS Modern']")
-	WebElement rms;
+	
+	//@FindBy(xpath="//a[normalize-space()='RMS Modern']")
+	//WebElement rms;
 
 	
 	 public void setPartnerCode(String pc) {
+		 WebDriverWait wait=new WebDriverWait(driver, 120);
+	 	 WebElement partnerCode= wait.until(
+	 	 ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@class='x-input-el x-form-field x-input-text']")));
 			partnerCode.sendKeys(pc);
 	}
 	public void clickNext() {
 			next.click();
 	}
 	public void setUserName(String uname) {
-		 
+		 WebDriverWait wait=new WebDriverWait(driver, 120);
+	 	 WebElement txtName= wait.until(
+	 	 ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='ext-element-36'][@class='x-input-el x-form-field x-input-text']")));
 		txtName.sendKeys(uname);
 		Assert.assertEquals(true, txtName.isEnabled());
 		System.out.println(txtName.isEnabled());	
 	}
 	
 	public void setPassWord(String pwd) {
+		 WebDriverWait wait=new WebDriverWait(driver, 120);
+	 	 WebElement password= wait.until(
+	 	 ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@class='x-input-el x-form-field x-input-password']")));
 		password.sendKeys(pwd);
 	    Assert.assertEquals(true, password.isEnabled());
 		System.out.println(password.isEnabled());
@@ -51,6 +63,9 @@ public class LoginPage extends TC_BaseClass {
 		signin.click();
 		Assert.assertEquals(true, signin.isEnabled());
 		System.out.println("signin clicked");
+		 WebDriverWait wait=new WebDriverWait(driver, 120);
+	 	 WebElement rms= wait.until(
+	 	 ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[normalize-space()='RMS Modern']")));
 		rms.click();
 		
 	}

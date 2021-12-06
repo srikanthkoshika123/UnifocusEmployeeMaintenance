@@ -14,13 +14,13 @@ public class TC_LaborPage extends TC_BaseClass  {
 	public void labor() throws  Exception {
 		
 		ScreenRecorderUtil.startRecord("Labor");
-    	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+    	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     	LoginPage lp=new LoginPage(driver);
-    	driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+    	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     	lp.setPartnerCode(partnerCode);
     	lp.clickNext();
 	    logger.info("enter user name");
-	    driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+	    driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
      	lp.setUserName(loginas);
      	logger.info("password entered");
         lp.setPassWord(Password);
@@ -33,14 +33,14 @@ public class TC_LaborPage extends TC_BaseClass  {
     	labor.clickEnterActualEnvironments();
     	labor.clickEnterActualKBIs();
     	labor.clickEnterEmployeeProductivity();
-    	labor.clickEnterActualHours();*/
+    	labor.clickEnterActualHours();
     	labor.clickPlanning();
     	labor.clickForecastEnvironments();
     	labor.clickEnterPreWork();
     	labor.clickEnterInputKBIForecast();
-    	//labor.clickViewEditRevenueCenterForecast();
-    	//labor.clickManageSchedules();
-    	//labor.clickEnterScheduledHours();
+    	labor.clickViewEditRevenueCenterForecast();
+    	labor.clickManageSchedules();
+    	labor.clickEnterScheduledHours();*/
     	labor.clickReProjectLabor();
     	labor.clickScheduling();
     	labor.clickEmployeeRequests();
