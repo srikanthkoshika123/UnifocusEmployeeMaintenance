@@ -15,14 +15,14 @@ public class TC_LaborPage extends TC_BaseClass  {
 		
 		ScreenRecorderUtil.startRecord("Labor");	
     	LaborPage labor=new LaborPage(driver);
-    	/*labor.clickUnifocus();
+    	labor.clickUnifocus();
     	labor.clickEnterActualEnvironments();
     	labor.clickEnterActualKBIs();
     	labor.clickEnterEmployeeProductivity();
     	labor.clickEnterActualHours();
     	labor.clickPlanning();
     	labor.clickForecastEnvironments();
-    	labor.clickEnterPreWork();
+    	/*labor.clickEnterPreWork();
     	labor.clickEnterInputKBIForecast();
     	labor.clickViewEditRevenueCenterForecast();
     	labor.clickManageSchedules();
