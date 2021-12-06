@@ -62,16 +62,13 @@ public class TC_BaseClass {
 			}
 		  driver.get(url);
 		  driver.manage().window().maximize(); 
-		  driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
+		  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		  ScreenRecorderUtil.startRecord("AddNewEmployee");
-		  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		  LoginPage lp=new LoginPage(driver);
-		  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		  lp.setPartnerCode(partnerCode);
 		  lp.clickNext();
 		  logger.info("enter user name");
-		  driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
-		  	lp.setUserName(loginas);
+		  lp.setUserName(loginas);
 		  	logger.info("password entered");
 		  lp.setPassWord(Password);
 		  Thread.sleep(4000);
