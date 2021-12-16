@@ -3,15 +3,13 @@ package com.pack.loginPages;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.pack.testCases.TC_BaseClass;
@@ -31,8 +29,6 @@ public class UpdateExistingEmployee extends TC_BaseClass{
 	WebElement additionalFields;
 	@FindBy(xpath="//div[7]/div[2]/div[1]/div[2]/div[1]/span[1]/input[1]")
 	WebElement adderss;
-	//@FindBy(xpath="(//input[@class='ant-input input-field uf-input-field text-input-field '])[17]")
-	//WebElement city;
 	@FindBy(xpath="//div[@id='STATE']")
 	WebElement state;
 	@FindBy(xpath="//form[2]/div/div[2]/div/div[7]/div[6]/div/div[2]/div/span[1]/input[1]")
@@ -66,14 +62,13 @@ public class UpdateExistingEmployee extends TC_BaseClass{
 	@FindBy(xpath="//li[normalize-space()='Active']")
     WebElement active;
 	
-	
 	public void switchFrame() throws InterruptedException {
 		driver.switchTo().frame(frame);
 		}
 	public void UpdateEmployee(String empId,String Address,String City,String State,String Zipcode,String dName) throws InterruptedException {
 		WebDriverWait wait=new WebDriverWait(driver, 80);
 		 WebElement searchEmp= wait.until(
-		 ExpectedConditions.elementToBeClickable(By.xpath("//input[contains(@placeholder,'Name or EmpID')]")));
+		 ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[contains(@placeholder,'Name or EmpID')]")));
 		Thread.sleep(8000);
 		searchEmp.click();
 		searchEmp.clear();
@@ -83,12 +78,8 @@ public class UpdateExistingEmployee extends TC_BaseClass{
 		Thread.sleep(6000);
 		additionalFields.click();
 		adderss.sendKeys(Address);
-		WebDriverWait wait1=new WebDriverWait(driver, 80);
-		 WebElement city= wait1.until(
-		 ExpectedConditions.elementToBeClickable(By.xpath("(//input[@class='ant-input input-field uf-input-field text-input-field '])[17]")));
-		 city.click();
-		 city.clear();
-		city.sendKeys(City);
+		WebElement city= driver.findElement(By.xpath("//form[2]//div[1]//div[2]//div[1]//div[7]//div[4]//div[1]//div[2]//div[1]//span[1]//input[1]"));
+ 	     city.sendKeys(City); 
 		Thread.sleep(6000);
 		state.click();
 	 List<WebElement> allOptions = driver.findElements(By.xpath("//ul[@class='ant-select-dropdown-menu  ant-select-dropdown-menu-root ant-select-dropdown-menu-vertical']/li"));
@@ -126,18 +117,27 @@ public class UpdateExistingEmployee extends TC_BaseClass{
 		employeeSet.click();
 		Thread.sleep(6000);
 		inactive.click();
+		WebDriverWait wait1=new WebDriverWait(driver, 80);
+		WebElement Status= wait1.until(
+		ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='Status']")));
 		Thread.sleep(6000);
-		status.click();
+		Status.click();
 		Thread.sleep(6000);
 		deleteEmp.click();
 		Thread.sleep(6000);
 		delete.click();
-		Thread.sleep(6000);
+		Thread.sleep(8000);
 		employeeSet.click();
 		Thread.sleep(6000);
 		active.click();
 		Thread.sleep(6000);
 		status.click();
+		Thread.sleep(9000);
 	}
-
 }
+		
+	
+	
+	
+
+

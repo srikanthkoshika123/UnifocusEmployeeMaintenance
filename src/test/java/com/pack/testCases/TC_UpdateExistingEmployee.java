@@ -25,6 +25,8 @@ public class TC_UpdateExistingEmployee extends TC_BaseClass {
 	    updateEmp.switchFrame();
 	    updateEmp.UpdateEmployee(empId,address,city,state,zipCode,displayName);
 	    updateEmp.clickStatus(effectiveDate);
+	   // updateEmp.deleteStatus();
+	    
 	    }
 	 @DataProvider(name="StatusData")
 	    String [][] getData() throws IOException
