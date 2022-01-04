@@ -30,7 +30,7 @@ public class LoginPage extends TC_BaseClass {
 	// WebElement txtName;
 	// @FindBy(xpath="//input[@class='x-input-el x-form-field x-input-password']")
 	// WebElement password;
-	@FindBy(css = "#ext-button-1")
+	@FindBy(xpath = "//div[@class='x-button x-button-no-icon x-button-primary-wide x-layout-box-item x-stretched']")
 	WebElement signin;
 
 	// @FindBy(xpath="//a[normalize-space()='RMS Modern']")
@@ -61,7 +61,8 @@ public class LoginPage extends TC_BaseClass {
 		System.out.println(password.isEnabled());
 	}
 
-	public void clickSignIn() {
+	public void clickSignIn() throws InterruptedException {
+		Thread.sleep(4000);
 		signin.click();
 		Assert.assertEquals(true, signin.isEnabled());
 		System.out.println("signin clicked");

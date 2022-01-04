@@ -1,8 +1,10 @@
 package com.pack.loginPages;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
@@ -14,6 +16,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import com.pack.testCases.TC_BaseClass;
 
@@ -45,8 +48,8 @@ public class UpdateExistingEmployeeJobTab extends TC_BaseClass{
 	WebElement refresh;
 	@FindBy(xpath="//div[@row-index='0']/div[@aria-colindex='1']")
 	WebElement empName;
-	@FindBy(xpath="//button[@class='ant-btn JobsTab-module___newRangeButton___38XMl']")
-	WebElement addNewEffectiveDate;
+	//@FindBy(xpath="//button[@class='ant-btn JobsTab-module___newRangeButton___38XMl']")
+	//WebElement addNewEffectiveDate;
 	@FindBy(xpath="//div[@class='ant-modal-root']//span[1]//div[1]//*[name()='svg']")
 	WebElement calender;
 	@FindBy(xpath="//div[@class='JobsTab-module___mainContent___3D2Dq']//button[2]")
@@ -76,21 +79,20 @@ public class UpdateExistingEmployeeJobTab extends TC_BaseClass{
 		 WebElement searchEmp= wait.until(
 		 ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[contains(@placeholder,'Name or EmpID')]")));
 		Thread.sleep(8000);
-		searchEmp.click();
+		//searchEmp.click();
 		searchEmp.clear();
 		searchEmp.sendKeys(empId);
 		Thread.sleep(8000);
 		empName.click();
-	   WebDriverWait wait1=new WebDriverWait(driver, 80);
-		WebElement jobs= wait1.until(
-		ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='Jobs']")));
-	   Thread.sleep(6000);
-	   jobs.click();
-	   Thread.sleep(6000);
-	   addJob.click();
-	   Thread.sleep(6000);
-	   expandAll.click();
-	   Thread.sleep(6000);
+		WebDriverWait wait2 = new WebDriverWait(driver, 40);
+		 WebElement jobs = wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='Jobs']"))); 
+		((JavascriptExecutor)driver).executeScript("arguments[0].click();", jobs);
+		WebDriverWait wait3 = new WebDriverWait(driver, 40);
+		 WebElement addJob = wait3.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='JobsForRangeContent-module___jobButtonsContainer___1Je5x']//button[1]"))); 
+		 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", addJob);
+		 WebDriverWait wait5 = new WebDriverWait(driver, 40);
+		 WebElement expandAll = wait5.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@title='Expand All']//button[@type='button']"))); 
+		 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", expandAll);
 	   WebElement selectEmployee=driver.findElement(By.xpath(employee));
 	   Coordinates cor=((Locatable) selectEmployee).getCoordinates();
 	     cor.inViewPort();
@@ -111,8 +113,6 @@ public class UpdateExistingEmployeeJobTab extends TC_BaseClass{
        	 WebElement hourly=driver.findElement(By.xpath("//input[@class='ant-input input-field uf-input-field AddEditJobModal-module___wageField___5cszH']"));
        	 hourly.sendKeys(Keys.CONTROL+ "a");
        	 hourly.sendKeys(Keys.DELETE,hr);
-       	 Thread.sleep(5000);
-       	 
         }
 	      else if(payType.equals("Salaried Non Exempt")) {
 	        	 weeklyContractHours.sendKeys(Keys.CONTROL+ "a");
@@ -123,10 +123,7 @@ public class UpdateExistingEmployeeJobTab extends TC_BaseClass{
 	     		WebElement aRate=driver.findElement(By.xpath("//body//div//div[@class='AddEditJobModal-module___initialWageContent___IWN61']//div//div//div[1]//input[1]"));
 	     		aRate.sendKeys(Keys.CONTROL+ "a");
 	     		aRate.sendKeys(Keys.DELETE,annual);
-	     		 Thread.sleep(5000);
 	         }
-	        
-         
           else if(payType.equals("Salaried Exempt")) {
        	   WebElement salary=driver.findElement(By.xpath("//div[text()='Salary 8']"));
        	   salary.click();
@@ -144,24 +141,30 @@ public class UpdateExistingEmployeeJobTab extends TC_BaseClass{
      	  WebElement er=driver.findElement(By.xpath("//input[@class='ant-input input-field uf-input-field AddEditJobModal-module___wageField___5cszH']"));
      	  er.sendKeys(Keys.CONTROL+ "a");
 		  er.sendKeys(Keys.DELETE,sAr);
-   	   Thread.sleep(7000);
 	         }
           else if(payType.equals("Piece")) {
        	   WebElement piece=driver.findElement(By.xpath("//input[@class='ant-input input-field uf-input-field AddEditJobModal-module___wageField___5cszH']"));
        	   Thread.sleep(2000);
 	           piece.sendKeys(Piece); 
-	           Thread.sleep(5000);
 	         }
+	       WebDriverWait wait5 = new WebDriverWait(driver, 40);
+		   WebElement clickOk = wait5.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-primary']"))); 
+		   ((JavascriptExecutor)driver).executeScript("arguments[0].click();", clickOk);
+	       WebDriverWait wait = new WebDriverWait(driver, 40);
+		   WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='Job Status Saved']"))); 
+		   ((JavascriptExecutor)driver).executeScript("arguments[0].click();", element);
+		   String name =element.getText();
+		   System.out.println(name);
+		   Assert.assertEquals("Job Status Saved", name);
 		}	
-	   public void addNewEffectiveDate(String EmpId,String pDate) throws InterruptedException {
-		   Thread.sleep(5000);
-    		clickOk.click();
-    		driver.switchTo().defaultContent();
-    		Thread.sleep(5000);
-    		refresh.click();
+	   public void addNewEffectiveDate(String EmpId) throws InterruptedException { 
+    	driver.switchTo().defaultContent();
+    	WebDriverWait wait = new WebDriverWait(driver, 40);
+ 		WebElement refresh = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='ant-btn action-button ant-btn-primary']"))); 
+ 		((JavascriptExecutor)driver).executeScript("arguments[0].click();", refresh);
 		driver.switchTo().frame(frame);
-		WebDriverWait wait=new WebDriverWait(driver, 80);
-		 WebElement searchEmp= wait.until(
+		WebDriverWait wait4=new WebDriverWait(driver, 80);
+		 WebElement searchEmp= wait4.until(
 		 ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[contains(@placeholder,'Name or EmpID')]")));
 		Thread.sleep(8000);
 		searchEmp.click();
@@ -169,20 +172,21 @@ public class UpdateExistingEmployeeJobTab extends TC_BaseClass{
 		searchEmp.sendKeys(EmpId);
 		Thread.sleep(8000);
 		empName.click();
-		 WebDriverWait wait1=new WebDriverWait(driver, 80);
-		WebElement jobs= wait1.until(
+		 WebDriverWait wait5=new WebDriverWait(driver, 80);
+		WebElement jobs= wait5.until(
 		ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='Jobs']")));
-	    Thread.sleep(6000);
-		jobs.click();
-		Thread.sleep(8000);
-	   addNewEffectiveDate.click();
+		((JavascriptExecutor)driver).executeScript("arguments[0].click();", jobs);
+		 WebDriverWait wait3=new WebDriverWait(driver, 80);
+		 WebElement addNewEffectiveDate= wait3.until(
+		 ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn JobsTab-module___newRangeButton___38XMl']")));
+		((JavascriptExecutor)driver).executeScript("arguments[0].click();", addNewEffectiveDate);
 	   WebElement date=driver.findElement(By.xpath("//div[contains(@class,'ant-modal-body')]//div//input[contains(@type,'text')]"));
 	   date.sendKeys(Keys.CONTROL+ "a");
 	   date.sendKeys(Keys.DELETE);
-	   date.sendKeys(pDate);
-	   WebElement create=driver.findElement(By.xpath("//button[@class='ant-btn ant-btn-primary']"));
-	   Thread.sleep(6000);
-	   create.click();
+	   date.sendKeys("01/04/2022");
+	   WebDriverWait wait2 = new WebDriverWait(driver, 40);
+	   WebElement create = wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-primary']"))); 
+	   ((JavascriptExecutor)driver).executeScript("arguments[0].click();", create);
 	   }
 	   public boolean retryingFindClick(String jobType) throws InterruptedException {
 	        boolean result = false;
@@ -217,14 +221,13 @@ public class UpdateExistingEmployeeJobTab extends TC_BaseClass{
 	       	 WebElement hourly=driver.findElement(By.xpath("//input[@class='ant-input input-field uf-input-field AddEditJobModal-module___wageField___5cszH']"));
 	       	 hourly.sendKeys(Keys.CONTROL+ "a");
 	       	 hourly.sendKeys(Keys.DELETE,hr);
-	       	 Thread.sleep(5000);
-	       	 
+	       	
 	        }
 	     else if(payType2.equals("Salaried Non Exempt")) {
 	     WebElement aRate=driver.findElement(By.xpath("//body//div//div[@class='AddEditJobModal-module___initialWageContent___IWN61']//div//div//div[1]//input[1]"));
   		aRate.sendKeys(Keys.CONTROL+ "a");
   		aRate.sendKeys(Keys.DELETE,annual);
-  		 Thread.sleep(5000);
+  		 
 	     }
 	     else if(payType2.equals("Piece")) {
 	       	   WebElement piece=driver.findElement(By.xpath("//input[@class='ant-input input-field uf-input-field AddEditJobModal-module___wageField___5cszH']"));
@@ -234,13 +237,13 @@ public class UpdateExistingEmployeeJobTab extends TC_BaseClass{
 		           piece.click();
 		           piece.clear();
 		           piece.sendKeys(Piece);
-		           Thread.sleep(5000);
+		          
 		         }
 	     else if(payType2.equals("Salaried Exempt")) {
 	    	 WebElement er=driver.findElement(By.xpath("//input[@class='ant-input input-field uf-input-field AddEditJobModal-module___wageField___5cszH']"));
 	     	  er.sendKeys(Keys.CONTROL+ "a");
 			  er.sendKeys(Keys.DELETE,sAr);
-	   	   Thread.sleep(7000);
+	   	  
 	     }
 	     
 	   Thread.sleep(6000);
@@ -274,16 +277,17 @@ public class UpdateExistingEmployeeJobTab extends TC_BaseClass{
 	  
    }
 	public void clickAddJob(String job,String jobName) throws InterruptedException {
-		 Thread.sleep(8000);
-		addJob.click();
-		 Thread.sleep(6000);
-		   expandAll.click();
-		   Thread.sleep(6000);
-		   WebElement selectEmployee=driver.findElement(By.xpath(job));
-		   Coordinates cor=((Locatable) selectEmployee).getCoordinates();
-		     cor.inViewPort();
-		     Thread.sleep(1000);
-		   selectEmployee.click();
+	WebDriverWait wait3 = new WebDriverWait(driver, 40);
+    WebElement addJob = wait3.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='JobsForRangeContent-module___jobButtonsContainer___1Je5x']//button[1]"))); 
+    ((JavascriptExecutor)driver).executeScript("arguments[0].click();", addJob);
+	WebDriverWait wait5 = new WebDriverWait(driver, 40);
+	WebElement expandAll = wait5.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@title='Expand All']//button[@type='button']"))); 
+	 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", expandAll);
+	 WebElement selectEmployee=driver.findElement(By.xpath(job));
+	Coordinates cor=((Locatable) selectEmployee).getCoordinates();
+	 cor.inViewPort();
+	 Thread.sleep(1000);
+	selectEmployee.click();
 	}
 	 public void selectpayType1(String payType,String hr,String wch,String ch,String annual,String sd,String sAr,String Piece) throws InterruptedException {
 			paytype.click();
@@ -299,7 +303,7 @@ public class UpdateExistingEmployeeJobTab extends TC_BaseClass{
 	       	 WebElement hourly=driver.findElement(By.xpath("//input[@class='ant-input input-field uf-input-field AddEditJobModal-module___wageField___5cszH']"));
 	       	 hourly.sendKeys(Keys.CONTROL+ "a");
 	       	 hourly.sendKeys(Keys.DELETE,hr);
-	       	 Thread.sleep(5000);
+	       	 
 	       	 
 	        }
 		      else if(payType.equals("Salaried Non Exempt")) {
@@ -311,7 +315,7 @@ public class UpdateExistingEmployeeJobTab extends TC_BaseClass{
 		     		WebElement aRate=driver.findElement(By.xpath("//body//div//div[@class='AddEditJobModal-module___initialWageContent___IWN61']//div//div//div[1]//input[1]"));
 		     		aRate.sendKeys(Keys.CONTROL+ "a");
 		     		aRate.sendKeys(Keys.DELETE,annual);
-		     		 Thread.sleep(5000);
+		     		 
 		         }
 		        
 	         
@@ -332,55 +336,86 @@ public class UpdateExistingEmployeeJobTab extends TC_BaseClass{
 	     	  WebElement er=driver.findElement(By.xpath("//input[@class='ant-input input-field uf-input-field AddEditJobModal-module___wageField___5cszH']"));
 	     	  er.sendKeys(Keys.CONTROL+ "a");
 			  er.sendKeys(Keys.DELETE,sAr);
-	   	   Thread.sleep(7000);
+	   	
 		         }
 	          else if(payType.equals("Piece")) {
 	       	   WebElement piece=driver.findElement(By.xpath("//input[@class='ant-input input-field uf-input-field AddEditJobModal-module___wageField___5cszH']"));
 	       	   Thread.sleep(2000);
 		           piece.sendKeys(Piece); 
-		           Thread.sleep(5000);
 		         }
-			}
-	   public void selectScheduling() throws InterruptedException {
-		   Thread.sleep(5000);
-   		   clickOk.click();
-   		   driver.switchTo().defaultContent();
-		   Thread.sleep(4000);
-		   unifocus.click();
-		   Thread.sleep(4000);
-    	   labor.click();
-    	   Thread.sleep(4000);
-    	   scheduling.click();
-    	   driver.switchTo().frame(frame);
-    	   WebDriverWait wait=new WebDriverWait(driver, 40);
-		  	WebElement  employee= wait.until(
-		  	ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#root > div > section > section > main > div > div > section > div > div.unifocus-section-toolbar-content > div > div > div.uf-tri-area-outer-right > div > div > button:nth-child(2)")));
-		  	Actions action = new Actions(driver);
-		    action.moveToElement(employee).click().build().perform();
-		    Thread.sleep(4000);
-		    driver.switchTo().activeElement();
-		    WebElement filter = driver.findElement(By.xpath("//li[normalize-space()='Filter by Job']"));
-		    Thread.sleep(4000);
-		    filter.click();
-		   Thread.sleep(4000); 
-		   WebElement diselectAll = driver.findElement(By.xpath("//button[@class='ant-btn ant-btn-icon-only']/i[@aria-label='icon: minus-square-o']"));
-		   diselectAll.click();
-		   Thread.sleep(4000); 
-		   WebElement expand = driver.findElement(By.xpath("//button[@class='ant-btn ant-btn-icon-only']/i[@aria-label='icon: arrows-alt']"));
-		   expand.click();
-		   Thread.sleep(4000);
+		       WebDriverWait wait5 = new WebDriverWait(driver, 40);
+			   WebElement clickOk = wait5.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-primary']"))); 
+			   ((JavascriptExecutor)driver).executeScript("arguments[0].click();", clickOk);
+		       driver.switchTo().defaultContent();
+		   	 WebElement close=driver.findElement(By.xpath("//div[@class='ant-tabs-nav-container']//div[2]//div[1]//i[@aria-label='icon: close']"));
+		      close.click();
+	 }
+	  public void clickUnifocus() throws InterruptedException{
+		  driver.switchTo().defaultContent();
+			unifocus.click();
+			String un =unifocus.getText();
+			System.out.println(un);
+			Assert.assertEquals("UniFocus", un);
+			Thread.sleep(4000);
+			   labor.click();
+			   Thread.sleep(4000);
+			   scheduling.click();     
+	  }
+	  public boolean retryingFindClick() throws InterruptedException {
+		  driver.switchTo().frame(frame);
+			   Thread.sleep(6000);
+		  boolean result = false;
+	        int attempts = 0;
+	        while(attempts < 2) {
+	            try {
+	            	
+		  			 WebDriverWait wait = new WebDriverWait(driver, 120);
+					   WebElement ele = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div > div >button.ant-dropdown-trigger:nth-child(2)")));
+					   //div > div >button.ant-dropdown-trigger:nth-child(2)
+					   ((JavascriptExecutor)driver).executeScript("arguments[0].click();", ele);	    
+					    Actions action = new Actions(driver);
+		       		    action.moveToElement(ele).build().perform();
+		       			driver.switchTo().activeElement();
+		 				WebElement das = driver.findElement(By.xpath("//li[text()='Filter by Job']"));
+		 				das.click();
+		 				Thread.sleep(4000);
+	                    result = true;
+	                    break;
+	            } catch(StaleElementReferenceException e) {
+	            }
+	            attempts++;
+	        }
+	        return result;
+	           
+	            }
+	        @SuppressWarnings("deprecation")
+	        public void selectDateRange(String filterJob,String dynamicName) throws InterruptedException{
+		       WebDriverWait wait = new WebDriverWait(driver, 40);
+			   WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-icon-only']/i[@aria-label='icon: minus-square-o']"))); 
+			  ((JavascriptExecutor)driver).executeScript("arguments[0].click();", element);
+			   WebDriverWait wait1 = new WebDriverWait(driver, 40);
+				WebElement element1 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-icon-only']/i[@aria-label='icon: arrows-alt']"))); 
+				((JavascriptExecutor)driver).executeScript("arguments[0].click();", element1);
+				@SuppressWarnings("deprecation")
+				WebDriverWait wait2 = new WebDriverWait(driver, 40);
+				WebElement element2 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(filterJob)));
+				 Coordinates cor=((Locatable) element2).getCoordinates();
+			     cor.inViewPort();
+			     Thread.sleep(1000);
+				((JavascriptExecutor)driver).executeScript("arguments[0].click();", element2);
+				WebDriverWait wait3 = new WebDriverWait(driver, 40);
+				WebElement element4 = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button[class='ant-btn ant-btn-primary']"))); 
+				((JavascriptExecutor)driver).executeScript("arguments[0].click();", element4);
+				Thread.sleep(4000);
+				WebDriverWait wait5 = new WebDriverWait(driver, 40);
+				WebElement element5 = wait5.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='uf-employee-label-container line-clamp'][normalize-space()='"+dynamicName+"']"))); 
+				 Coordinates cor1=((Locatable) element5).getCoordinates();
+			     cor1.inViewPort();
+			     Thread.sleep(1000);
+				((JavascriptExecutor)driver).executeScript("arguments[0].click();", element5);
+				String name =element5.getText();
+				System.out.println(name);
+				Thread.sleep(8000);
 	     }
-	     public void selectDateRange() throws InterruptedException{
-		   WebElement  dateRange=driver.findElement(By.xpath("//div[@class='unifocus-selectdropdown ant-select ant-select-enabled']"));
-		   Thread.sleep(4000);
-		   dateRange.click();
-			 List<WebElement> allOptions = driver.findElements(By.xpath("//ul[@class='ant-select-dropdown-menu  ant-select-dropdown-menu-root ant-select-dropdown-menu-vertical']/li"));
-		     for(int i = 0; i<=allOptions.size()-1; i++) {
-		         if(allOptions.get(i).getText().contains("12/11/21 - 12/24/21")) { 
-		             allOptions.get(i).click();
-		             break;     
-		         }
-		     }
 	   }
 	
-}

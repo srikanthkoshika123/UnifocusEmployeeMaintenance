@@ -6,8 +6,8 @@
         </listeners>
   <test name="openShift">
     <parameter name="browser" value="firefox" />
-    
-    <classes>
+
+       <classes>
        <class name="com.pack.testCases.TC_UpdateExistingEmployeeJobTab"/>
        
     </classes>

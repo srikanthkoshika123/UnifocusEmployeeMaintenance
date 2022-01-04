@@ -9,7 +9,7 @@
     <classes>
       <class name="com.pack.testCases.TC_UpdateExistingEmployeeJobTab">
         <methods>
-          <include name="updateExistingEmployeeJobsTab" invocation-numbers="0"/>
+          <include name="updateExistingEmployeeJobsTab" invocation-numbers="0 1"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
