@@ -1,6 +1,7 @@
 package com.pack.loginPages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -62,7 +63,7 @@ public class LoginPage extends TC_BaseClass {
 	}
 
 	public void clickSignIn() throws InterruptedException {
-		Thread.sleep(4000);
+		Thread.sleep(8000);
 		signin.click();
 		Assert.assertEquals(true, signin.isEnabled());
 		System.out.println("signin clicked");

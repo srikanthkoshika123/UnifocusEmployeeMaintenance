@@ -5,15 +5,15 @@
     <listener class-name="com.pack.utils.Reporting"/>
   </listeners>
   <test thread-count="5" name="openShift(failed)">
-    <parameter name="browser" value="firefox"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.pack.testCases.TC_UpdateExistingEmployeeJobTab">
+      <class name="com.pack.testCases.TC_UpdateSchedulingTab">
         <methods>
-          <include name="updateExistingEmployeeJobsTab" invocation-numbers="0 1"/>
           <include name="setup"/>
+          <include name="updateSchedulingTab" invocation-numbers="0"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.pack.testCases.TC_UpdateExistingEmployeeJobTab -->
+      </class> <!-- com.pack.testCases.TC_UpdateSchedulingTab -->
     </classes>
   </test> <!-- openShift(failed) -->
 </suite> <!-- Failed suite [UnifocusScheduler] -->

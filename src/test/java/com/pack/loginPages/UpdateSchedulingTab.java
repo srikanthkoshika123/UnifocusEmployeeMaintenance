@@ -59,14 +59,14 @@ public class UpdateSchedulingTab extends TC_BaseClass{
 		public void switchFrame() throws InterruptedException {
 			driver.switchTo().frame(frame);
 			}
-		public void selectEmployee() throws InterruptedException {
+		public void selectEmployee(String empId) throws InterruptedException {
 			 WebDriverWait wait=new WebDriverWait(driver, 120);
 			 WebElement searchEmp= wait.until(
 			 ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[contains(@placeholder,'Name or EmpID')]")));
 			Thread.sleep(8000);
 			//searchEmp.click();
 			searchEmp.clear();
-			searchEmp.sendKeys("987816");
+			searchEmp.sendKeys(empId);
 			Thread.sleep(6000);
 			empName.click();
 			WebDriverWait wait2 = new WebDriverWait(driver, 40);
@@ -90,20 +90,16 @@ public class UpdateSchedulingTab extends TC_BaseClass{
 			
 			
 		}
-		public void selectShiftTime() throws InterruptedException {
-			startTime.sendKeys("9:00AM");
-			endTime.sendKeys("5:00Pm");
+		public void selectShiftTime(String starttime,String endtime) throws InterruptedException {
+			Thread.sleep(4000);
+			startTime.sendKeys(starttime);
+			endTime.sendKeys(endtime);
 			WebDriverWait wait1 = new WebDriverWait(driver, 40);
 			 WebElement jobType = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='job']"))); 
 			 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", jobType);
 			
-			WebDriverWait wait2 = new WebDriverWait(driver, 40);
-			 WebElement jobName = wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[normalize-space()='Door Person']"))); 
-			 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", jobName);
-			
-			
 		}
-		public void selectCheckBoxs() throws InterruptedException {
+		public void selectCheckBoxs(String day1,String day2) throws InterruptedException {
           
 			List<WebElement> checkBoxes = driver.findElements(By.xpath("//div[@id='days']/label/span/input"));
 			 int size = checkBoxes.size();
@@ -111,7 +107,7 @@ public class UpdateSchedulingTab extends TC_BaseClass{
 			        
 			        String value = checkBoxes.get(i).getAttribute("value");
 			        
-			        if(value.equalsIgnoreCase("WEDNESDAY")){
+			        if(value.equalsIgnoreCase(day1)){
 			            
 			        	checkBoxes.get(i).click();
 			        	
@@ -126,7 +122,7 @@ public class UpdateSchedulingTab extends TC_BaseClass{
 				        
 				        String value = checkBoxes1.get(i).getAttribute("value");
 				        
-				        if(value.equalsIgnoreCase("SATURDAY")){
+				        if(value.equalsIgnoreCase(day2)){
 				            
 				        	checkBoxes1.get(i).click();
 				        	
@@ -142,14 +138,14 @@ public class UpdateSchedulingTab extends TC_BaseClass{
 				   
 		}
 		
-		 public boolean doubleClick() throws InterruptedException {
+		 public boolean doubleClick(String day3) throws InterruptedException {
 		        boolean result = false;
 		        int attempts = 0;
 		        while(attempts < 2) {
 		            try {
 		            	driver.switchTo().activeElement();
 		        		Actions action = new Actions(driver);
-		        		WebElement doubleClick =driver.findElement(By.xpath("//section[2]//div//div[3]//div//div//div//div//div[2]//div[1]//div[3]//div[2]//div/div//div[@role='row'][@row-index='0'][@aria-rowindex='2']//div[@col-id='TUESDAY']"));
+		        		WebElement doubleClick =driver.findElement(By.xpath("//section[2]//div//div[3]//div//div//div//div//div[2]//div[1]//div[3]//div[2]//div/div//div[@role='row'][@row-index='0'][@aria-rowindex='2']//div[@col-id='"+day3+"']"));
 		        		Thread.sleep(2000);
 		        		action.moveToElement(doubleClick).doubleClick().build().perform();
 		                result = true;
@@ -160,34 +156,28 @@ public class UpdateSchedulingTab extends TC_BaseClass{
 		        }
 		        return result;
 		}
-		public void clickEmptyCell() throws InterruptedException {
+		public void clickEmptyCell(String starttime,String endtime) throws InterruptedException {
 			
-			startTime.sendKeys("8:00AM");
-			endTime.sendKeys("4:00PM");
+			startTime.sendKeys(starttime);
+			endTime.sendKeys(endtime);
 			
 			 WebDriverWait wait2 = new WebDriverWait(driver, 40);
 			 WebElement jobType = wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='job']"))); 
 			 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", jobType);
-			
-			WebDriverWait wait3 = new WebDriverWait(driver, 40);
-			 WebElement jobName = wait3.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[normalize-space()='Door Person']"))); 
-			 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", jobName);
-			
+
 			 WebDriverWait wait1 = new WebDriverWait(driver, 40);
 			 WebElement clickAdd = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-primary']"))); 
-			 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", clickAdd);
-			 
-			
+			 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", clickAdd);	
 		}
 		
-		public boolean rightClick() throws InterruptedException {
+		public boolean rightClick(String day4) throws InterruptedException {
 			 boolean result = false;
 		        int attempts = 0;
 		        while(attempts < 2) {
 		            try {
 		            	driver.switchTo().activeElement();
 		        		Actions action = new Actions(driver);
-		        		WebElement doubleClick =driver.findElement(By.xpath("//section[2]//div//div[3]//div//div//div//div//div[2]//div[1]//div[3]//div[2]//div/div//div[@role='row'][@row-index='0'][@aria-rowindex='2']//div[@col-id='TUESDAY']"));
+		        		WebElement doubleClick =driver.findElement(By.xpath("//section[2]//div//div[3]//div//div//div//div//div[2]//div[1]//div[3]//div[2]//div/div//div[@role='row'][@row-index='0'][@aria-rowindex='2']//div[@col-id='"+day4+"']"));
 		        		Thread.sleep(2000);
 		        		action.moveToElement(doubleClick).contextClick().build().perform();
 		                result = true;
@@ -198,43 +188,40 @@ public class UpdateSchedulingTab extends TC_BaseClass{
 		        }
 		        return result;
 		}
-		public void clickAddShift() {
+		@SuppressWarnings("deprecation")
+		public void clickAddShift(String editStart,String editEnd) {
 			WebDriverWait wait = new WebDriverWait(driver, 40);
 			 WebElement addShift = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='Add Shift']"))); 
 			 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", addShift);
 			 
 			startTime.sendKeys(Keys.CONTROL+ "a");
 			startTime.sendKeys(Keys.DELETE);
-			startTime.sendKeys("6:00PM");
+			startTime.sendKeys(editStart);
 			
 			endTime.sendKeys(Keys.CONTROL+ "a");
 			endTime.sendKeys(Keys.DELETE);
-			endTime.sendKeys("3:00AM");
+			endTime.sendKeys(editEnd);
 			
 			 WebDriverWait wait2 = new WebDriverWait(driver, 40);
 			 WebElement jobType = wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='job']"))); 
 			 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", jobType);
 			
-			WebDriverWait wait3 = new WebDriverWait(driver, 40);
-			 WebElement jobName = wait3.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[normalize-space()='Door Person']"))); 
-			 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", jobName);
-			
-		WebDriverWait wait1 = new WebDriverWait(driver, 40);
-		 WebElement clickAdd = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-primary']"))); 
-		 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", clickAdd);
+		   WebDriverWait wait1 = new WebDriverWait(driver, 40);
+		   WebElement clickAdd = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-primary']"))); 
+		  ((JavascriptExecutor)driver).executeScript("arguments[0].click();", clickAdd);
 }
-		public void selectCheckBoxes() throws InterruptedException {
+		public void selectCheckBoxes(String starttime,String endtime,String day1,String day2,String day3) throws InterruptedException {
 			Thread.sleep(4000);
 			addShift.click();
-			startTime.sendKeys("7:00AM");
-			endTime.sendKeys("3:00PM");
+			startTime.sendKeys(starttime);
+			endTime.sendKeys(endtime);
 			List<WebElement> checkBoxes = driver.findElements(By.xpath("//div[@id='days']/label/span/input"));
 			 int size = checkBoxes.size();
 			    for(int i = 0; i<size; i++) {
 			        
 			        String value = checkBoxes.get(i).getAttribute("value");
 			        
-			        if(value.equalsIgnoreCase("MONDAY")){
+			        if(value.equalsIgnoreCase(day1)){
 			            
 			        	checkBoxes.get(i).click();
 			        	Thread.sleep(6000);
@@ -242,29 +229,16 @@ public class UpdateSchedulingTab extends TC_BaseClass{
 			            
 			        }   
 			    }
-			    List<WebElement> checkBoxes1 = driver.findElements(By.xpath("//div[@id='days']/label/span/input"));
-				 int size1 = checkBoxes.size();
-				    for(int i = 0; i<size1; i++) {
-				        
-				        String value = checkBoxes1.get(i).getAttribute("value");
-				        
-				        if(value.equalsIgnoreCase("WEDNESDAY")){
-				            
-				        	checkBoxes1.get(i).click();
-				        	Thread.sleep(6000);
-				            break;
-				            
-				        }
-				    }
+			   
 				        List<WebElement> checkBoxes2= driver.findElements(By.xpath("//div[@id='days']/label/span/input"));
-						 int size2 = checkBoxes.size();
+						 int size2 = checkBoxes2.size();
 						    for(int i = 0; i<size2; i++) {
 						        
 						        String value = checkBoxes2.get(i).getAttribute("value");
 						        
-						        if(value.equalsIgnoreCase("SATURDAY")){
+						        if(value.equalsIgnoreCase(day2)){
 						            
-						        	checkBoxes1.get(i).click();
+						        	checkBoxes2.get(i).click();
 						        	Thread.sleep(6000);
 						            break;
 						            
@@ -272,14 +246,14 @@ public class UpdateSchedulingTab extends TC_BaseClass{
 				        
 				    }
 						    List<WebElement> checkBoxes3 = driver.findElements(By.xpath("//div[@id='days']/label/span/input"));
-							 int size3 = checkBoxes.size();
+							 int size3 = checkBoxes3.size();
 							    for(int i = 0; i<size3; i++) {
 							        
 							        String value = checkBoxes3.get(i).getAttribute("value");
 							        
-							        if(value.equalsIgnoreCase("SUNDAY")){
+							        if(value.equalsIgnoreCase(day3)){
 							            
-							        	checkBoxes1.get(i).click();
+							        	checkBoxes3.get(i).click();
 							        	Thread.sleep(6000);
 							            break;
 							            
@@ -293,41 +267,117 @@ public class UpdateSchedulingTab extends TC_BaseClass{
 					overRide.click();	   
 				    WebDriverWait wait1 = new WebDriverWait(driver, 40);
 					WebElement clickAdd = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-primary']"))); 
-					((JavascriptExecutor)driver).executeScript("arguments[0].click();", clickAdd);	
-					  WebDriverWait wait2 = new WebDriverWait(driver, 40);
-						WebElement ok = wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-primary']"))); 
-						((JavascriptExecutor)driver).executeScript("arguments[0].click();", ok);	
+					Thread.sleep(4000);
+					clickAdd.click();
+					Thread.sleep(4000);
+					 WebDriverWait wait2 = new WebDriverWait(driver, 40);
+					 WebElement ok = wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='ant-modal-body']//button[2]"))); 
+					((JavascriptExecutor)driver).executeScript("arguments[0].click();", ok);
+					
 		}
-		public void clickEdit() throws InterruptedException {
-			WebDriverWait wait1 = new WebDriverWait(driver, 40);
-		    WebElement days = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//section[2]//div//div[3]//div//div//div//div//div[2]//div[1]//div[3]//div[2]//div/div//div[@role='row'][@row-index='0'][@aria-rowindex='2']//div[@col-id='WEDNESDAY']"))); 
-			((JavascriptExecutor)driver).executeScript("arguments[0].click();", days);
-			WebDriverWait wait2 = new WebDriverWait(driver, 40);
-			 WebElement edit = wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//section[2]//div[1]//div[1]//div[1]//div[1]//button[2]"))); 
-			 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", edit);
-			 startTime.sendKeys(Keys.CONTROL+ "a");
+		public boolean clickDayShift(String day1) throws InterruptedException {
+			
+			 boolean result = false;
+		        int attempts = 0;
+		        while(attempts < 2) {
+		            try {
+		            	driver.switchTo().activeElement();
+		        		Actions action = new Actions(driver);
+		        		WebElement doubleClick =driver.findElement(By.xpath("//section[2]//div//div[3]//div//div//div//div//div[2]//div[1]//div[3]//div[2]//div/div//div[@role='row'][@row-index='0'][@aria-rowindex='2']//div[@col-id='"+day1+"']"));
+		        		Thread.sleep(2000);
+		        		action.moveToElement(doubleClick).doubleClick().build().perform();
+		                result = true;
+		                break;
+		            } catch(StaleElementReferenceException e) {
+		            }
+		            attempts++;
+		        }
+		        return result;
+		}
+	
+			 public void clickEdit(String starttime,String endtime) throws InterruptedException {
+				/* WebDriverWait wait = new WebDriverWait(driver, 40);
+				 WebElement editShift = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//section[2]//div[1]//div[1]//div[1]//div[1]//button[2]"))); 
+				 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", editShift);*/
+				
+			    startTime.sendKeys(Keys.CONTROL+ "a");
 				startTime.sendKeys(Keys.DELETE);
-				startTime.sendKeys("6:00PM");
+				startTime.sendKeys(starttime);
 				
 				endTime.sendKeys(Keys.CONTROL+ "a");
 				endTime.sendKeys(Keys.DELETE);
-				endTime.sendKeys("3:00AM");
+				endTime.sendKeys(endtime);
 			WebDriverWait wait3 = new WebDriverWait(driver, 40);
 			 WebElement save = wait3.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-primary']"))); 
 			 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", save);
 			
 		}
+			 public boolean clickShiftDay(String day2) throws InterruptedException {
+				 boolean result = false;
+			        int attempts = 0;
+			        while(attempts < 2) {
+			            try {
+			            	driver.switchTo().activeElement();
+			        		Actions action = new Actions(driver);
+			        		WebElement doubleClick =driver.findElement(By.xpath("//section[2]//div//div[3]//div//div//div//div//div[2]//div[1]//div[3]//div[2]//div/div//div[@role='row'][@row-index='0'][@aria-rowindex='2']//div[@col-id='"+day2+"']"));
+			        		Thread.sleep(2000);
+			        		action.moveToElement(doubleClick).click().build().perform();
+			                result = true;
+			                break;
+			            } catch(StaleElementReferenceException e) {
+			            }
+			            attempts++;
+			        }
+			        return result;
+			} 
+			 public void clickDeleteSelectedShifts() throws InterruptedException {
+					WebDriverWait wait1 = new WebDriverWait(driver, 40);
+				    WebElement delete = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//section[2]//div[1]//div[1]//div[1]//div[1]//button[3]"))); 
+					((JavascriptExecutor)driver).executeScript("arguments[0].click();", delete);
+					
+					WebDriverWait wait3 = new WebDriverWait(driver, 40);
+					 WebElement DeleteShift = wait3.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[normalize-space()='Delete Selected Shift']"))); 
+					 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", DeleteShift);
+					
+					WebDriverWait wait4 = new WebDriverWait(driver, 40);
+					 WebElement clickOk = wait4.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-primary']"))); 
+					 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", clickOk);
+					
+					
+				}
+			 public boolean clickDeleteShift(String day2) throws InterruptedException {
+				 boolean result = false;
+			        int attempts = 0;
+			        while(attempts < 2) {
+			            try {
+			            	driver.switchTo().activeElement();
+			        		Actions action = new Actions(driver);
+			        		WebElement doubleClick =driver.findElement(By.xpath("//section[2]//div//div[3]//div//div//div//div//div[2]//div[1]//div[3]//div[2]//div/div//div[@role='row'][@row-index='0'][@aria-rowindex='2']//div[@col-id='"+day2+"']"));
+			        		Thread.sleep(2000);
+			        		action.moveToElement(doubleClick).contextClick().build().perform();
+			                result = true;
+			                break;
+			            } catch(StaleElementReferenceException e) {
+			            }
+			            attempts++;
+			        }
+			        return result;
+			} 
 		public void clickDelete() throws InterruptedException {
 			WebDriverWait wait1 = new WebDriverWait(driver, 40);
-			 WebElement days = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//section[2]//div//div[3]//div//div//div//div//div[2]//div[1]//div[3]//div[2]//div/div//div[@role='row'][@row-index='0'][@aria-rowindex='2']//div[@col-id='SUNDAY']"))); 
-			 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", days);
-			
-			WebDriverWait wait2 = new WebDriverWait(driver, 40);
-			 WebElement Delete = wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-dropdown-trigger ant-dropdown-open']"))); 
+			 WebElement Delete = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='Delete Shift']"))); 
 			 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", Delete);
+				WebDriverWait wait2 = new WebDriverWait(driver, 40);
+				 WebElement ok = wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-primary']"))); 
+				 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", ok);
+		}
+			public void clickDeleteAllShifts() throws InterruptedException {
+			WebDriverWait wait1 = new WebDriverWait(driver, 40);
+		    WebElement delete = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//section[2]//div[1]//div[1]//div[1]//div[1]//button[3]"))); 
+			((JavascriptExecutor)driver).executeScript("arguments[0].click();", delete);
 			
 			WebDriverWait wait3 = new WebDriverWait(driver, 40);
-			 WebElement DeleteShift = wait3.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[normalize-space()='Delete Selected Shift']"))); 
+			 WebElement DeleteShift = wait3.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[normalize-space()='Delete All Shifts']"))); 
 			 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", DeleteShift);
 			
 			WebDriverWait wait4 = new WebDriverWait(driver, 40);
@@ -336,5 +386,70 @@ public class UpdateSchedulingTab extends TC_BaseClass{
 			
 			
 		}
+			public void selectPermanent(String starttime,String endtime,String day1) throws InterruptedException {
+				WebDriverWait wait3 = new WebDriverWait(driver, 40);
+				 WebElement addShift = wait3.until(ExpectedConditions.elementToBeClickable(By.xpath("//section[2]/div[1]/div[1]/div[1]/div[1]/button[1]"))); 
+				 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", addShift);
+                  Thread.sleep(4000);
+					startTime.sendKeys(starttime);
+					endTime.sendKeys(endtime);
+					WebDriverWait wait4 = new WebDriverWait(driver, 40);
+					 WebElement jobType = wait4.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='job']"))); 
+					 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", jobType);
+					
+					 List<WebElement> checkBoxes1 = driver.findElements(By.xpath("//div[@id='days']/label/span/input"));
+					 int size1 = checkBoxes1.size();
+					    for(int i = 0; i<size1; i++) {
+					        
+					        String value = checkBoxes1.get(i).getAttribute("value");
+					        
+					        if(value.equalsIgnoreCase(day1)){
+					            
+					        	checkBoxes1.get(i).click();
+					        	
+					            break;
+					            
+					        }
+					        
+					        
+					    }
+					    WebDriverWait wait6 = new WebDriverWait(driver, 40);
+						 WebElement clickAdd = wait6.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-primary']"))); 
+						 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", clickAdd);
+						 
+						 WebDriverWait wait1 = new WebDriverWait(driver, 40);
+						 WebElement employeeType = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='type']"))); 
+						 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", employeeType);
+							
+						WebDriverWait wait2 = new WebDriverWait(driver, 40);
+						WebElement Permanent= wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[normalize-space()='Permanent']"))); 
+						((JavascriptExecutor)driver).executeScript("arguments[0].click();", Permanent);
+					   
+			}
+			    public void selectVariableType(String EmployeeType) throws InterruptedException{
+				 WebDriverWait wait1 = new WebDriverWait(driver, 40);
+				 WebElement employeeType = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='type']"))); 
+				 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", employeeType);
+					
+				  List<WebElement> jobType = driver.findElements(By.xpath("//ul[@class='ant-select-dropdown-menu  ant-select-dropdown-menu-root ant-select-dropdown-menu-vertical']/li"));
+		     	     
+		     	     for(int i = 0; i<=jobType.size()-1; i++) {
+		     	         if(jobType.get(i).getText().contains(EmployeeType)) {
+		     	        	 Thread.sleep(4000);
+		     	        	jobType.get(i).click();
+		     	             break;     
+		     	         }
+		     	     }
+		     	    WebDriverWait wait4 = new WebDriverWait(driver, 40);
+					 WebElement clickOk = wait4.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-primary']"))); 
+					 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", clickOk);
+					 WebDriverWait wait5 = new WebDriverWait(driver, 40);
+					 WebElement informationSaved = wait5.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(),'Scheduling Information Saved')]"))); 
+					 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", informationSaved);
+					 String name =informationSaved.getText();
+					 System.out.println(name);
+					
+			}
+			
 		}
 
