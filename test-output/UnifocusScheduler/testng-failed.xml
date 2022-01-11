@@ -10,7 +10,7 @@
       <class name="com.pack.testCases.TC_UpdateSchedulingTab">
         <methods>
           <include name="setup"/>
-          <include name="updateSchedulingTab" invocation-numbers="0"/>
+          <include name="updateSchedulingTab"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.pack.testCases.TC_UpdateSchedulingTab -->

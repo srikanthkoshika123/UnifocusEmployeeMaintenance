@@ -210,7 +210,7 @@ public class UpdateSchedulingTab extends TC_BaseClass{
 		   WebElement clickAdd = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-primary']"))); 
 		  ((JavascriptExecutor)driver).executeScript("arguments[0].click();", clickAdd);
 }
-		public void selectCheckBoxes(String starttime,String endtime,String day1,String day2,String day3) throws InterruptedException {
+		public void selectCheckBoxes(String starttime,String endtime,String day5,String day6,String day7,String day8) throws InterruptedException {
 			Thread.sleep(4000);
 			addShift.click();
 			startTime.sendKeys(starttime);
@@ -221,7 +221,7 @@ public class UpdateSchedulingTab extends TC_BaseClass{
 			        
 			        String value = checkBoxes.get(i).getAttribute("value");
 			        
-			        if(value.equalsIgnoreCase(day1)){
+			        if(value.equalsIgnoreCase(day5)){
 			            
 			        	checkBoxes.get(i).click();
 			        	Thread.sleep(6000);
@@ -236,7 +236,7 @@ public class UpdateSchedulingTab extends TC_BaseClass{
 						        
 						        String value = checkBoxes2.get(i).getAttribute("value");
 						        
-						        if(value.equalsIgnoreCase(day2)){
+						        if(value.equalsIgnoreCase(day6)){
 						            
 						        	checkBoxes2.get(i).click();
 						        	Thread.sleep(6000);
@@ -251,7 +251,7 @@ public class UpdateSchedulingTab extends TC_BaseClass{
 							        
 							        String value = checkBoxes3.get(i).getAttribute("value");
 							        
-							        if(value.equalsIgnoreCase(day3)){
+							        if(value.equalsIgnoreCase(day7)){
 							            
 							        	checkBoxes3.get(i).click();
 							        	Thread.sleep(6000);
@@ -260,7 +260,21 @@ public class UpdateSchedulingTab extends TC_BaseClass{
 							        }
 				    
 							    }
-							    
+							    List<WebElement> checkBoxes4 = driver.findElements(By.xpath("//div[@id='days']/label/span/input"));
+								 int size4 = checkBoxes4.size();
+								    for(int i = 0; i<size4; i++) {
+								        
+								        String value = checkBoxes4.get(i).getAttribute("value");
+								        
+								        if(value.equalsIgnoreCase(day8)){
+								            
+								        	checkBoxes4.get(i).click();
+								        	Thread.sleep(6000);
+								            break;
+								            
+								        }
+					    
+								    }	    
 					
 					WebElement overRide =driver.findElement(By.xpath("//input[@id='override']")); 
 					Thread.sleep(6000);
@@ -275,7 +289,7 @@ public class UpdateSchedulingTab extends TC_BaseClass{
 					((JavascriptExecutor)driver).executeScript("arguments[0].click();", ok);
 					
 		}
-		public boolean clickDayShift(String day1) throws InterruptedException {
+		public boolean clickDayShift(String day9) throws InterruptedException {
 			
 			 boolean result = false;
 		        int attempts = 0;
@@ -283,7 +297,7 @@ public class UpdateSchedulingTab extends TC_BaseClass{
 		            try {
 		            	driver.switchTo().activeElement();
 		        		Actions action = new Actions(driver);
-		        		WebElement doubleClick =driver.findElement(By.xpath("//section[2]//div//div[3]//div//div//div//div//div[2]//div[1]//div[3]//div[2]//div/div//div[@role='row'][@row-index='0'][@aria-rowindex='2']//div[@col-id='"+day1+"']"));
+		        		WebElement doubleClick =driver.findElement(By.xpath("//section[2]//div//div[3]//div//div//div//div//div[2]//div[1]//div[3]//div[2]//div/div//div[@role='row'][@row-index='0'][@aria-rowindex='2']//div[@col-id='"+day9+"']"));
 		        		Thread.sleep(2000);
 		        		action.moveToElement(doubleClick).doubleClick().build().perform();
 		                result = true;
@@ -312,14 +326,14 @@ public class UpdateSchedulingTab extends TC_BaseClass{
 			 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", save);
 			
 		}
-			 public boolean clickShiftDay(String day2) throws InterruptedException {
+			 public boolean clickShiftDay(String day10) throws InterruptedException {
 				 boolean result = false;
 			        int attempts = 0;
 			        while(attempts < 2) {
 			            try {
 			            	driver.switchTo().activeElement();
 			        		Actions action = new Actions(driver);
-			        		WebElement doubleClick =driver.findElement(By.xpath("//section[2]//div//div[3]//div//div//div//div//div[2]//div[1]//div[3]//div[2]//div/div//div[@role='row'][@row-index='0'][@aria-rowindex='2']//div[@col-id='"+day2+"']"));
+			        		WebElement doubleClick =driver.findElement(By.xpath("//section[2]//div//div[3]//div//div//div//div//div[2]//div[1]//div[3]//div[2]//div/div//div[@role='row'][@row-index='0'][@aria-rowindex='2']//div[@col-id='"+day10+"']"));
 			        		Thread.sleep(2000);
 			        		action.moveToElement(doubleClick).click().build().perform();
 			                result = true;
@@ -345,14 +359,14 @@ public class UpdateSchedulingTab extends TC_BaseClass{
 					
 					
 				}
-			 public boolean clickDeleteShift(String day2) throws InterruptedException {
+			 public boolean clickDeleteShift(String day11) throws InterruptedException {
 				 boolean result = false;
 			        int attempts = 0;
 			        while(attempts < 2) {
 			            try {
 			            	driver.switchTo().activeElement();
 			        		Actions action = new Actions(driver);
-			        		WebElement doubleClick =driver.findElement(By.xpath("//section[2]//div//div[3]//div//div//div//div//div[2]//div[1]//div[3]//div[2]//div/div//div[@role='row'][@row-index='0'][@aria-rowindex='2']//div[@col-id='"+day2+"']"));
+			        		WebElement doubleClick =driver.findElement(By.xpath("//section[2]//div//div[3]//div//div//div//div//div[2]//div[1]//div[3]//div[2]//div/div//div[@role='row'][@row-index='0'][@aria-rowindex='2']//div[@col-id='"+day11+"']"));
 			        		Thread.sleep(2000);
 			        		action.moveToElement(doubleClick).contextClick().build().perform();
 			                result = true;
@@ -386,7 +400,7 @@ public class UpdateSchedulingTab extends TC_BaseClass{
 			
 			
 		}
-			public void selectPermanent(String starttime,String endtime,String day1) throws InterruptedException {
+			public void selectPermanent(String starttime,String endtime,String day12) throws InterruptedException {
 				WebDriverWait wait3 = new WebDriverWait(driver, 40);
 				 WebElement addShift = wait3.until(ExpectedConditions.elementToBeClickable(By.xpath("//section[2]/div[1]/div[1]/div[1]/div[1]/button[1]"))); 
 				 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", addShift);
@@ -403,7 +417,7 @@ public class UpdateSchedulingTab extends TC_BaseClass{
 					        
 					        String value = checkBoxes1.get(i).getAttribute("value");
 					        
-					        if(value.equalsIgnoreCase(day1)){
+					        if(value.equalsIgnoreCase(day12)){
 					            
 					        	checkBoxes1.get(i).click();
 					        	
@@ -450,6 +464,15 @@ public class UpdateSchedulingTab extends TC_BaseClass{
 					 System.out.println(name);
 					
 			}
+			        public void EmployeeType() {
+			    	 WebDriverWait wait1 = new WebDriverWait(driver, 40);
+					 WebElement employeeType = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='type']"))); 
+					 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", employeeType);
+					 WebDriverWait wait2 = new WebDriverWait(driver, 40);
+					 WebElement Permanent= wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[normalize-space()='Variable']"))); 
+					 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", Permanent);
+			    	
+			    }
 			
 		}
 

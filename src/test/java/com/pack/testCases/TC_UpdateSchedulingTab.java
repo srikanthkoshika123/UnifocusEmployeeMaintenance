@@ -14,7 +14,7 @@ import recordingTests.ScreenRecorderUtil;
 
 public class TC_UpdateSchedulingTab extends TC_BaseClass{
 	@Test(dataProvider="RegularShedule")
-	public void updateSchedulingTab(String empId,String starttime,String endtime,String day1,String day2,String emptycellDay,String starttime1,String endtime1,String rightDay,String editStart,String editEnd,String starttime2,String endtime2,String Wday1,String Wday2,String Wday3,String editDay,String starttime3,String endtime3,String deleteDay1,String deleteDay2,String starttime4,String endtime4,String pDay,String employeeType) throws Exception {
+	public void updateSchedulingTab(String empId,String starttime,String endtime,String day1,String day2,String emptycellDay,String starttime1,String endtime1,String rightDay,String editStart,String editEnd,String starttime2,String endtime2,String Wday1,String Wday2,String Wday3,String Wday4,String editDay,String starttime3,String endtime3,String deleteDay1,String deleteDay2,String starttime4,String endtime4,String pDay,String employeeType) throws Exception {
 		ScreenRecorderUtil.startRecord("UpdateSchedulingTab");
 		 driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 		 EmployeeMaintenance employeemaintenance=new EmployeeMaintenance(driver);
@@ -31,7 +31,7 @@ public class TC_UpdateSchedulingTab extends TC_BaseClass{
 	    scheduling.clickEmptyCell(starttime1,endtime1);
 	    scheduling.rightClick(rightDay);
 	    scheduling.clickAddShift(editStart,editEnd);
-	    scheduling.selectCheckBoxes(starttime2,endtime2,Wday1,Wday2,Wday3);
+	    scheduling.selectCheckBoxes(starttime2,endtime2,Wday1,Wday2,Wday3,Wday4);
 	    scheduling.clickDayShift(editDay);
 	    scheduling.clickEdit(starttime3,endtime3);
 	    scheduling.clickShiftDay(deleteDay1);
@@ -41,6 +41,7 @@ public class TC_UpdateSchedulingTab extends TC_BaseClass{
 	    scheduling.clickDeleteAllShifts();
 	    scheduling.selectPermanent(starttime4,endtime4,pDay);
 	    scheduling.selectVariableType(employeeType);
+	    scheduling.EmployeeType();
 	    
 	}
    @DataProvider(name="RegularShedule")

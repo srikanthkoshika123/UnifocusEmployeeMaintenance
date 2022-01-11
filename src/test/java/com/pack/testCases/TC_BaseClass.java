@@ -91,7 +91,7 @@ public class TC_BaseClass {
 	
 	 @AfterMethod
 	   	public void tearDown() throws Exception {
-	   		//ScreenRecorderUtil.stopRecord();  
+	   		ScreenRecorderUtil.stopRecord();  
 	   		driver.quit();
 	   		
 	   	} 
