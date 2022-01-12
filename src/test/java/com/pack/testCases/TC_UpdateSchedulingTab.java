@@ -47,7 +47,7 @@ public class TC_UpdateSchedulingTab extends TC_BaseClass{
    @DataProvider(name="RegularShedule")
    String [][] getData() throws IOException
    {
-	String path=System.getProperty("user.dir")+"/src/test/java/com/pack/testData/RegularShedules.xlsx";
+	String path=System.getProperty("user.dir")+"/src/test/java/com/pack/testData/RegularSchedules.xlsx";
 	
 	int rownum=XLUtils.getRowCount(path, "Sheet1");
 	int colcount=XLUtils.getCellCount(path,"Sheet1",1);

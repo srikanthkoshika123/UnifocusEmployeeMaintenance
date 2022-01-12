@@ -29,32 +29,13 @@ public class UpdateSchedulingTab extends TC_BaseClass{
 		
 		@FindBy(xpath="//div[@row-index='0']/div[@aria-colindex='1']")
 		WebElement empName;
-		@FindBy(xpath="//span[normalize-space()='Scheduling']")
-		WebElement scheduling;
-		@FindBy(xpath="//div[@id='type']")
-		WebElement employeeType;
-		@FindBy(xpath="//li[normalize-space()='Regular']")
-		WebElement regular;
+		
 		@FindBy(xpath="//section[2]/div[1]/div[1]/div[1]/div[1]/button[1]")
 		WebElement addShift;
 		@FindBy(xpath="//div[contains(@class,'ant-col ant-col-9')]//div[1]//div[2]//div[1]//span[1]//span[1]//input[1]")
 		WebElement startTime;
 		@FindBy(xpath="//div[contains(@class,'ant-col ant-col-9')]//div[2]//div[2]//div[1]//span[1]//span[1]//input[1]")
 		WebElement endTime;
-		@FindBy(xpath="//div[@id='job']")
-		WebElement jobType;
-		@FindBy(xpath="//li[normalize-space()='Door Person']")
-		WebElement jobName;
-		@FindBy(xpath="//button[@class='ant-btn ant-btn-primary']")
-		WebElement clickAdd;
-		@FindBy(xpath="//div[@class='ag-cell ag-cell-not-inline-editing ag-cell-with-height ag-cell-value ag-cell-focus'][@col-id='THURSDAY']")
-		WebElement rightClick;
-		@FindBy(xpath="//input[@id='override']")
-		WebElement overRide;
-		@FindBy(xpath="//section[2]//div[1]//div[1]//div[1]//div[1]//button[2]")
-		WebElement edit;
-		@FindBy(xpath="//button[@class='ant-btn ant-btn-primary']")
-		WebElement save;
 		
 		public void switchFrame() throws InterruptedException {
 			driver.switchTo().frame(frame);
@@ -464,14 +445,14 @@ public class UpdateSchedulingTab extends TC_BaseClass{
 					 System.out.println(name);
 					
 			}
-			        public void EmployeeType() {
+			        public void EmployeeType() throws InterruptedException {
 			    	 WebDriverWait wait1 = new WebDriverWait(driver, 40);
 					 WebElement employeeType = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='type']"))); 
 					 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", employeeType);
 					 WebDriverWait wait2 = new WebDriverWait(driver, 40);
 					 WebElement Permanent= wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[normalize-space()='Variable']"))); 
 					 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", Permanent);
-			    	
+			    	 Thread.sleep(4000);
 			    }
 			
 		}
