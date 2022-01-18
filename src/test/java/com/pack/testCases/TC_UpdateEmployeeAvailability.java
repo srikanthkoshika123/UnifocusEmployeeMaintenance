@@ -14,7 +14,7 @@ import recordingTests.ScreenRecorderUtil;
 
 public class TC_UpdateEmployeeAvailability extends TC_BaseClass{
 	@Test(dataProvider="EmployeeAvailability")
-	public void updateSchedulingTab(String empId,String starttime,String endtime,String day1,String day2,String emptycellDay,String starttime1,String endtime1,String rightDay,String editStart,String editEnd,String day3,String starttime2,String endtime2,String filterJob,String empName,String empId1,String editDay,String starttime3,String endtime3,String deleteDay1,String deleteDay2,String starttime4,String endtime4,String pDay,String employeeType) throws Exception {
+	public void updateSchedulingTab(String empId,String starttime,String endtime,String day1,String day2,String emptycellDay,String starttime1,String endtime1,String rightDay,String editStart,String editEnd,String day3,String starttime2,String endtime2,String empId1,String starttime3,String endtime3,String day5,String day6,String day7,String day8,String editDay,String starttime4,String endtime4,String deleteDay1,String deleteDay2) throws Exception {
 		ScreenRecorderUtil.startRecord("EmployeeAvailability");
 		 driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 		 EmployeeMaintenance employeemaintenance=new EmployeeMaintenance(driver);
@@ -34,14 +34,22 @@ public class TC_UpdateEmployeeAvailability extends TC_BaseClass{
 	    availability.doubleClick1(day3);
 	    availability.clickEmptyCell1(starttime2,endtime2);
 	    availability.clickUnifocus();
-	    availability.retryingFindClick();
-	    availability.selectDateRange(filterJob, empName);
+	   // availability.retryingFindClick();
+	    //availability.selectDateRange(filterJob,empName);
 	    availability.selectEmployee1(empId1);
+	    availability.selectCheckBoxs1(starttime3,endtime3,day5,day6,day7,day8);
+	    availability.clickDayShift(editDay);
+	    availability.clickEdit(starttime4, endtime4);
+	    availability.clickShiftDay(deleteDay1);
+	    availability.clickDeleteSelectedShifts();
+	    availability.clickDeleteShift(deleteDay2);
+	    availability.clickDelete();
+	    availability.clickDeleteAllShifts();
 }
 	 @DataProvider(name="EmployeeAvailability")
 	   String [][] getData() throws IOException
 	   {
-		String path=System.getProperty("user.dir")+"/src/test/java/com/pack/testData/RegularSchedules.xlsx";
+		String path=System.getProperty("user.dir")+"/src/test/java/com/pack/testData/EmployeeAvailability.xlsx";
 		
 		int rownum=XLUtils.getRowCount(path, "Sheet1");
 		int colcount=XLUtils.getCellCount(path,"Sheet1",1);
