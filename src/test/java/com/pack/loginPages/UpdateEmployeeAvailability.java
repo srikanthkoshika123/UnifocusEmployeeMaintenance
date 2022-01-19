@@ -79,8 +79,8 @@ public class UpdateEmployeeAvailability extends TC_BaseClass {
 		startTime.sendKeys(starttime);
 		endTime.sendKeys(endtime);
 		WebDriverWait wait3 = new WebDriverWait(driver, 40);
-		WebElement preferredOff = wait3
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='ant-radio ant-radio-checked']")));
+		WebElement preferredOff = wait3.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("//div[@id='type']/label[1]/span[@class='ant-radio ant-radio-checked']")));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", preferredOff);
 	}
 
@@ -148,7 +148,10 @@ public class UpdateEmployeeAvailability extends TC_BaseClass {
 
 		startTime.sendKeys(starttime);
 		endTime.sendKeys(endtime);
-
+		WebDriverWait wait3 = new WebDriverWait(driver, 40);
+		WebElement preferredOff = wait3.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("//div[@id='type']/label[1]/span[@class='ant-radio ant-radio-checked']")));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", preferredOff);
 		WebDriverWait wait1 = new WebDriverWait(driver, 40);
 		WebElement clickAdd = wait1
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-primary']")));
@@ -190,10 +193,10 @@ public class UpdateEmployeeAvailability extends TC_BaseClass {
 		endTime.sendKeys(Keys.CONTROL + "a");
 		endTime.sendKeys(Keys.DELETE);
 		endTime.sendKeys(editEnd);
-        
+
 		WebDriverWait wait3 = new WebDriverWait(driver, 40);
-		WebElement preferredOff = wait3
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='PREFERRED_OFF']")));
+		WebElement preferredOff = wait3.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("//div[@id='type']/label[1]/span[@class='ant-radio ant-radio-checked']")));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", preferredOff);
 		WebDriverWait wait1 = new WebDriverWait(driver, 40);
 		WebElement clickAdd = wait1
@@ -249,65 +252,84 @@ public class UpdateEmployeeAvailability extends TC_BaseClass {
 		scheduling.click();
 	}
 
-	/*
-	 * public boolean retryingFindClick() throws InterruptedException {
-	 * driver.switchTo().frame(frame); Thread.sleep(6000); boolean result = false;
-	 * int attempts = 0; while(attempts < 2) { try {
-	 * 
-	 * WebDriverWait wait = new WebDriverWait(driver, 120); WebElement ele =
-	 * wait.until(ExpectedConditions.elementToBeClickable(By.
-	 * cssSelector("div > div >button.ant-dropdown-trigger:nth-child(2)"))); //div >
-	 * div >button.ant-dropdown-trigger:nth-child(2)
-	 * ((JavascriptExecutor)driver).executeScript("arguments[0].click();", ele);
-	 * Actions action = new Actions(driver);
-	 * action.moveToElement(ele).build().perform();
-	 * driver.switchTo().activeElement(); WebElement das =
-	 * driver.findElement(By.xpath("//li[text()='Filter by Job']")); das.click();
-	 * Thread.sleep(4000); result = true; break; }
-	 * catch(StaleElementReferenceException e) { } attempts++; } return result;
-	 * 
-	 * }
-	 * 
-	 * @SuppressWarnings("deprecation") public void selectDateRange(String
-	 * filterJob,String dynamicName) throws InterruptedException{ WebDriverWait wait
-	 * = new WebDriverWait(driver, 40); WebElement element =
-	 * wait.until(ExpectedConditions.elementToBeClickable(By.
-	 * xpath("//button[@class='ant-btn ant-btn-icon-only']/i[@aria-label='icon: minus-square-o']"
-	 * ))); ((JavascriptExecutor)driver).executeScript("arguments[0].click();",
-	 * element); WebDriverWait wait1 = new WebDriverWait(driver, 40); WebElement
-	 * element1 = wait.until(ExpectedConditions.elementToBeClickable(By.
-	 * xpath("//button[@class='ant-btn ant-btn-icon-only']/i[@aria-label='icon: arrows-alt']"
-	 * ))); ((JavascriptExecutor)driver).executeScript("arguments[0].click();",
-	 * element1);
-	 * 
-	 * @SuppressWarnings("deprecation") WebDriverWait wait2 = new
-	 * WebDriverWait(driver, 40); WebElement element2 =
-	 * wait.until(ExpectedConditions.elementToBeClickable(By.xpath(filterJob)));
-	 * Coordinates cor=((Locatable) element2).getCoordinates(); cor.inViewPort();
-	 * Thread.sleep(1000);
-	 * ((JavascriptExecutor)driver).executeScript("arguments[0].click();",
-	 * element2); WebDriverWait wait3 = new WebDriverWait(driver, 40); WebElement
-	 * element4 = wait3.until(ExpectedConditions.elementToBeClickable(By.
-	 * cssSelector("button[class='ant-btn ant-btn-primary']")));
-	 * ((JavascriptExecutor)driver).executeScript("arguments[0].click();",
-	 * element4); WebDriverWait wait6 = new WebDriverWait(driver, 40); WebElement
-	 * date = wait6.until(ExpectedConditions.elementToBeClickable(By.
-	 * xpath("//div[@class='unifocus-selectdropdown ant-select ant-select-enabled']"
-	 * ))); ((JavascriptExecutor)driver).executeScript("arguments[0].click();",
-	 * date); WebDriverWait wait7 = new WebDriverWait(driver, 40); WebElement
-	 * dateRange = wait7.until(ExpectedConditions.elementToBeClickable(By.
-	 * xpath("//li[normalize-space()='12/25/21 - 1/7/22']")));
-	 * ((JavascriptExecutor)driver).executeScript("arguments[0].click();",
-	 * dateRange); WebDriverWait wait5 = new WebDriverWait(driver, 40); WebElement
-	 * element5 = wait5.until(ExpectedConditions.elementToBeClickable(By.
-	 * xpath("//div[@class='uf-employee-label-container line-clamp'][normalize-space()='"
-	 * +dynamicName+"']"))); Coordinates cor1=((Locatable)
-	 * element5).getCoordinates(); cor1.inViewPort(); Thread.sleep(1000);
-	 * ((JavascriptExecutor)driver).executeScript("arguments[0].click();",
-	 * element5); String name =element5.getText(); System.out.println(name);
-	 * Thread.sleep(8000); }
-	 */
+	public boolean retryingFindClick() throws InterruptedException {
+		driver.switchTo().frame(frame);
+		Thread.sleep(6000);
+		boolean result = false;
+		int attempts = 0;
+		while (attempts < 2) {
+			try {
+
+				WebDriverWait wait = new WebDriverWait(driver, 120);
+				WebElement ele = wait.until(ExpectedConditions
+						.elementToBeClickable(By.cssSelector("div > div >button.ant-dropdown-trigger:nth-child(2)"))); // div
+																														// >
+				// div >button.ant-dropdown-trigger:nth-child(2)
+				((JavascriptExecutor) driver).executeScript("arguments[0].click();", ele);
+				Actions action = new Actions(driver);
+				action.moveToElement(ele).build().perform();
+				driver.switchTo().activeElement();
+				WebElement das = driver.findElement(By.xpath("//li[text()='Filter by Job']"));
+				das.click();
+				Thread.sleep(4000);
+				result = true;
+				break;
+			} catch (StaleElementReferenceException e) {
+			}
+			attempts++;
+		}
+		return result;
+
+	}
+
+	@SuppressWarnings("deprecation")
+	public void selectDateRange(String filterJob, String dynamicName) throws InterruptedException {
+		WebDriverWait wait = new WebDriverWait(driver, 40);
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("//button[@class='ant-btn ant-btn-icon-only']/i[@aria-label='icon: minus-square-o']")));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+		WebDriverWait wait1 = new WebDriverWait(driver, 40);
+		WebElement element1 = wait.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("//button[@class='ant-btn ant-btn-icon-only']/i[@aria-label='icon: arrows-alt']")));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", element1);
+
+		@SuppressWarnings("deprecation")
+		WebDriverWait wait2 = new WebDriverWait(driver, 40);
+		WebElement element2 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(filterJob)));
+		Coordinates cor = ((Locatable) element2).getCoordinates();
+		cor.inViewPort();
+		Thread.sleep(1000);
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", element2);
+		WebDriverWait wait3 = new WebDriverWait(driver, 40);
+		WebElement element4 = wait3.until(
+				ExpectedConditions.elementToBeClickable(By.cssSelector("button[class='ant-btn ant-btn-primary']")));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", element4);
+		WebDriverWait wait6 = new WebDriverWait(driver, 40);
+		WebElement date = wait6.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("//div[@class='unifocus-selectdropdown ant-select ant-select-enabled']")));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", date);
+		WebDriverWait wait7 = new WebDriverWait(driver, 40);
+		WebElement dateRange = wait7.until(
+				ExpectedConditions.elementToBeClickable(By.xpath("//li[normalize-space()='1/8/22 - 1/21/22']")));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", dateRange);
+		WebDriverWait wait5 = new WebDriverWait(driver, 40);
+		WebElement element5 = wait5.until(ExpectedConditions.elementToBeClickable(By.xpath(
+				"//div[@class='uf-employee-label-container line-clamp'][normalize-space()='" + dynamicName + "']")));
+		Coordinates cor1 = ((Locatable) element5).getCoordinates();
+		cor1.inViewPort();
+		Thread.sleep(1000);
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", element5);
+		String name = element5.getText();
+		System.out.println(name);
+		Thread.sleep(5000);
+		driver.switchTo().defaultContent();
+		WebElement close = driver.findElement(
+				By.xpath("//div[@class='ant-tabs-nav-container']//div[2]//div[1]//i[@aria-label='icon: close']"));
+		close.click();
+	}
+
 	public void selectEmployee1(String empId) throws InterruptedException {
+		driver.switchTo().frame(frame);
 		WebDriverWait wait = new WebDriverWait(driver, 120);
 		WebElement searchEmp = wait.until(ExpectedConditions
 				.visibilityOfElementLocated(By.xpath("//input[contains(@placeholder,'Name or EmpID')]")));

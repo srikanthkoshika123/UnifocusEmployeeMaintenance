@@ -33,11 +33,11 @@ public class DoubleClick extends TC_BaseClass{
 		driver.switchTo().frame(frame);
 		}
 	public void selectEmployee() throws InterruptedException {
-		 WebDriverWait wait=new WebDriverWait(driver, 80);
+		 WebDriverWait wait=new WebDriverWait(driver, 180);
 		 WebElement searchEmp= wait.until(
 		 ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[contains(@placeholder,'Name or EmpID')]")));
 		Thread.sleep(8000);
-		//searchEmp.click();
+		searchEmp.click();
 		searchEmp.clear();
 		searchEmp.sendKeys("987817");
 		Thread.sleep(6000);
@@ -64,7 +64,7 @@ public class DoubleClick extends TC_BaseClass{
 	            try {
 	            	driver.switchTo().activeElement();
 	        		Actions action = new Actions(driver);
-	        		WebElement doubleClick =driver.findElement(By.xpath("//section[2]//div//div[3]//div//div//div//div//div[2]//div[1]//div[3]//div[2]//div/div//div[@role='row'][@row-index='0'][@aria-rowindex='2']//div[@col-id='TUESDAY']"));
+	        		WebElement doubleClick =driver.findElement(By.xpath("//section[1]/div/div[3]/div/div/div/div/div[2]/div[1]/div[3]/div[2]/div/div/div/div[3]"));
 	        		Thread.sleep(2000);
 	        		action.moveToElement(doubleClick).contextClick().build().perform();
 	                result = true;
@@ -77,7 +77,7 @@ public class DoubleClick extends TC_BaseClass{
 	}
 	public void clickEmptyCell() throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, 40);
-		 WebElement addShift = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='Add Shift']"))); 
+		 WebElement addShift = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='Add Availability']"))); 
 		 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", addShift);
 		 
 		startTime.sendKeys("6:00PM");

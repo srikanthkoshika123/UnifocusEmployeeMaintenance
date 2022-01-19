@@ -7,13 +7,13 @@
   <test thread-count="5" name="openShift(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.pack.testCases.TC_UpdateEmployeeAvailability">
+      <class name="com.pack.testCases.TC_UpdateSchedulingTab">
         <methods>
-          <include name="updateSchedulingTab" invocation-numbers="0 1 2"/>
           <include name="setup"/>
+          <include name="updateSchedulingTab"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.pack.testCases.TC_UpdateEmployeeAvailability -->
+      </class> <!-- com.pack.testCases.TC_UpdateSchedulingTab -->
     </classes>
   </test> <!-- openShift(failed) -->
 </suite> <!-- Failed suite [UnifocusScheduler] -->
