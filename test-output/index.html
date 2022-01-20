@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-UnifocusScheduler" class="navigator-link">
-              <span class="suite-name border-skipped">UnifocusScheduler</span>
+              <span class="suite-name border-failed">UnifocusScheduler</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,  7 skipped,  </span>
+                    <span class="method-stats">7 methods, 2 failed,  5 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-UnifocusScheduler" class="hide-methods failed suite-UnifocusScheduler"> (hide)</a> <!-- hide-methods failed suite-UnifocusScheduler -->
+                      <a href="#" panel-name="suite-UnifocusScheduler" class="show-methods failed suite-UnifocusScheduler"> (show)</a> <!-- show-methods failed suite-UnifocusScheduler -->
+                    </span>
+                    <div class="method-list-content failed suite-UnifocusScheduler">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-UnifocusScheduler" title="com.pack.testCases.TC_UpdateEmployeeAvailability" class="method navigator-link" hash-for-method="updateSchedulingTab(585213, 9:00AM, 5:00PM, MONDAY, FRIDAY, WEDNESDAY, 7:00PM, 3:00AM, MONDAY, 6:00PM, 2:00AM, TUESDAY, ...)">updateSchedulingTab(585213, 9:00AM, 5:00PM, MONDAY, FRIDAY, WEDNESDAY, 7:00PM, 3:00AM, MONDAY, 6:00PM, 2:00AM, TUESDAY, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-UnifocusScheduler" title="com.pack.testCases.TC_UpdateEmployeeAvailability" class="method navigator-link" hash-for-method="updateSchedulingTab(987817, 8:00AM, 4:00PM, TUESDAY, SUNDAY, MONDAY, 6:00PM, 2:00AM, TUESDAY, 5:00PM, 1:00AM, WEDNESDAY,...)">updateSchedulingTab(987817, 8:00AM, 4:00PM, TUESDAY, SUNDAY, MONDAY, 6:00PM, 2:00AM, TUESDAY, 5:00PM, 1:00AM, WEDNESDAY,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-UnifocusScheduler -->
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -104,37 +123,27 @@
                     <div class="method-list-content skipped suite-UnifocusScheduler">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-UnifocusScheduler" title="com.pack.testCases.TC_UpdateSchedulingTab" class="method navigator-link" hash-for-method="updateSchedulingTab(585278, 6:00AM, 2:00PM, THURSDAY, FRIDAY, TUESDAY, 4:00PM, 12:00AM, THURSDAY, 3:00PM, 11:00PM, 1:00A...)">updateSchedulingTab(585278, 6:00AM, 2:00PM, THURSDAY, FRIDAY, TUESDAY, 4:00PM, 12:00AM, THURSDAY, 3:00PM, 11:00PM, 1:00A...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-UnifocusScheduler" title="com.pack.testCases.TC_UpdateEmployeeAvailability" class="method navigator-link" hash-for-method="updateSchedulingTab(585278, 6:00AM, 2:00PM, THURSDAY, FRIDAY, TUESDAY, 4:00PM, 12:00AM, THURSDAY, 3:00PM, 11:00PM, MONDA...)">updateSchedulingTab(585278, 6:00AM, 2:00PM, THURSDAY, FRIDAY, TUESDAY, 4:00PM, 12:00AM, THURSDAY, 3:00PM, 11:00PM, MONDA...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-UnifocusScheduler" title="com.pack.testCases.TC_UpdateSchedulingTab" class="method navigator-link" hash-for-method="updateSchedulingTab(5437, 9:00AM, 5:00PM, MONDAY, FRIDAY, WEDNESDAY, 7:00PM, 3:00AM, MONDAY, 6:00PM, 2:00AM, 4:00AM, 1:0...)">updateSchedulingTab(5437, 9:00AM, 5:00PM, MONDAY, FRIDAY, WEDNESDAY, 7:00PM, 3:00AM, MONDAY, 6:00PM, 2:00AM, 4:00AM, 1:0...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-UnifocusScheduler" title="com.pack.testCases.TC_UpdateEmployeeAvailability" class="method navigator-link" hash-for-method="updateSchedulingTab(585211, 5:00AM, 1:00PM, FRIDAY, MONDAY, SATURDAY, 3:00PM, 11:00PM, FRIDAY, 2:00PM, 10:00PM, TUESDAY,...)">updateSchedulingTab(585211, 5:00AM, 1:00PM, FRIDAY, MONDAY, SATURDAY, 3:00PM, 11:00PM, FRIDAY, 2:00PM, 10:00PM, TUESDAY,...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-UnifocusScheduler" title="com.pack.testCases.TC_UpdateSchedulingTab" class="method navigator-link" hash-for-method="updateSchedulingTab(787887, 3:00AM, 11:00AM, SUNDAY, WEDNESDAY, MONDAY, 1:00PM, 9:00PM, WEDNESDAY, 12:00PM, 8:00PM, 10:0...)">updateSchedulingTab(787887, 3:00AM, 11:00AM, SUNDAY, WEDNESDAY, MONDAY, 1:00PM, 9:00PM, WEDNESDAY, 12:00PM, 8:00PM, 10:0...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-UnifocusScheduler" title="com.pack.testCases.TC_UpdateEmployeeAvailability" class="method navigator-link" hash-for-method="updateSchedulingTab(976537, 7:00AM, 3:00PM, WEDNESDAY, SATURDAY, THURSDAY, 5:00PM, 1:00AM, WEDNESDAY, 4:00PM, 12:00AM, F...)">updateSchedulingTab(976537, 7:00AM, 3:00PM, WEDNESDAY, SATURDAY, THURSDAY, 5:00PM, 1:00AM, WEDNESDAY, 4:00PM, 12:00AM, F...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-UnifocusScheduler" title="com.pack.testCases.TC_UpdateSchedulingTab" class="method navigator-link" hash-for-method="updateSchedulingTab(999887, 7:00AM, 3:00PM, WEDNESDAY, SATURDAY, THURSDAY, 5:00PM, 1:00AM, WEDNESDAY, 4:00PM, 12:00AM, 2...)">updateSchedulingTab(999887, 7:00AM, 3:00PM, WEDNESDAY, SATURDAY, THURSDAY, 5:00PM, 1:00AM, WEDNESDAY, 4:00PM, 12:00AM, 2...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-UnifocusScheduler" title="com.pack.testCases.TC_UpdateEmployeeAvailability" class="method navigator-link" hash-for-method="updateSchedulingTab(987816, 3:00AM, 11:00AM, SUNDAY, WEDNESDAY, THURSDAY, 1:00PM, 9:00PM, SUNDAY, 12:00PM, 8:00PM, SATUR...)">updateSchedulingTab(987816, 3:00AM, 11:00AM, SUNDAY, WEDNESDAY, THURSDAY, 1:00PM, 9:00PM, SUNDAY, 12:00PM, 8:00PM, SATUR...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-UnifocusScheduler" title="com.pack.testCases.TC_UpdateSchedulingTab" class="method navigator-link" hash-for-method="updateSchedulingTab(585211, 5:00AM, 1:00PM, FRIDAY, MONDAY, SATURDAY, 3:00PM, 11:00PM, FRIDAY, 2:00PM, 10:00PM, 12:00AM,...)">updateSchedulingTab(585211, 5:00AM, 1:00PM, FRIDAY, MONDAY, SATURDAY, 3:00PM, 11:00PM, FRIDAY, 2:00PM, 10:00PM, 12:00AM,...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-UnifocusScheduler" title="com.pack.testCases.TC_UpdateSchedulingTab" class="method navigator-link" hash-for-method="updateSchedulingTab(987817, 8:00AM, 4:00PM, TUESDAY, SUNDAY, MONDAY, 6:00PM, 2:00AM, TUESDAY, 5:00PM, 1:00AM, 3:00AM, 11...)">updateSchedulingTab(987817, 8:00AM, 4:00PM, TUESDAY, SUNDAY, MONDAY, 6:00PM, 2:00AM, TUESDAY, 5:00PM, 1:00AM, 3:00AM, 11...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-UnifocusScheduler" title="com.pack.testCases.TC_UpdateSchedulingTab" class="method navigator-link" hash-for-method="updateSchedulingTab(635677, 4:00AM, 12:00PM, SATURDAY, TUESDAY, FRIDAY, 2:00PM, 10:00PM, SATURDAY, 1:00PM, 9:00PM, 11:00...)">updateSchedulingTab(635677, 4:00AM, 12:00PM, SATURDAY, TUESDAY, FRIDAY, 2:00PM, 10:00PM, SATURDAY, 1:00PM, 9:00PM, 11:00...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-UnifocusScheduler" title="com.pack.testCases.TC_UpdateEmployeeAvailability" class="method navigator-link" hash-for-method="updateSchedulingTab(635677, 4:00AM, 12:00PM, SATURDAY, TUESDAY, FRIDAY, 2:00PM, 10:00PM, SATURDAY, 1:00PM, 9:00PM, SUNDA...)">updateSchedulingTab(635677, 4:00AM, 12:00PM, SATURDAY, TUESDAY, FRIDAY, 2:00PM, 10:00PM, SATURDAY, 1:00PM, 9:00PM, SUNDA...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-UnifocusScheduler -->
@@ -149,418 +158,230 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-UnifocusScheduler" class="panel UnifocusScheduler">
-          <div class="suite-UnifocusScheduler-class-skipped">
+          <div class="suite-UnifocusScheduler-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.pack.testCases.TC_UpdateSchedulingTab</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.pack.testCases.TC_UpdateEmployeeAvailability</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="updateSchedulingTab(585278, 6:00AM, 2:00PM, THURSDAY, FRIDAY, TUESDAY, 4:00PM, 12:00AM, THURSDAY, 3:00PM, 11:00PM, 1:00A...)">
-                  </a> <!-- updateSchedulingTab(585278, 6:00AM, 2:00PM, THURSDAY, FRIDAY, TUESDAY, 4:00PM, 12:00AM, THURSDAY, 3:00PM, 11:00PM, 1:00A...) -->
+                  <a name="updateSchedulingTab(585213, 9:00AM, 5:00PM, MONDAY, FRIDAY, WEDNESDAY, 7:00PM, 3:00AM, MONDAY, 6:00PM, 2:00AM, TUESDAY, ...)">
+                  </a> <!-- updateSchedulingTab(585213, 9:00AM, 5:00PM, MONDAY, FRIDAY, WEDNESDAY, 7:00PM, 3:00AM, MONDAY, 6:00PM, 2:00AM, TUESDAY, ...) -->
                   <span class="method-name">updateSchedulingTab</span>
-                  <span class="parameters">(585278, 6:00AM, 2:00PM, THURSDAY, FRIDAY, TUESDAY, 4:00PM, 12:00AM, THURSDAY, 3:00PM, 11:00PM, 1:00AM, 10:00AM, THURSDAY, FRIDAY, MONDAY, TUESDAY, FRIDAY, 9:00AM, 5:00PM, MONDAY, TUESDAY, 5:00AM, 1:00PM, MONDAY, Salaried
-)</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+                  <span class="parameters">(585213, 9:00AM, 5:00PM, MONDAY, FRIDAY, WEDNESDAY, 7:00PM, 3:00AM, MONDAY, 6:00PM, 2:00AM, TUESDAY, 7:00PM, 3:00AM, //ul[@role='tree']/li[1]/ul[1]/li[2]/ul[1]/li[9]/span[2]/span[1], bharat, 585213, 4:00AM, 1:00PM, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, TUESDAY, 6:00AM, 2:00PM, WEDNESDAY, THURSDAY)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //li[normalize-space()=&apos;1/8/22 - 1/21/22&apos;] (tried for 40 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
 System info: host: &apos;DESKTOP-K93H14H&apos;, ip: &apos;192.168.0.180&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [937429d33ff90696de9007e3d4fa8038, clickElement {id=40cf49ca-086f-4e6f-be70-4baf18b36b2a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\745G6~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53810}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53810/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (937429d33ff90696de9007e3d4fa8038)] -&gt; xpath: //a[normalize-space()=&apos;RMS Modern&apos;]]
-Session ID: 937429d33ff90696de9007e3d4fa8038
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-	at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-	at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-	at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-	at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-	at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-	at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:108)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at com.pack.loginPages.LoginPage.clickSignIn(LoginPage.java:73)
-	at com.pack.testCases.TC_BaseClass.setup(TC_BaseClass.java:78)
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:59977, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 4784, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:59977/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 077226ab-e6bf-4e83-9770-4fcdaed5d49a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.pack.loginPages.UpdateEmployeeAvailability.selectDateRange(UpdateEmployeeAvailability.java:312)
+	at com.pack.testCases.TC_UpdateEmployeeAvailability.updateSchedulingTab(TC_UpdateEmployeeAvailability.java:38)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
-	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:66)
-	... 64 more
-... Removed 31 stack frames
+... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="updateSchedulingTab(5437, 9:00AM, 5:00PM, MONDAY, FRIDAY, WEDNESDAY, 7:00PM, 3:00AM, MONDAY, 6:00PM, 2:00AM, 4:00AM, 1:0...)">
-                  </a> <!-- updateSchedulingTab(5437, 9:00AM, 5:00PM, MONDAY, FRIDAY, WEDNESDAY, 7:00PM, 3:00AM, MONDAY, 6:00PM, 2:00AM, 4:00AM, 1:0...) -->
+                  <a name="updateSchedulingTab(987817, 8:00AM, 4:00PM, TUESDAY, SUNDAY, MONDAY, 6:00PM, 2:00AM, TUESDAY, 5:00PM, 1:00AM, WEDNESDAY,...)">
+                  </a> <!-- updateSchedulingTab(987817, 8:00AM, 4:00PM, TUESDAY, SUNDAY, MONDAY, 6:00PM, 2:00AM, TUESDAY, 5:00PM, 1:00AM, WEDNESDAY,...) -->
                   <span class="method-name">updateSchedulingTab</span>
-                  <span class="parameters">(5437, 9:00AM, 5:00PM, MONDAY, FRIDAY, WEDNESDAY, 7:00PM, 3:00AM, MONDAY, 6:00PM, 2:00AM, 4:00AM, 1:00PM, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, TUESDAY, 6:00AM, 2:00PM, WEDNESDAY, THURSDAY, 8:00AM, 4:00PM, WEDNESDAY, Salaried)</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+                  <span class="parameters">(987817, 8:00AM, 4:00PM, TUESDAY, SUNDAY, MONDAY, 6:00PM, 2:00AM, TUESDAY, 5:00PM, 1:00AM, WEDNESDAY, 6:00PM, 2:00AM, //ul[@role='tree']/li[1]/ul[1]/li[1]/ul[1]/li[1]/span[2]/span[1]
+, srikanth, 987817, 3:00AM, 11:00PM, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, WEDNESDAY, 7:00AM, 3:00PM, THURSDAY, FRIDAY)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: div &gt; div &gt;button.ant-dropdown-trigger:nth-child(2) (tried for 120 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
 System info: host: &apos;DESKTOP-K93H14H&apos;, ip: &apos;192.168.0.180&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [937429d33ff90696de9007e3d4fa8038, clickElement {id=40cf49ca-086f-4e6f-be70-4baf18b36b2a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\745G6~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53810}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53810/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (937429d33ff90696de9007e3d4fa8038)] -&gt; xpath: //a[normalize-space()=&apos;RMS Modern&apos;]]
-Session ID: 937429d33ff90696de9007e3d4fa8038
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-	at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-	at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-	at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-	at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-	at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-	at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:108)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:62939, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 10836, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:62939/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 99ccda66-c185-447f-a0c7-9817996ef41b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.pack.loginPages.UpdateEmployeeAvailability.retryingFindClick(UpdateEmployeeAvailability.java:264)
+	at com.pack.testCases.TC_UpdateEmployeeAvailability.updateSchedulingTab(TC_UpdateEmployeeAvailability.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-UnifocusScheduler-class-failed -->
+          <div class="suite-UnifocusScheduler-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.pack.testCases.TC_UpdateEmployeeAvailability</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateSchedulingTab(585278, 6:00AM, 2:00PM, THURSDAY, FRIDAY, TUESDAY, 4:00PM, 12:00AM, THURSDAY, 3:00PM, 11:00PM, MONDA...)">
+                  </a> <!-- updateSchedulingTab(585278, 6:00AM, 2:00PM, THURSDAY, FRIDAY, TUESDAY, 4:00PM, 12:00AM, THURSDAY, 3:00PM, 11:00PM, MONDA...) -->
+                  <span class="method-name">updateSchedulingTab</span>
+                  <span class="parameters">(585278, 6:00AM, 2:00PM, THURSDAY, FRIDAY, TUESDAY, 4:00PM, 12:00AM, THURSDAY, 3:00PM, 11:00PM, MONDAY, 4:00PM, 12:00AM, //ul[@role='tree']/li[1]/ul[1]/li[2]/ul[1]/li[5]/span[2]/span[1], mallik, 585278, 1:00AM, 10:00AM, THURSDAY, FRIDAY, MONDAY, TUESDAY, FRIDAY, 9:00AM, 5:00PM, MONDAY, TUESDAY)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: TypeError: browsingContext.currentWindowGlobal is null
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;DESKTOP-K93H14H&apos;, ip: &apos;192.168.0.180&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [46dfa0ab-a108-488a-b084-5e83a94a02ef, findElement {using=xpath, value=//input[@class=&apos;x-input-el x-form-field x-input-text&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:62147, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 15020, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:62147/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 46dfa0ab-a108-488a-b084-5e83a94a02ef
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at com.pack.loginPages.LoginPage.clickSignIn(LoginPage.java:73)
-	at com.pack.testCases.TC_BaseClass.setup(TC_BaseClass.java:78)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:197)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:193)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at com.pack.loginPages.LoginPage.setPartnerCode(LoginPage.java:42)
+	at com.pack.testCases.TC_BaseClass.setup(TC_BaseClass.java:71)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
-	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:66)
-	... 64 more
-... Removed 31 stack frames
+... Removed 36 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="updateSchedulingTab(787887, 3:00AM, 11:00AM, SUNDAY, WEDNESDAY, MONDAY, 1:00PM, 9:00PM, WEDNESDAY, 12:00PM, 8:00PM, 10:0...)">
-                  </a> <!-- updateSchedulingTab(787887, 3:00AM, 11:00AM, SUNDAY, WEDNESDAY, MONDAY, 1:00PM, 9:00PM, WEDNESDAY, 12:00PM, 8:00PM, 10:0...) -->
+                  <a name="updateSchedulingTab(585211, 5:00AM, 1:00PM, FRIDAY, MONDAY, SATURDAY, 3:00PM, 11:00PM, FRIDAY, 2:00PM, 10:00PM, TUESDAY,...)">
+                  </a> <!-- updateSchedulingTab(585211, 5:00AM, 1:00PM, FRIDAY, MONDAY, SATURDAY, 3:00PM, 11:00PM, FRIDAY, 2:00PM, 10:00PM, TUESDAY,...) -->
                   <span class="method-name">updateSchedulingTab</span>
-                  <span class="parameters">(787887, 3:00AM, 11:00AM, SUNDAY, WEDNESDAY, MONDAY, 1:00PM, 9:00PM, WEDNESDAY, 12:00PM, 8:00PM, 10:00PM, 7:00AM, SUNDAY, WEDNESDAY, THURSDAY, FRIDAY, WEDNESDAY, 12:00PM, 8:00PM, THURSDAY, FRIDAY, 2:00AM, 10:00AM, THURSDAY, Supervisor)</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+                  <span class="parameters">(585211, 5:00AM, 1:00PM, FRIDAY, MONDAY, SATURDAY, 3:00PM, 11:00PM, FRIDAY, 2:00PM, 10:00PM, TUESDAY, 3:00PM, 11:00PM, //ul[@role='tree']/li[1]/ul[1]/li[2]/ul[1]/li[2]/span[2]/span[1], keb, 585211, 12:00AM, 9:00AM, FRIDAY, MONDAY, TUESDAY, WEDNESDAY, MONDAY, 10:00AM, 6:00PM, TUESDAY, WEDNESDAY)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: TypeError: browsingContext.currentWindowGlobal is null
 Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
 System info: host: &apos;DESKTOP-K93H14H&apos;, ip: &apos;192.168.0.180&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [937429d33ff90696de9007e3d4fa8038, clickElement {id=40cf49ca-086f-4e6f-be70-4baf18b36b2a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\745G6~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53810}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53810/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (937429d33ff90696de9007e3d4fa8038)] -&gt; xpath: //a[normalize-space()=&apos;RMS Modern&apos;]]
-Session ID: 937429d33ff90696de9007e3d4fa8038
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-	at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-	at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-	at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-	at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-	at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-	at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:108)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [46dfa0ab-a108-488a-b084-5e83a94a02ef, findElement {using=xpath, value=//input[@class=&apos;x-input-el x-form-field x-input-text&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:62147, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 15020, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:62147/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 46dfa0ab-a108-488a-b084-5e83a94a02ef
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at com.pack.loginPages.LoginPage.clickSignIn(LoginPage.java:73)
-	at com.pack.testCases.TC_BaseClass.setup(TC_BaseClass.java:78)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:197)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:193)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at com.pack.loginPages.LoginPage.setPartnerCode(LoginPage.java:42)
+	at com.pack.testCases.TC_BaseClass.setup(TC_BaseClass.java:71)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
-	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:66)
-	... 64 more
-... Removed 31 stack frames
+... Removed 36 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="updateSchedulingTab(999887, 7:00AM, 3:00PM, WEDNESDAY, SATURDAY, THURSDAY, 5:00PM, 1:00AM, WEDNESDAY, 4:00PM, 12:00AM, 2...)">
-                  </a> <!-- updateSchedulingTab(999887, 7:00AM, 3:00PM, WEDNESDAY, SATURDAY, THURSDAY, 5:00PM, 1:00AM, WEDNESDAY, 4:00PM, 12:00AM, 2...) -->
+                  <a name="updateSchedulingTab(976537, 7:00AM, 3:00PM, WEDNESDAY, SATURDAY, THURSDAY, 5:00PM, 1:00AM, WEDNESDAY, 4:00PM, 12:00AM, F...)">
+                  </a> <!-- updateSchedulingTab(976537, 7:00AM, 3:00PM, WEDNESDAY, SATURDAY, THURSDAY, 5:00PM, 1:00AM, WEDNESDAY, 4:00PM, 12:00AM, F...) -->
                   <span class="method-name">updateSchedulingTab</span>
-                  <span class="parameters">(999887, 7:00AM, 3:00PM, WEDNESDAY, SATURDAY, THURSDAY, 5:00PM, 1:00AM, WEDNESDAY, 4:00PM, 12:00AM, 2:00AM, 10:00AM, WEDNESDAY, THURSDAY, FRIDAY, MONDAY, THURSDAY, 8:00AM, 4:00PM, FRIDAY, MONDAY, 6:00AM, 2:00PM, FRIDAY, Supervisor)</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+                  <span class="parameters">(976537, 7:00AM, 3:00PM, WEDNESDAY, SATURDAY, THURSDAY, 5:00PM, 1:00AM, WEDNESDAY, 4:00PM, 12:00AM, FRIDAY, 5:00PM, 1:00AM, //ul[@role='tree']/li[1]/ul[1]/li[2]/ul[1]/li[9]/span[2]/span[1], Brooks, 976537, 2:00AM, 10:00AM, WEDNESDAY, THURSDAY, FRIDAY, MONDAY, THURSDAY, 8:00AM, 4:00PM, FRIDAY, MONDAY)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: TypeError: browsingContext.currentWindowGlobal is null
 Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
 System info: host: &apos;DESKTOP-K93H14H&apos;, ip: &apos;192.168.0.180&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [937429d33ff90696de9007e3d4fa8038, clickElement {id=40cf49ca-086f-4e6f-be70-4baf18b36b2a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\745G6~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53810}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53810/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (937429d33ff90696de9007e3d4fa8038)] -&gt; xpath: //a[normalize-space()=&apos;RMS Modern&apos;]]
-Session ID: 937429d33ff90696de9007e3d4fa8038
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-	at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-	at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-	at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-	at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-	at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-	at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:108)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [46dfa0ab-a108-488a-b084-5e83a94a02ef, findElement {using=xpath, value=//input[@class=&apos;x-input-el x-form-field x-input-text&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:62147, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 15020, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:62147/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 46dfa0ab-a108-488a-b084-5e83a94a02ef
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at com.pack.loginPages.LoginPage.clickSignIn(LoginPage.java:73)
-	at com.pack.testCases.TC_BaseClass.setup(TC_BaseClass.java:78)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:197)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:193)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at com.pack.loginPages.LoginPage.setPartnerCode(LoginPage.java:42)
+	at com.pack.testCases.TC_BaseClass.setup(TC_BaseClass.java:71)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
-	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:66)
-	... 64 more
-... Removed 31 stack frames
+... Removed 36 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="updateSchedulingTab(585211, 5:00AM, 1:00PM, FRIDAY, MONDAY, SATURDAY, 3:00PM, 11:00PM, FRIDAY, 2:00PM, 10:00PM, 12:00AM,...)">
-                  </a> <!-- updateSchedulingTab(585211, 5:00AM, 1:00PM, FRIDAY, MONDAY, SATURDAY, 3:00PM, 11:00PM, FRIDAY, 2:00PM, 10:00PM, 12:00AM,...) -->
+                  <a name="updateSchedulingTab(987816, 3:00AM, 11:00AM, SUNDAY, WEDNESDAY, THURSDAY, 1:00PM, 9:00PM, SUNDAY, 12:00PM, 8:00PM, SATUR...)">
+                  </a> <!-- updateSchedulingTab(987816, 3:00AM, 11:00AM, SUNDAY, WEDNESDAY, THURSDAY, 1:00PM, 9:00PM, SUNDAY, 12:00PM, 8:00PM, SATUR...) -->
                   <span class="method-name">updateSchedulingTab</span>
-                  <span class="parameters">(585211, 5:00AM, 1:00PM, FRIDAY, MONDAY, SATURDAY, 3:00PM, 11:00PM, FRIDAY, 2:00PM, 10:00PM, 12:00AM, 9:00AM, FRIDAY, MONDAY, TUESDAY, WEDNESDAY, MONDAY, 10:00AM, 6:00PM, TUESDAY, WEDNESDAY, 4:00AM, 12:00PM, TUESDAY, Supervisor
-)</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+                  <span class="parameters">(987816, 3:00AM, 11:00AM, SUNDAY, WEDNESDAY, THURSDAY, 1:00PM, 9:00PM, SUNDAY, 12:00PM, 8:00PM, SATURDAY, 1:00PM, 9:00PM, //ul[@role='tree']/li[1]/ul[1]/li[2]/ul[1]/li[2]/span[2]/span[1], vishal, 987816, 10:00PM, 7:00AM, SUNDAY, WEDNESDAY, THURSDAY, FRIDAY, WEDNESDAY, 12:00PM, 8:00PM, THURSDAY, FRIDAY)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: TypeError: browsingContext.currentWindowGlobal is null
 Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
 System info: host: &apos;DESKTOP-K93H14H&apos;, ip: &apos;192.168.0.180&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [937429d33ff90696de9007e3d4fa8038, clickElement {id=40cf49ca-086f-4e6f-be70-4baf18b36b2a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\745G6~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53810}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53810/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (937429d33ff90696de9007e3d4fa8038)] -&gt; xpath: //a[normalize-space()=&apos;RMS Modern&apos;]]
-Session ID: 937429d33ff90696de9007e3d4fa8038
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-	at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-	at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-	at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-	at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-	at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-	at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:108)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [46dfa0ab-a108-488a-b084-5e83a94a02ef, findElement {using=xpath, value=//input[@class=&apos;x-input-el x-form-field x-input-text&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:62147, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 15020, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:62147/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 46dfa0ab-a108-488a-b084-5e83a94a02ef
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at com.pack.loginPages.LoginPage.clickSignIn(LoginPage.java:73)
-	at com.pack.testCases.TC_BaseClass.setup(TC_BaseClass.java:78)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:197)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:193)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at com.pack.loginPages.LoginPage.setPartnerCode(LoginPage.java:42)
+	at com.pack.testCases.TC_BaseClass.setup(TC_BaseClass.java:71)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
-	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:66)
-	... 64 more
-... Removed 31 stack frames
+... Removed 36 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="updateSchedulingTab(987817, 8:00AM, 4:00PM, TUESDAY, SUNDAY, MONDAY, 6:00PM, 2:00AM, TUESDAY, 5:00PM, 1:00AM, 3:00AM, 11...)">
-                  </a> <!-- updateSchedulingTab(987817, 8:00AM, 4:00PM, TUESDAY, SUNDAY, MONDAY, 6:00PM, 2:00AM, TUESDAY, 5:00PM, 1:00AM, 3:00AM, 11...) -->
+                  <a name="updateSchedulingTab(635677, 4:00AM, 12:00PM, SATURDAY, TUESDAY, FRIDAY, 2:00PM, 10:00PM, SATURDAY, 1:00PM, 9:00PM, SUNDA...)">
+                  </a> <!-- updateSchedulingTab(635677, 4:00AM, 12:00PM, SATURDAY, TUESDAY, FRIDAY, 2:00PM, 10:00PM, SATURDAY, 1:00PM, 9:00PM, SUNDA...) -->
                   <span class="method-name">updateSchedulingTab</span>
-                  <span class="parameters">(987817, 8:00AM, 4:00PM, TUESDAY, SUNDAY, MONDAY, 6:00PM, 2:00AM, TUESDAY, 5:00PM, 1:00AM, 3:00AM, 11:00PM, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, WEDNESDAY, 7:00AM, 3:00PM, THURSDAY, FRIDAY, 7:00AM, 3:00PM, THURSDAY, Supervisor)</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+                  <span class="parameters">(635677, 4:00AM, 12:00PM, SATURDAY, TUESDAY, FRIDAY, 2:00PM, 10:00PM, SATURDAY, 1:00PM, 9:00PM, SUNDAY, 2:00PM, 10:00PM, //ul[@role='tree']/li[1]/ul[1]/li[2]/ul[1]/li[6]/span[2]/span[1], zach, 635677, 11:00PM, 8:00AM, SATURDAY, TUESDAY, WEDNESDAY, THURSDAY, TUESDAY, 11:00AM, 7:00PM, WEDNESDAY, THURSDAY)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: TypeError: browsingContext.currentWindowGlobal is null
 Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
 System info: host: &apos;DESKTOP-K93H14H&apos;, ip: &apos;192.168.0.180&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [937429d33ff90696de9007e3d4fa8038, clickElement {id=40cf49ca-086f-4e6f-be70-4baf18b36b2a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\745G6~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53810}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53810/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (937429d33ff90696de9007e3d4fa8038)] -&gt; xpath: //a[normalize-space()=&apos;RMS Modern&apos;]]
-Session ID: 937429d33ff90696de9007e3d4fa8038
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-	at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-	at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-	at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-	at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-	at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-	at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:108)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [46dfa0ab-a108-488a-b084-5e83a94a02ef, findElement {using=xpath, value=//input[@class=&apos;x-input-el x-form-field x-input-text&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:62147, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 15020, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:62147/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 46dfa0ab-a108-488a-b084-5e83a94a02ef
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at com.pack.loginPages.LoginPage.clickSignIn(LoginPage.java:73)
-	at com.pack.testCases.TC_BaseClass.setup(TC_BaseClass.java:78)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:197)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:193)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at com.pack.loginPages.LoginPage.setPartnerCode(LoginPage.java:42)
+	at com.pack.testCases.TC_BaseClass.setup(TC_BaseClass.java:71)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
-	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:66)
-	... 64 more
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="updateSchedulingTab(635677, 4:00AM, 12:00PM, SATURDAY, TUESDAY, FRIDAY, 2:00PM, 10:00PM, SATURDAY, 1:00PM, 9:00PM, 11:00...)">
-                  </a> <!-- updateSchedulingTab(635677, 4:00AM, 12:00PM, SATURDAY, TUESDAY, FRIDAY, 2:00PM, 10:00PM, SATURDAY, 1:00PM, 9:00PM, 11:00...) -->
-                  <span class="method-name">updateSchedulingTab</span>
-                  <span class="parameters">(635677, 4:00AM, 12:00PM, SATURDAY, TUESDAY, FRIDAY, 2:00PM, 10:00PM, SATURDAY, 1:00PM, 9:00PM, 11:00PM, 8:00AM, SATURDAY, TUESDAY, WEDNESDAY, THURSDAY, TUESDAY, 11:00AM, 7:00PM, WEDNESDAY, THURSDAY, 3:00AM, 11:00AM, WEDNESDAY, Salaried
-)</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
-Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
-System info: host: &apos;DESKTOP-K93H14H&apos;, ip: &apos;192.168.0.180&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [937429d33ff90696de9007e3d4fa8038, clickElement {id=40cf49ca-086f-4e6f-be70-4baf18b36b2a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\745G6~1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53810}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53810/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (937429d33ff90696de9007e3d4fa8038)] -&gt; xpath: //a[normalize-space()=&apos;RMS Modern&apos;]]
-Session ID: 937429d33ff90696de9007e3d4fa8038
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-	at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-	at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-	at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-	at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-	at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-	at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-	at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-	at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:108)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at com.pack.loginPages.LoginPage.clickSignIn(LoginPage.java:73)
-	at com.pack.testCases.TC_BaseClass.setup(TC_BaseClass.java:78)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
-	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:66)
-	... 64 more
-... Removed 31 stack frames
+... Removed 36 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -580,9 +401,9 @@ Caused by: java.util.concurrent.TimeoutException
     &lt;listener class-name=&quot;com.pack.utils.Reporting&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;openShift&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.pack.testCases.TC_UpdateSchedulingTab&quot;/&gt;
+      &lt;class name=&quot;com.pack.testCases.TC_UpdateEmployeeAvailability&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- openShift --&gt;
 &lt;/suite&gt; &lt;!-- UnifocusScheduler --&gt;
@@ -625,37 +446,37 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'updateSchedulingTab')
-data.setCell(0, 2, 'com.pack.testCases.TC_UpdateSchedulingTab')
-data.setCell(0, 3, 0);
+data.setCell(0, 2, 'com.pack.testCases.TC_UpdateEmployeeAvailability')
+data.setCell(0, 3, 382908);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'updateSchedulingTab')
-data.setCell(1, 2, 'com.pack.testCases.TC_UpdateSchedulingTab')
-data.setCell(1, 3, 0);
+data.setCell(1, 2, 'com.pack.testCases.TC_UpdateEmployeeAvailability')
+data.setCell(1, 3, 349598);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'updateSchedulingTab')
-data.setCell(2, 2, 'com.pack.testCases.TC_UpdateSchedulingTab')
+data.setCell(2, 2, 'com.pack.testCases.TC_UpdateEmployeeAvailability')
 data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'updateSchedulingTab')
-data.setCell(3, 2, 'com.pack.testCases.TC_UpdateSchedulingTab')
+data.setCell(3, 2, 'com.pack.testCases.TC_UpdateEmployeeAvailability')
 data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'updateSchedulingTab')
-data.setCell(4, 2, 'com.pack.testCases.TC_UpdateSchedulingTab')
+data.setCell(4, 2, 'com.pack.testCases.TC_UpdateEmployeeAvailability')
 data.setCell(4, 3, 0);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'updateSchedulingTab')
-data.setCell(5, 2, 'com.pack.testCases.TC_UpdateSchedulingTab')
+data.setCell(5, 2, 'com.pack.testCases.TC_UpdateEmployeeAvailability')
 data.setCell(5, 3, 0);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'updateSchedulingTab')
-data.setCell(6, 2, 'com.pack.testCases.TC_UpdateSchedulingTab')
+data.setCell(6, 2, 'com.pack.testCases.TC_UpdateEmployeeAvailability')
 data.setCell(6, 3, 0);
 window.suiteTableData['UnifocusScheduler']= { tableData: data, tableDiv: 'times-div-UnifocusScheduler'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 12 minutes</span>
               <div id="times-div-UnifocusScheduler">
               </div> <!-- times-div-UnifocusScheduler -->
             </div> <!-- times-div -->
@@ -681,92 +502,96 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.pack.testCases.TC_UpdateSchedulingTab</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.pack.testCases.TC_UpdateEmployeeAvailability</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">setup(chrome)</span>
+                <span class="method-name">setup(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">updateSchedulingTab(5437, 9:00AM, 5:00PM, MONDAY, FRIDAY, WEDNESDAY, 7:00PM, 3:00AM, MONDAY, 6:00PM, 2:00AM, 4:00AM, 1:0...)</span>
-                <span class="method-start">424638 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">updateSchedulingTab(585213, 9:00AM, 5:00PM, MONDAY, FRIDAY, WEDNESDAY, 7:00PM, 3:00AM, MONDAY, 6:00PM, 2:00AM, TUESDAY, ...)</span>
+                <span class="method-start">101660 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">424686 ms</span>
+                <span class="method-start">451310 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">455499 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">updateSchedulingTab(987817, 8:00AM, 4:00PM, TUESDAY, SUNDAY, MONDAY, 6:00PM, 2:00AM, TUESDAY, 5:00PM, 1:00AM, WEDNESDAY,...)</span>
+                <span class="method-start">565842 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">948763 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">952780 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateSchedulingTab(976537, 7:00AM, 3:00PM, WEDNESDAY, SATURDAY, THURSDAY, 5:00PM, 1:00AM, WEDNESDAY, 4:00PM, 12:00AM, F...)</span>
+                <span class="method-start">961368 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">961390 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">424692 ms</span>
+                <span class="method-start">961396 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">updateSchedulingTab(987817, 8:00AM, 4:00PM, TUESDAY, SUNDAY, MONDAY, 6:00PM, 2:00AM, TUESDAY, 5:00PM, 1:00AM, 3:00AM, 11...)</span>
-                <span class="method-start">424700 ms</span>
+                <span class="method-name">updateSchedulingTab(585278, 6:00AM, 2:00PM, THURSDAY, FRIDAY, TUESDAY, 4:00PM, 12:00AM, THURSDAY, 3:00PM, 11:00PM, MONDA...)</span>
+                <span class="method-start">961401 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">424716 ms</span>
+                <span class="method-start">961414 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">424721 ms</span>
+                <span class="method-start">961420 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">updateSchedulingTab(999887, 7:00AM, 3:00PM, WEDNESDAY, SATURDAY, THURSDAY, 5:00PM, 1:00AM, WEDNESDAY, 4:00PM, 12:00AM, 2...)</span>
-                <span class="method-start">424725 ms</span>
+                <span class="method-name">updateSchedulingTab(585211, 5:00AM, 1:00PM, FRIDAY, MONDAY, SATURDAY, 3:00PM, 11:00PM, FRIDAY, 2:00PM, 10:00PM, TUESDAY,...)</span>
+                <span class="method-start">961424 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">424738 ms</span>
+                <span class="method-start">961437 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">424742 ms</span>
+                <span class="method-start">961448 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">updateSchedulingTab(585278, 6:00AM, 2:00PM, THURSDAY, FRIDAY, TUESDAY, 4:00PM, 12:00AM, THURSDAY, 3:00PM, 11:00PM, 1:00A...)</span>
-                <span class="method-start">424748 ms</span>
+                <span class="method-name">updateSchedulingTab(635677, 4:00AM, 12:00PM, SATURDAY, TUESDAY, FRIDAY, 2:00PM, 10:00PM, SATURDAY, 1:00PM, 9:00PM, SUNDA...)</span>
+                <span class="method-start">961456 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">424768 ms</span>
+                <span class="method-start">961480 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">424773 ms</span>
+                <span class="method-start">961490 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">updateSchedulingTab(585211, 5:00AM, 1:00PM, FRIDAY, MONDAY, SATURDAY, 3:00PM, 11:00PM, FRIDAY, 2:00PM, 10:00PM, 12:00AM,...)</span>
-                <span class="method-start">424791 ms</span>
+                <span class="method-name">updateSchedulingTab(987816, 3:00AM, 11:00AM, SUNDAY, WEDNESDAY, THURSDAY, 1:00PM, 9:00PM, SUNDAY, 12:00PM, 8:00PM, SATUR...)</span>
+                <span class="method-start">961495 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">424812 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">424820 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">updateSchedulingTab(635677, 4:00AM, 12:00PM, SATURDAY, TUESDAY, FRIDAY, 2:00PM, 10:00PM, SATURDAY, 1:00PM, 9:00PM, 11:00...)</span>
-                <span class="method-start">424824 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">424835 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">424838 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">updateSchedulingTab(787887, 3:00AM, 11:00AM, SUNDAY, WEDNESDAY, MONDAY, 1:00PM, 9:00PM, WEDNESDAY, 12:00PM, 8:00PM, 10:0...)</span>
-                <span class="method-start">424842 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">424858 ms</span>
+                <span class="method-start">961512 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
