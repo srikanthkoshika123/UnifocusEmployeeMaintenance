@@ -36,8 +36,9 @@ public class TC_UpdateEmployeeAvailability extends TC_BaseClass{
 	    availability.clickUnifocus();
 	    availability.retryingFindClick();
 	    availability.selectDateRange(filterJob,empName);
-		employeemaintenance.clickUnifocus();
-		employeemaintenance.getselect_List();
+	    EmployeeMaintenance employeemaintenance1=new EmployeeMaintenance(driver);
+		employeemaintenance1.clickUnifocus();
+		employeemaintenance1.getselect_List();
 	    availability.selectEmployee1(empId1);
 	    availability.selectCheckBoxs1(starttime3,endtime3,day5,day6,day7,day8);
 	    availability.clickDayShift(editDay);
@@ -47,6 +48,7 @@ public class TC_UpdateEmployeeAvailability extends TC_BaseClass{
 	    availability.clickDeleteShift(deleteDay2);
 	    availability.clickDelete();
 	    availability.clickDeleteAllShifts();
+	    availability.clickRefreshButton();
 }
 	 @DataProvider(name="EmployeeAvailability")
 	   String [][] getData() throws IOException
