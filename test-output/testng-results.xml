@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="0" failed="1" skipped="6">
+<testng-results ignored="0" total="7" passed="1" failed="1" skipped="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-24T18:52:01 IST" name="UnifocusScheduler" finished-at="2022-01-24T19:02:48 IST" duration-ms="646584">
+  <suite started-at="2022-01-25T17:49:13 IST" name="UnifocusScheduler" finished-at="2022-01-25T18:00:54 IST" duration-ms="701675">
     <groups>
     </groups>
-    <test started-at="2022-01-24T18:52:01 IST" name="openShift" finished-at="2022-01-24T19:02:48 IST" duration-ms="646584">
+    <test started-at="2022-01-25T17:49:13 IST" name="openShift" finished-at="2022-01-25T18:00:54 IST" duration-ms="701675">
       <class name="com.pack.testCases.TC_UpdateEmployeeAvailability">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-24T18:52:07 IST" name="setup" finished-at="2022-01-24T18:56:20 IST" duration-ms="253002" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-25T17:49:19 IST" name="setup" finished-at="2022-01-25T17:50:52 IST" duration-ms="93042" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="updateSchedulingTab(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-24T18:56:21 IST" name="updateSchedulingTab" data-provider="EmployeeAvailability" finished-at="2022-01-24T18:57:41 IST" duration-ms="80326" status="FAIL">
+        <test-method signature="updateSchedulingTab(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-25T17:50:52 IST" name="updateSchedulingTab" data-provider="EmployeeAvailability" finished-at="2022-01-25T17:57:42 IST" duration-ms="409625" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -161,86 +161,14 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: //header/div[1]/div[1]/div[1]/button[1]
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'DESKTOP-K93H14H', ip: '192.168.0.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [d1e32c38-6ae4-4ff9-98af-79786fb25c10, findElement {using=xpath, value=//header/div[1]/div[1]/div[1]/button[1]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:60649, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 6168, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:60649/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d1e32c38-6ae4-4ff9-98af-79786fb25c10]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //header/div[1]/div[1]/div[1]/button[1]
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'DESKTOP-K93H14H', ip: '192.168.0.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [d1e32c38-6ae4-4ff9-98af-79786fb25c10, findElement {using=xpath, value=//header/div[1]/div[1]/div[1]/button[1]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:60649, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 6168, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:60649/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d1e32c38-6ae4-4ff9-98af-79786fb25c10
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
-at com.pack.loginPages.EmployeeMaintenance.clickUnifocus(EmployeeMaintenance.java:39)
-at com.pack.testCases.TC_UpdateEmployeeAvailability.updateSchedulingTab(TC_UpdateEmployeeAvailability.java:21)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateSchedulingTab -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-24T18:57:41 IST" name="tearDown" finished-at="2022-01-24T18:57:42 IST" duration-ms="1009" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-25T17:57:42 IST" name="tearDown" finished-at="2022-01-25T17:57:46 IST" duration-ms="4545" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-24T18:57:42 IST" name="setup" finished-at="2022-01-24T19:02:48 IST" duration-ms="305945" status="FAIL">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-25T17:57:46 IST" name="setup" finished-at="2022-01-25T17:58:43 IST" duration-ms="56638" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -248,108 +176,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[java.util.concurrent.TimeoutException
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'DESKTOP-K93H14H', ip: '192.168.0.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [49a87add-0b1e-4233-80cb-9c5ae4b1c04c, clickElement {id=ec65b9aa-f500-4c4a-8cec-e4fc1109f8a8}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:56035, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 17392, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:56035/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (49a87add-0b1e-4233-80cb-9c5ae4b1c04c)] -> xpath: //a[normalize-space()='RMS Modern']]
-Session ID: 49a87add-0b1e-4233-80cb-9c5ae4b1c04c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'DESKTOP-K93H14H', ip: '192.168.0.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [49a87add-0b1e-4233-80cb-9c5ae4b1c04c, clickElement {id=ec65b9aa-f500-4c4a-8cec-e4fc1109f8a8}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:56035, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 17392, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:56035/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (49a87add-0b1e-4233-80cb-9c5ae4b1c04c)] -> xpath: //a[normalize-space()='RMS Modern']]
-Session ID: 49a87add-0b1e-4233-80cb-9c5ae4b1c04c
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:108)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at com.pack.loginPages.LoginPage.clickSignIn(LoginPage.java:73)
-at com.pack.testCases.TC_BaseClass.setup(TC_BaseClass.java:78)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.util.concurrent.TimeoutException
-at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
-at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:66)
-... 64 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="updateSchedulingTab(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-24T19:02:48 IST" name="updateSchedulingTab" data-provider="EmployeeAvailability" finished-at="2022-01-24T19:02:48 IST" duration-ms="0" status="SKIP">
+        <test-method signature="updateSchedulingTab(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-25T17:58:43 IST" name="updateSchedulingTab" data-provider="EmployeeAvailability" finished-at="2022-01-25T18:00:54 IST" duration-ms="130623" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[987817]]>
+                <![CDATA[69]]>
               </value>
             </param>
             <param index="1">
@@ -425,12 +259,12 @@ at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHand
             </param>
             <param index="15">
               <value>
-                <![CDATA[srikanth]]>
+                <![CDATA[Blanchard, Tasha]]>
               </value>
             </param>
             <param index="16">
               <value>
-                <![CDATA[987817]]>
+                <![CDATA[69]]>
               </value>
             </param>
             <param index="17">
@@ -489,69 +323,53 @@ at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHand
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[java.util.concurrent.TimeoutException
+              <![CDATA[TypeError: browsingContext.currentWindowGlobal is null
 Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'DESKTOP-K93H14H', ip: '192.168.0.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [49a87add-0b1e-4233-80cb-9c5ae4b1c04c, clickElement {id=ec65b9aa-f500-4c4a-8cec-e4fc1109f8a8}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:56035, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 17392, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:56035/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (49a87add-0b1e-4233-80cb-9c5ae4b1c04c)] -> xpath: //a[normalize-space()='RMS Modern']]
-Session ID: 49a87add-0b1e-4233-80cb-9c5ae4b1c04c]]>
+Command: [eed464aa-a4f4-48a0-b0f3-5fbbe0820925, findElement {using=xpath, value=//div[@id='type']/label[1]/span[@class='ant-radio ant-radio-checked']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:50884, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 5028, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:50884/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eed464aa-a4f4-48a0-b0f3-5fbbe0820925]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+              <![CDATA[org.openqa.selenium.WebDriverException: TypeError: browsingContext.currentWindowGlobal is null
 Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'DESKTOP-K93H14H', ip: '192.168.0.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [49a87add-0b1e-4233-80cb-9c5ae4b1c04c, clickElement {id=ec65b9aa-f500-4c4a-8cec-e4fc1109f8a8}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:56035, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 17392, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:56035/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (49a87add-0b1e-4233-80cb-9c5ae4b1c04c)] -> xpath: //a[normalize-space()='RMS Modern']]
-Session ID: 49a87add-0b1e-4233-80cb-9c5ae4b1c04c
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:108)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+Command: [eed464aa-a4f4-48a0-b0f3-5fbbe0820925, findElement {using=xpath, value=//div[@id='type']/label[1]/span[@class='ant-radio ant-radio-checked']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:50884, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 5028, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:50884/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eed464aa-a4f4-48a0-b0f3-5fbbe0820925
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at com.pack.loginPages.LoginPage.clickSignIn(LoginPage.java:73)
-at com.pack.testCases.TC_BaseClass.setup(TC_BaseClass.java:78)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:197)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:193)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:631)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:628)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+at com.pack.loginPages.UpdateEmployeeAvailability.clickEmptyCell(UpdateEmployeeAvailability.java:152)
+at com.pack.testCases.TC_UpdateEmployeeAvailability.updateSchedulingTab(TC_UpdateEmployeeAvailability.java:31)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:567)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -574,27 +392,57 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.util.concurrent.TimeoutException
-at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
-at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:66)
-... 64 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateSchedulingTab -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-24T19:02:48 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643031168435" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-25T18:00:54 IST" name="tearDown" finished-at="2022-01-25T18:00:54 IST" duration-ms="580" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Failed to decode response from marionette
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DESKTOP-K93H14H', ip: '192.168.0.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [eed464aa-a4f4-48a0-b0f3-5fbbe0820925, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:50884, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 5028, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:50884/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eed464aa-a4f4-48a0-b0f3-5fbbe0820925]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DESKTOP-K93H14H', ip: '192.168.0.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [eed464aa-a4f4-48a0-b0f3-5fbbe0820925, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:50884, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 5028, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:50884/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eed464aa-a4f4-48a0-b0f3-5fbbe0820925
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:102)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-24T19:02:48 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643031168440" status="SKIP">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-25T18:00:54 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643113854817" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="updateSchedulingTab(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-24T19:02:48 IST" name="updateSchedulingTab" data-provider="EmployeeAvailability" finished-at="2022-01-24T19:02:48 IST" duration-ms="0" status="SKIP">
+        <test-method signature="updateSchedulingTab(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-25T18:00:54 IST" name="updateSchedulingTab" data-provider="EmployeeAvailability" finished-at="2022-01-25T18:00:54 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -737,112 +585,54 @@ at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHand
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[java.util.concurrent.TimeoutException
+              <![CDATA[Failed to decode response from marionette
 Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'DESKTOP-K93H14H', ip: '192.168.0.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [49a87add-0b1e-4233-80cb-9c5ae4b1c04c, clickElement {id=ec65b9aa-f500-4c4a-8cec-e4fc1109f8a8}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:56035, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 17392, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:56035/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (49a87add-0b1e-4233-80cb-9c5ae4b1c04c)] -> xpath: //a[normalize-space()='RMS Modern']]
-Session ID: 49a87add-0b1e-4233-80cb-9c5ae4b1c04c]]>
+Command: [eed464aa-a4f4-48a0-b0f3-5fbbe0820925, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:50884, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 5028, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:50884/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eed464aa-a4f4-48a0-b0f3-5fbbe0820925]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
 Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'DESKTOP-K93H14H', ip: '192.168.0.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [49a87add-0b1e-4233-80cb-9c5ae4b1c04c, clickElement {id=ec65b9aa-f500-4c4a-8cec-e4fc1109f8a8}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:56035, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 17392, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:56035/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (49a87add-0b1e-4233-80cb-9c5ae4b1c04c)] -> xpath: //a[normalize-space()='RMS Modern']]
-Session ID: 49a87add-0b1e-4233-80cb-9c5ae4b1c04c
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:108)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+Command: [eed464aa-a4f4-48a0-b0f3-5fbbe0820925, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:50884, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 5028, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:50884/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eed464aa-a4f4-48a0-b0f3-5fbbe0820925
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at com.pack.loginPages.LoginPage.clickSignIn(LoginPage.java:73)
-at com.pack.testCases.TC_BaseClass.setup(TC_BaseClass.java:78)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.util.concurrent.TimeoutException
-at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
-at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:66)
-... 64 more
+at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:102)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateSchedulingTab -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-24T19:02:48 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643031168455" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-25T18:00:54 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643113854831" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-24T19:02:48 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643031168459" status="SKIP">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-25T18:00:54 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643113854834" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="updateSchedulingTab(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-24T19:02:48 IST" name="updateSchedulingTab" data-provider="EmployeeAvailability" finished-at="2022-01-24T19:02:48 IST" duration-ms="0" status="SKIP">
+        <test-method signature="updateSchedulingTab(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-25T18:00:54 IST" name="updateSchedulingTab" data-provider="EmployeeAvailability" finished-at="2022-01-25T18:00:54 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -985,112 +775,54 @@ at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHand
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[java.util.concurrent.TimeoutException
+              <![CDATA[Failed to decode response from marionette
 Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'DESKTOP-K93H14H', ip: '192.168.0.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [49a87add-0b1e-4233-80cb-9c5ae4b1c04c, clickElement {id=ec65b9aa-f500-4c4a-8cec-e4fc1109f8a8}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:56035, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 17392, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:56035/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (49a87add-0b1e-4233-80cb-9c5ae4b1c04c)] -> xpath: //a[normalize-space()='RMS Modern']]
-Session ID: 49a87add-0b1e-4233-80cb-9c5ae4b1c04c]]>
+Command: [eed464aa-a4f4-48a0-b0f3-5fbbe0820925, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:50884, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 5028, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:50884/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eed464aa-a4f4-48a0-b0f3-5fbbe0820925]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
 Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'DESKTOP-K93H14H', ip: '192.168.0.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [49a87add-0b1e-4233-80cb-9c5ae4b1c04c, clickElement {id=ec65b9aa-f500-4c4a-8cec-e4fc1109f8a8}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:56035, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 17392, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:56035/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (49a87add-0b1e-4233-80cb-9c5ae4b1c04c)] -> xpath: //a[normalize-space()='RMS Modern']]
-Session ID: 49a87add-0b1e-4233-80cb-9c5ae4b1c04c
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:108)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+Command: [eed464aa-a4f4-48a0-b0f3-5fbbe0820925, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:50884, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 5028, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:50884/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eed464aa-a4f4-48a0-b0f3-5fbbe0820925
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at com.pack.loginPages.LoginPage.clickSignIn(LoginPage.java:73)
-at com.pack.testCases.TC_BaseClass.setup(TC_BaseClass.java:78)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.util.concurrent.TimeoutException
-at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
-at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:66)
-... 64 more
+at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:102)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateSchedulingTab -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-24T19:02:48 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643031168475" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-25T18:00:54 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643113854845" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-24T19:02:48 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643031168480" status="SKIP">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-25T18:00:54 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643113854848" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="updateSchedulingTab(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-24T19:02:48 IST" name="updateSchedulingTab" data-provider="EmployeeAvailability" finished-at="2022-01-24T19:02:48 IST" duration-ms="0" status="SKIP">
+        <test-method signature="updateSchedulingTab(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-25T18:00:54 IST" name="updateSchedulingTab" data-provider="EmployeeAvailability" finished-at="2022-01-25T18:00:54 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -1233,112 +965,54 @@ at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHand
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[java.util.concurrent.TimeoutException
+              <![CDATA[Failed to decode response from marionette
 Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'DESKTOP-K93H14H', ip: '192.168.0.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [49a87add-0b1e-4233-80cb-9c5ae4b1c04c, clickElement {id=ec65b9aa-f500-4c4a-8cec-e4fc1109f8a8}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:56035, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 17392, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:56035/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (49a87add-0b1e-4233-80cb-9c5ae4b1c04c)] -> xpath: //a[normalize-space()='RMS Modern']]
-Session ID: 49a87add-0b1e-4233-80cb-9c5ae4b1c04c]]>
+Command: [eed464aa-a4f4-48a0-b0f3-5fbbe0820925, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:50884, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 5028, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:50884/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eed464aa-a4f4-48a0-b0f3-5fbbe0820925]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
 Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'DESKTOP-K93H14H', ip: '192.168.0.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [49a87add-0b1e-4233-80cb-9c5ae4b1c04c, clickElement {id=ec65b9aa-f500-4c4a-8cec-e4fc1109f8a8}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:56035, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 17392, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:56035/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (49a87add-0b1e-4233-80cb-9c5ae4b1c04c)] -> xpath: //a[normalize-space()='RMS Modern']]
-Session ID: 49a87add-0b1e-4233-80cb-9c5ae4b1c04c
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:108)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+Command: [eed464aa-a4f4-48a0-b0f3-5fbbe0820925, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:50884, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 5028, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:50884/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eed464aa-a4f4-48a0-b0f3-5fbbe0820925
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at com.pack.loginPages.LoginPage.clickSignIn(LoginPage.java:73)
-at com.pack.testCases.TC_BaseClass.setup(TC_BaseClass.java:78)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.util.concurrent.TimeoutException
-at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
-at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:66)
-... 64 more
+at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:102)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateSchedulingTab -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-24T19:02:48 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643031168495" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-25T18:00:54 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643113854860" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-24T19:02:48 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643031168504" status="SKIP">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-25T18:00:54 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643113854868" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="updateSchedulingTab(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-24T19:02:48 IST" name="updateSchedulingTab" data-provider="EmployeeAvailability" finished-at="2022-01-24T19:02:48 IST" duration-ms="0" status="SKIP">
+        <test-method signature="updateSchedulingTab(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-25T18:00:54 IST" name="updateSchedulingTab" data-provider="EmployeeAvailability" finished-at="2022-01-25T18:00:54 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -1481,112 +1155,54 @@ at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHand
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[java.util.concurrent.TimeoutException
+              <![CDATA[Failed to decode response from marionette
 Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'DESKTOP-K93H14H', ip: '192.168.0.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [49a87add-0b1e-4233-80cb-9c5ae4b1c04c, clickElement {id=ec65b9aa-f500-4c4a-8cec-e4fc1109f8a8}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:56035, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 17392, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:56035/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (49a87add-0b1e-4233-80cb-9c5ae4b1c04c)] -> xpath: //a[normalize-space()='RMS Modern']]
-Session ID: 49a87add-0b1e-4233-80cb-9c5ae4b1c04c]]>
+Command: [eed464aa-a4f4-48a0-b0f3-5fbbe0820925, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:50884, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 5028, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:50884/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eed464aa-a4f4-48a0-b0f3-5fbbe0820925]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
 Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'DESKTOP-K93H14H', ip: '192.168.0.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [49a87add-0b1e-4233-80cb-9c5ae4b1c04c, clickElement {id=ec65b9aa-f500-4c4a-8cec-e4fc1109f8a8}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:56035, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 17392, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:56035/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (49a87add-0b1e-4233-80cb-9c5ae4b1c04c)] -> xpath: //a[normalize-space()='RMS Modern']]
-Session ID: 49a87add-0b1e-4233-80cb-9c5ae4b1c04c
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:108)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+Command: [eed464aa-a4f4-48a0-b0f3-5fbbe0820925, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:50884, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 5028, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:50884/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eed464aa-a4f4-48a0-b0f3-5fbbe0820925
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at com.pack.loginPages.LoginPage.clickSignIn(LoginPage.java:73)
-at com.pack.testCases.TC_BaseClass.setup(TC_BaseClass.java:78)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.util.concurrent.TimeoutException
-at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
-at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:66)
-... 64 more
+at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:102)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateSchedulingTab -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-24T19:02:48 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643031168522" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-25T18:00:54 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643113854879" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-24T19:02:48 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643031168526" status="SKIP">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-25T18:00:54 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643113854882" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="updateSchedulingTab(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-24T19:02:48 IST" name="updateSchedulingTab" data-provider="EmployeeAvailability" finished-at="2022-01-24T19:02:48 IST" duration-ms="0" status="SKIP">
+        <test-method signature="updateSchedulingTab(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-25T18:00:54 IST" name="updateSchedulingTab" data-provider="EmployeeAvailability" finished-at="2022-01-25T18:00:54 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -1729,104 +1345,46 @@ at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHand
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[java.util.concurrent.TimeoutException
+              <![CDATA[Failed to decode response from marionette
 Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'DESKTOP-K93H14H', ip: '192.168.0.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [49a87add-0b1e-4233-80cb-9c5ae4b1c04c, clickElement {id=ec65b9aa-f500-4c4a-8cec-e4fc1109f8a8}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:56035, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 17392, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:56035/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (49a87add-0b1e-4233-80cb-9c5ae4b1c04c)] -> xpath: //a[normalize-space()='RMS Modern']]
-Session ID: 49a87add-0b1e-4233-80cb-9c5ae4b1c04c]]>
+Command: [eed464aa-a4f4-48a0-b0f3-5fbbe0820925, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:50884, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 5028, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:50884/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eed464aa-a4f4-48a0-b0f3-5fbbe0820925]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
 Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'DESKTOP-K93H14H', ip: '192.168.0.180', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [49a87add-0b1e-4233-80cb-9c5ae4b1c04c, clickElement {id=ec65b9aa-f500-4c4a-8cec-e4fc1109f8a8}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:56035, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 17392, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:56035/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (49a87add-0b1e-4233-80cb-9c5ae4b1c04c)] -> xpath: //a[normalize-space()='RMS Modern']]
-Session ID: 49a87add-0b1e-4233-80cb-9c5ae4b1c04c
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$6(RetryRequest.java:82)
-at net.jodah.failsafe.Functions.lambda$get$0(Functions.java:48)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.RetryPolicyExecutor.lambda$supply$0(RetryPolicyExecutor.java:66)
-at net.jodah.failsafe.Execution.executeSync(Execution.java:128)
-at net.jodah.failsafe.FailsafeExecutor.call(FailsafeExecutor.java:379)
-at net.jodah.failsafe.FailsafeExecutor.get(FailsafeExecutor.java:68)
-at org.openqa.selenium.remote.http.RetryRequest.lambda$apply$7(RetryRequest.java:82)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:108)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+Command: [eed464aa-a4f4-48a0-b0f3-5fbbe0820925, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 95.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211218203254, moz:debuggerAddress: localhost:50884, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 5028, moz:profile: C:\Users\745 G6\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), se:cdp: ws://localhost:50884/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eed464aa-a4f4-48a0-b0f3-5fbbe0820925
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at com.pack.loginPages.LoginPage.clickSignIn(LoginPage.java:73)
-at com.pack.testCases.TC_BaseClass.setup(TC_BaseClass.java:78)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.util.concurrent.TimeoutException
-at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1956)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2091)
-at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:66)
-... 64 more
+at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:102)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateSchedulingTab -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-24T19:02:48 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643031168542" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pack.testCases.TC_UpdateEmployeeAvailability@5b202a3a]" started-at="2022-01-25T18:00:54 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1643113854893" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

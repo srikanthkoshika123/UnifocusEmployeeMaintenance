@@ -571,11 +571,12 @@ public class UpdateEmployeeAvailability extends TC_BaseClass {
 	public void clickRefreshButton() throws InterruptedException {
 		clickUnifocus();
 		driver.switchTo().defaultContent();
+		Thread.sleep(8000);
 		WebDriverWait wait = new WebDriverWait(driver, 40);
 		WebElement refresh = wait.until(ExpectedConditions
 				.visibilityOfElementLocated(By.xpath("//button[@class='ant-btn action-button ant-btn-primary']")));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", refresh);
-		Thread.sleep(8000);
+		Thread.sleep(40000);
 		
 	}
 }
