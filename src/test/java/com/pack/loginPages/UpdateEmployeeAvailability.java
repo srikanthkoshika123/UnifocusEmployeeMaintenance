@@ -180,7 +180,7 @@ public class UpdateEmployeeAvailability extends TC_BaseClass {
 	}
 
 	@SuppressWarnings("deprecation")
-	public void clickAddShift(String editStart, String editEnd) {
+	public void clickAddShift(String editStart, String editEnd) throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, 40);
 		WebElement addShift = wait.until(
 				ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='Add Availability']")));
@@ -193,11 +193,12 @@ public class UpdateEmployeeAvailability extends TC_BaseClass {
 		endTime.sendKeys(Keys.CONTROL + "a");
 		endTime.sendKeys(Keys.DELETE);
 		endTime.sendKeys(editEnd);
-
+       
 		WebDriverWait wait3 = new WebDriverWait(driver, 40);
 		WebElement preferredOff = wait3.until(ExpectedConditions.elementToBeClickable(
 				By.xpath("//div[@id='type']/label[2]/span[1]")));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", preferredOff);
+		 Thread.sleep(4000);
 		WebDriverWait wait1 = new WebDriverWait(driver, 40);
 		WebElement clickAdd = wait1
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-primary']")));
@@ -233,6 +234,7 @@ public class UpdateEmployeeAvailability extends TC_BaseClass {
 		WebElement AvailableToWork = wait3.until(ExpectedConditions.elementToBeClickable(
 				By.xpath("//div[@id='type']/label[3]/span[1]")));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", AvailableToWork);
+		
 		WebDriverWait wait1 = new WebDriverWait(driver, 40);
 		WebElement clickAdd = wait1
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-primary']")));
@@ -470,10 +472,11 @@ public class UpdateEmployeeAvailability extends TC_BaseClass {
 		startTime.sendKeys(Keys.CONTROL + "a");
 		startTime.sendKeys(Keys.DELETE);
 		startTime.sendKeys(starttime);
-
+		Thread.sleep(4000);
 		endTime.sendKeys(Keys.CONTROL + "a");
 		endTime.sendKeys(Keys.DELETE);
 		endTime.sendKeys(endtime);
+		Thread.sleep(4000);
 		WebDriverWait wait3 = new WebDriverWait(driver, 40);
 		WebElement save = wait3
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-primary']")));
