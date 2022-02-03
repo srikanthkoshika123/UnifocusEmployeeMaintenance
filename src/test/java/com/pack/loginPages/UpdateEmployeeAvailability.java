@@ -150,7 +150,7 @@ public class UpdateEmployeeAvailability extends TC_BaseClass {
 		endTime.sendKeys(endtime);
 		WebDriverWait wait3 = new WebDriverWait(driver, 40);
 		WebElement preferredOff = wait3.until(ExpectedConditions.elementToBeClickable(
-				By.xpath("//div[@id='type']/label[1]/span[@class='ant-radio ant-radio-checked']")));
+				By.xpath("//div[@id='type']/label[1]/span[1]")));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", preferredOff);
 		WebDriverWait wait1 = new WebDriverWait(driver, 40);
 		WebElement clickAdd = wait1

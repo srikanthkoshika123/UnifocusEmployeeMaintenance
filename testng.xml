@@ -5,10 +5,10 @@
          <listener class-name="com.pack.utils.Reporting"/>
         </listeners>
   <test name="openShift">
-    <parameter name="browser" value="firefox" />
+    <parameter name="browser" value="chrome" />
 
        <classes>
-       <class name="com.pack.testCases.TC_UpdateEmployeeAvailability"/>
+       <class name="com.pack.testCases.TC_SchedularTest"/>
        
     </classes>
   </test> <!-- Test -->

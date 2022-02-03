@@ -63,12 +63,11 @@ public class LoginPage extends TC_BaseClass {
 	}
 
 	public void clickSignIn() throws InterruptedException {
-		Thread.sleep(8000);
+		Thread.sleep(6000);
 		signin.click();
-		Assert.assertEquals(true, signin.isEnabled());
 		System.out.println("signin clicked");
-		WebDriverWait wait = new WebDriverWait(driver, 120);
-		WebElement rms = wait
+		WebDriverWait wait1 = new WebDriverWait(driver, 120);
+		WebElement rms = wait1
 				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[normalize-space()='RMS Modern']")));
 		rms.click();
 

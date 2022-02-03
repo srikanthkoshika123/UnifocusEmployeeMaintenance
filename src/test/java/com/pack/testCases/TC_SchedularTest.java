@@ -10,7 +10,12 @@ public class TC_SchedularTest extends TC_BaseClass{
 		 //ScreenRecorderUtil.startRecord("HomePage");
 		 SchedularTest schedularTest=new SchedularTest(driver);
 		 schedularTest.clickUnifocus();
-		 schedularTest.retryingFindClick();
-		 schedularTest.selectDateRange();
+		 schedularTest.switchFrame();
+		 schedularTest.selectPropertyDefault();
+		 schedularTest.clickAdd();
+		 schedularTest.selectPropertyDefault1();
+		 schedularTest.robotClass();
+		 //schedularTest.retryingFindClick();
+		// schedularTest.selectDateRange();
 	 }
 }

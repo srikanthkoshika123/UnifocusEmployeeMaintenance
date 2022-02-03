@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.TakesScreenshot;
@@ -21,11 +22,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
-import com.pack.loginPages.EmployeeMaintenance;
 import com.pack.loginPages.LoginPage;
 import com.pack.utils.ReadConfig;
-
-import recordingTests.ScreenRecorderUtil;
 
 public class TC_BaseClass {
 	ReadConfig readconfig=new ReadConfig();
@@ -48,16 +46,19 @@ public class TC_BaseClass {
 		PropertyConfigurator.configure("log.properties.txt");
 		
 		if(browser.equals("chrome")) {
+	
 		System.setProperty("webdriver.chrome.driver",readconfig.getChromepath());
 		ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 		 driver = new ChromeDriver(chromeOptions);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 		
 		 
 		}
 		else if(browser.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"//Drivers//geckodriver.exe");
 			 driver = new FirefoxDriver();
+				JavascriptExecutor js = (JavascriptExecutor) driver;
 			}
 		else if(browser.equals("ie")) {
 			System.setProperty("webdriver.ie.driver",readconfig.getIEpath());
@@ -91,7 +92,7 @@ public class TC_BaseClass {
 	
 	 @AfterMethod
 	   	public void tearDown() throws Exception {
-	   		ScreenRecorderUtil.stopRecord();  
+	   		//ScreenRecorderUtil.stopRecord();  
 	   		driver.quit();
 	   		
 	   	} 
