@@ -8,7 +8,7 @@
     <parameter name="browser" value="chrome" />
 
        <classes>
-       <class name="com.pack.testCases.TC_SchedularTest"/>
+       <class name="com.pack.testCases.TC_TandAPage"/>
        
     </classes>
   </test> <!-- Test -->

@@ -107,14 +107,14 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 		return result;
 	}
 
-	public void changeNameDivision() {
+	public void changeNameDivision(String divisionName) {
 		WebDriverWait wait = new WebDriverWait(driver, 40);
 		WebElement editName = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Division 1']")));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", editName);
 		editName.sendKeys(Keys.CONTROL + "a");
 		editName.sendKeys(Keys.DELETE);
-		editName.sendKeys("Auto Div1");
+		editName.sendKeys(divisionName);
 		WebDriverWait wait1 = new WebDriverWait(driver, 40);
 		WebElement ok = wait1
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-primary']")));
@@ -139,18 +139,18 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 		return result;
 	}
 
-	public void EditCode() {
+	public void EditCode(String divisionCode) {
 		WebDriverWait wait = new WebDriverWait(driver, 40);
 		WebElement editCode = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Division 1']")));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", editCode);
 		editCode.sendKeys(Keys.CONTROL + "a");
 		editCode.sendKeys(Keys.DELETE);
-		editCode.sendKeys("Auto Div1");
+		editCode.sendKeys(divisionCode);
 		editCode.sendKeys(Keys.ENTER);
 	}
 
-	public void clickAddDepatment() {
+	public void clickAddDepatment(String expandDivision) {
 		WebDriverWait wait = new WebDriverWait(driver, 40);
 		WebElement ele = wait.until(ExpectedConditions.elementToBeClickable(
 				By.xpath("//button[@class='ant-btn ant-dropdown-trigger']//span[contains(text(),'Add')]")));
@@ -161,9 +161,9 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 		WebElement addDivision = driver.findElement(By.xpath("//li[normalize-space()='Add Department']"));
 		addDivision.click();
 		WebDriverWait wait1 = new WebDriverWait(driver, 40);
-		WebElement expandDivision = wait1.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//div[@row-index='20']//span[@class='ag-icon ag-icon-contracted']")));
-		((JavascriptExecutor) driver).executeScript("arguments[0].click();", expandDivision);
+		WebElement expanddivision = wait1.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//div[@row-index='"+expandDivision+"']//span[@class='ag-icon ag-icon-contracted']")));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", expanddivision);
 
 	}
 
@@ -185,14 +185,14 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 		return result;
 	}
 
-	public void changeNameDepartment() {
+	public void changeNameDepartment(String departmentName) {
 		WebDriverWait wait = new WebDriverWait(driver, 40);
 		WebElement editDepartment = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Department1']")));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", editDepartment);
 		editDepartment.sendKeys(Keys.CONTROL + "a");
 		editDepartment.sendKeys(Keys.DELETE);
-		editDepartment.sendKeys("Auto Dep1");
+		editDepartment.sendKeys(departmentName);
 		WebDriverWait wait1 = new WebDriverWait(driver, 40);
 		WebElement ok = wait1
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-primary']")));
@@ -217,18 +217,18 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 		return result;
 	}
 
-	public void EditDepartmentCode() {
+	public void EditDepartmentCode(String departmentCode) {
 		WebDriverWait wait = new WebDriverWait(driver, 40);
 		WebElement editCode = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Department1']")));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", editCode);
 		editCode.sendKeys(Keys.CONTROL + "a");
 		editCode.sendKeys(Keys.DELETE);
-		editCode.sendKeys("Auto Dept1");
+		editCode.sendKeys(departmentCode);
 		editCode.sendKeys(Keys.ENTER);
 	}
 
-	public void clickAddJob() {
+	public void clickAddJob(String expandDepartment) {
 		WebDriverWait wait = new WebDriverWait(driver, 40);
 		WebElement ele = wait.until(ExpectedConditions.elementToBeClickable(
 				By.xpath("//button[@class='ant-btn ant-dropdown-trigger']//span[contains(text(),'Add')]")));
@@ -240,7 +240,7 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 		addJob.click();
 		WebDriverWait wait1 = new WebDriverWait(driver, 40);
 		WebElement expandDivision = wait1.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//div[@row-index='21']//span[@class='ag-icon ag-icon-contracted']")));
+				.elementToBeClickable(By.xpath("//div[@row-index='"+expandDepartment+"']//span[@class='ag-icon ag-icon-contracted']")));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", expandDivision);
 
 	}
@@ -252,7 +252,7 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 			try {
 				driver.switchTo().activeElement();
 				Actions action = new Actions(driver);
-				WebElement department = driver.findElement(By.xpath("//div/span/span[text()='Job1']"));
+				WebElement department = driver.findElement(By.xpath("//span[text()='Job1']"));
 				action.moveToElement(department).doubleClick().build().perform();
 				result = true;
 				break;
@@ -263,14 +263,14 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 		return result;
 	}
 
-	public void changeNameJob() {
+	public void changeNameJob(String JobName) {
 		WebDriverWait wait = new WebDriverWait(driver, 40);
 		WebElement editDepartment = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Job1']")));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", editDepartment);
 		editDepartment.sendKeys(Keys.CONTROL + "a");
 		editDepartment.sendKeys(Keys.DELETE);
-		editDepartment.sendKeys("Auto job1");
+		editDepartment.sendKeys(JobName);
 		WebDriverWait wait1 = new WebDriverWait(driver, 40);
 		WebElement ok = wait1
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-primary']")));
@@ -295,13 +295,13 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 		return result;
 	}
 
-	public void EditJobCode() {
+	public void EditJobCode(String JobCode) {
 		WebDriverWait wait = new WebDriverWait(driver, 40);
 		WebElement editCode = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Job1']")));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", editCode);
 		editCode.sendKeys(Keys.CONTROL + "a");
 		editCode.sendKeys(Keys.DELETE);
-		editCode.sendKeys("Auto Job1");
+		editCode.sendKeys(JobCode);
 		editCode.sendKeys(Keys.ENTER);
 	}
 
@@ -318,12 +318,16 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 		addJob.click();
 
 	}
-
-	public boolean doubleClickAssignment() throws InterruptedException {
+	public void expandJob(String expandJob) {
 		WebDriverWait wait1 = new WebDriverWait(driver, 40);
 		WebElement expandAssignment = wait1.until(ExpectedConditions.elementToBeClickable(
-				By.xpath("//div[@row-index='22']//span[@class='ag-icon ag-icon-contracted']")));
+				By.xpath("//div[@row-index='"+expandJob+"']//span[@class='ag-icon ag-icon-contracted']")));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", expandAssignment);
+		
+	}
+
+	public boolean doubleClickAssignment() throws InterruptedException {
+		
 		boolean result = false;
 		int attempts = 0;
 		while (attempts < 4) {
@@ -342,14 +346,14 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 		return result;
 	}
 
-	public void changeNameAssignment() {
+	public void changeNameAssignment(String assignment1Name) {
 		WebDriverWait wait = new WebDriverWait(driver, 40);
 		WebElement editDepartment = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Assignment1']")));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", editDepartment);
 		editDepartment.sendKeys(Keys.CONTROL + "a");
 		editDepartment.sendKeys(Keys.DELETE);
-		editDepartment.sendKeys("Auto Assignment1");
+		editDepartment.sendKeys(assignment1Name);
 		WebDriverWait wait1 = new WebDriverWait(driver, 40);
 		WebElement ok = wait1
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-primary']")));
@@ -374,25 +378,25 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 		return result;
 	}
 
-	public void EditAssignmentCode() {
+	public void EditAssignmentCode(String assignment1Code) {
 		WebDriverWait wait = new WebDriverWait(driver, 40);
 		WebElement editCode = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Assignment1']")));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", editCode);
 		editCode.sendKeys(Keys.CONTROL + "a");
 		editCode.sendKeys(Keys.DELETE);
-		editCode.sendKeys("Auto Assignment1");
+		editCode.sendKeys(assignment1Code);
 		editCode.sendKeys(Keys.ENTER);
 	}
 
-	public boolean doubleClickAutoJob1() throws InterruptedException {
+	public boolean doubleClickAutoJob1(String autoJob1) throws InterruptedException {
 		boolean result = false;
 		int attempts = 0;
 		while (attempts < 4) {
 			try {
 				driver.switchTo().activeElement();
 				Actions action = new Actions(driver);
-				WebElement department = driver.findElement(By.xpath("//div/span/span[text()='Auto job1']"));
+				WebElement department = driver.findElement(By.xpath("//div/span/span[text()='"+autoJob1+"']"));
 				action.moveToElement(department).click().build().perform();
 				result = true;
 				break;
@@ -404,6 +408,7 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 	}
 	public void clickExpandAutoJob1() throws InterruptedException {
 		clickAddAssignment();
+		//doubleClickAssignment2();
 	
 	}
 
@@ -426,14 +431,14 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 		return result;
 	}
 
-	public void changeNameAssignment2() {
+	public void changeNameAssignment2(String assignment2Name) {
 		WebDriverWait wait = new WebDriverWait(driver, 40);
 		WebElement editDepartment = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Assignment1']")));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", editDepartment);
 		editDepartment.sendKeys(Keys.CONTROL + "a");
 		editDepartment.sendKeys(Keys.DELETE);
-		editDepartment.sendKeys("Auto Assignment2");
+		editDepartment.sendKeys(assignment2Name);
 		WebDriverWait wait1 = new WebDriverWait(driver, 40);
 		WebElement ok = wait1
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-primary']")));
@@ -457,14 +462,14 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 		}
 		return result;
 	}
-	public void EditAssignmentCode2() {
+	public void EditAssignmentCode2(String assignment2Code) {
 		WebDriverWait wait = new WebDriverWait(driver, 40);
 		WebElement editCode = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Assignment1']")));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", editCode);
 		editCode.sendKeys(Keys.CONTROL + "a");
 		editCode.sendKeys(Keys.DELETE);
-		editCode.sendKeys("Auto Assisnment2");
+		editCode.sendKeys(assignment2Code);
 		editCode.sendKeys(Keys.ENTER);
 	}
 
@@ -505,14 +510,14 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 		return result;
 	}
 
-	public void changeNameAssignment3() {
+	public void changeNameAssignment3(String assignment3Name) {
 		WebDriverWait wait = new WebDriverWait(driver, 40);
 		WebElement editDepartment = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Assignment1']")));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", editDepartment);
 		editDepartment.sendKeys(Keys.CONTROL + "a");
 		editDepartment.sendKeys(Keys.DELETE);
-		editDepartment.sendKeys("Auto Assignment3");
+		editDepartment.sendKeys(assignment3Name);
 		WebDriverWait wait1 = new WebDriverWait(driver, 40);
 		WebElement ok = wait1
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-primary']")));
@@ -537,14 +542,14 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 		return result;
 	}
 
-	public void EditAssignmentCode3() {
+	public void EditAssignmentCode3(String assignment3Code) {
 		WebDriverWait wait = new WebDriverWait(driver, 40);
 		WebElement editCode = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Assignment1']")));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", editCode);
 		editCode.sendKeys(Keys.CONTROL + "a");
 		editCode.sendKeys(Keys.DELETE);
-		editCode.sendKeys("Auto Assisnment3");
+		editCode.sendKeys(assignment3Code);
 		editCode.sendKeys(Keys.ENTER);
 	}
 

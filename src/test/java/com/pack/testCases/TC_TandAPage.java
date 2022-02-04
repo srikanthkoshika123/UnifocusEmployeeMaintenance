@@ -15,21 +15,16 @@ public class TC_TandAPage extends TC_BaseClass{
 		
 		ScreenRecorderUtil.startRecord("TandA");
 	    TandAPage tANDa=new TandAPage(driver);
+	    tANDa.clickUnifocus();
 	    tANDa.clickReviewPayPeriod();
 	    tANDa.approveShifts();
-	    tANDa.clickWhoIsInOut();
-	    tANDa.viewAsOf();
+	    tANDa.whoIsInOut();
 	    tANDa.clickAttendancePointsandEvents();
-	    tANDa.viewSelectAll();
 	    tANDa.clickBenefits();
-	    tANDa.viewEmployees();
 	    tANDa.clickEnterEarnings();
-	    tANDa.viewBulkEarnings();
 	    tANDa.clickHolidayPay();
-	    tANDa.viewApplyEarnings();
 	    tANDa.clickPunchImageReview();
-	    tANDa.viewNames();
-	   // tANDa.clickApproveEarnings();
-	   // tANDa.viewApproveAllEarnings();
+	    tANDa.clickApproveEarnings();
+	   
 }
 }
