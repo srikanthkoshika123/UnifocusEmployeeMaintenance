@@ -16,6 +16,8 @@ public class TC_AdminstrationTest extends TC_BaseClass{
 		adminstration.clickUnifocus();
 		adminstration.audit();
 		adminstration.employeeMaintenance();
+		adminstration.EditPayRates();
+		adminstration.manageEmployeeBadges();
 		adminstration.myProcesses();
 		
 	}

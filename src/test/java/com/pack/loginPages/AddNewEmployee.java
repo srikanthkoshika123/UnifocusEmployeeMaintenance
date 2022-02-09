@@ -65,6 +65,7 @@ public class AddNewEmployee extends TC_BaseClass{
 	WebElement hr;
 	@FindBy(xpath="//button[@class='ant-btn ant-btn-primary']")
 	WebElement save;
+	
 	public void switchFrame() throws InterruptedException {
 	driver.switchTo().frame(frame);
 	WebElement addnew = driver.findElement(By.xpath("//button[normalize-space()='Add New']"));

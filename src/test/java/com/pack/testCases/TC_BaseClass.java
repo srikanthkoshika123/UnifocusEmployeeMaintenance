@@ -25,6 +25,8 @@ import org.testng.annotations.Parameters;
 import com.pack.loginPages.LoginPage;
 import com.pack.utils.ReadConfig;
 
+import recordingTests.ScreenRecorderUtil;
+
 public class TC_BaseClass {
 	ReadConfig readconfig=new ReadConfig();
 	public String url =readconfig.getApplicationUrl();
@@ -92,7 +94,7 @@ public class TC_BaseClass {
 	
 	 @AfterMethod
 	   	public void tearDown() throws Exception {
-	   		//ScreenRecorderUtil.stopRecord();  
+	   		ScreenRecorderUtil.stopRecord();  
 	   		driver.quit();
 	   		
 	   	} 

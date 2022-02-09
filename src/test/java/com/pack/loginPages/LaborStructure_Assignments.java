@@ -72,6 +72,7 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 		return result;
 	}
 
+	@SuppressWarnings("deprecation")
 	public void clickAdd() throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, 40);
 		WebElement ele = wait.until(ExpectedConditions.elementToBeClickable(
@@ -82,7 +83,6 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 		driver.switchTo().activeElement();
 		WebElement addDivision = driver.findElement(By.xpath("//li[contains(text(),'Add Division')]"));
 		addDivision.click();
-		  @SuppressWarnings("deprecation")
 		EventFiringWebDriver eventFiringWebDriver = new EventFiringWebDriver(driver);
 		eventFiringWebDriver.executeScript("document.querySelector('div[ref=\"eBodyViewport\"]').scrollTop=600");
 		
@@ -170,12 +170,12 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 	public boolean doubleClickDepatment() throws InterruptedException {
 		boolean result = false;
 		int attempts = 0;
-		while (attempts < 4) {
+		while (attempts < 2) {
 			try {
 				driver.switchTo().activeElement();
 				Actions action = new Actions(driver);
 				WebElement department = driver.findElement(By.xpath("//span[text()='Department1']"));
-				action.moveToElement(department).doubleClick().build().perform();
+				action.moveToElement(department).doubleClick(department).build().perform();
 				result = true;
 				break;
 			} catch (StaleElementReferenceException e) {
@@ -202,7 +202,7 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 	public boolean doubleClickDepartmentCode() throws InterruptedException {
 		boolean result = false;
 		int attempts = 0;
-		while (attempts < 4) {
+		while (attempts < 2) {
 			try {
 				driver.switchTo().activeElement();
 				Actions action = new Actions(driver);
@@ -248,12 +248,12 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 	public boolean doubleClickJob() throws InterruptedException {
 		boolean result = false;
 		int attempts = 0;
-		while (attempts < 4) {
+		while (attempts < 2) {
 			try {
 				driver.switchTo().activeElement();
 				Actions action = new Actions(driver);
-				WebElement department = driver.findElement(By.xpath("//span[text()='Job1']"));
-				action.moveToElement(department).doubleClick().build().perform();
+				WebElement department = driver.findElement(By.xpath("//div/span/span[text()='Job1']"));
+				action.moveToElement(department).doubleClick(department).build().perform();
 				result = true;
 				break;
 			} catch (StaleElementReferenceException e) {
@@ -330,13 +330,13 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 		
 		boolean result = false;
 		int attempts = 0;
-		while (attempts < 4) {
+		while (attempts < 2) {
 			try {
 				
 				driver.switchTo().activeElement();
 				Actions action = new Actions(driver);
-				WebElement department = driver.findElement(By.xpath("//div/span/span[text()='Assignment1']"));
-				action.moveToElement(department).doubleClick().build().perform();
+				WebElement department = driver.findElement(By.xpath("//div[2]/div[1]/div[3]/div[1]/div[1]/div[1]"));
+				action.moveToElement(department).doubleClick(department).build().perform();
 				result = true;
 				break;
 			} catch (StaleElementReferenceException e) {
@@ -363,7 +363,7 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 	public boolean doubleClickAssignmentCode() throws InterruptedException {
 		boolean result = false;
 		int attempts = 0;
-		while (attempts < 4) {
+		while (attempts < 2) {
 			try {
 				driver.switchTo().activeElement();
 				Actions action = new Actions(driver);
@@ -389,14 +389,14 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 		editCode.sendKeys(Keys.ENTER);
 	}
 
-	public boolean doubleClickAutoJob1(String autoJob1) throws InterruptedException {
+	public boolean doubleClickAutoJob1() throws InterruptedException {
 		boolean result = false;
 		int attempts = 0;
 		while (attempts < 4) {
 			try {
 				driver.switchTo().activeElement();
 				Actions action = new Actions(driver);
-				WebElement department = driver.findElement(By.xpath("//div/span/span[text()='"+autoJob1+"']"));
+				WebElement department = driver.findElement(By.xpath("//div/span/span[text()='Auto Job1']"));
 				action.moveToElement(department).click().build().perform();
 				result = true;
 				break;
@@ -408,7 +408,7 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 	}
 	public void clickExpandAutoJob1() throws InterruptedException {
 		clickAddAssignment();
-		//doubleClickAssignment2();
+	
 	
 	}
 
@@ -420,8 +420,8 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 				
 				driver.switchTo().activeElement();
 				Actions action = new Actions(driver);
-				WebElement department = driver.findElement(By.xpath("//span[text()='Assignment1']"));
-				action.moveToElement(department).doubleClick().build().perform();
+				WebElement department = driver.findElement(By.xpath("//div[2]/div[1]/div[3]/div[1]/div[1]/div[1]"));
+				action.moveToElement(department).doubleClick(department).build().perform();
 				result = true;
 				break;
 			} catch (StaleElementReferenceException e) {
@@ -431,7 +431,8 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 		return result;
 	}
 
-	public void changeNameAssignment2(String assignment2Name) {
+	public void changeNameAssignment2(String assignment2Name) throws InterruptedException {
+		//doubleClickAssignment();
 		WebDriverWait wait = new WebDriverWait(driver, 40);
 		WebElement editDepartment = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Assignment1']")));
@@ -445,7 +446,7 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", ok);
 	}
 
-	public boolean doubleClickAssignmentCode2() throws InterruptedException {
+	/*public boolean doubleClickAssignmentCode2() throws InterruptedException {
 		boolean result = false;
 		int attempts = 0;
 		while (attempts < 4) {
@@ -461,8 +462,9 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 			attempts++;
 		}
 		return result;
-	}
-	public void EditAssignmentCode2(String assignment2Code) {
+	}*/
+	public void EditAssignmentCode2(String assignment2Code) throws InterruptedException {
+		doubleClickAssignmentCode();
 		WebDriverWait wait = new WebDriverWait(driver, 40);
 		WebElement editCode = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Assignment1']")));
@@ -473,10 +475,10 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 		editCode.sendKeys(Keys.ENTER);
 	}
 
-	public boolean doubleClickAutoJob2() throws InterruptedException {
+	/*public boolean doubleClickAutoJob2() throws InterruptedException {
 		boolean result = false;
 		int attempts = 0;
-		while (attempts < 4) {
+		while (attempts < 2) {
 			try {
 				driver.switchTo().activeElement();
 				Actions action = new Actions(driver);
@@ -489,18 +491,19 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 			attempts++;
 		}
 		return result;
-	}
+	}*/
 
-	public boolean doubleClickAssignment3() throws InterruptedException {
+	/*public boolean doubleClickAssignment3() throws InterruptedException {
+		doubleClickAutoJob1();
 		clickAddAssignment();
 		boolean result = false;
 		int attempts = 0;
-		while (attempts < 4) {
+		while (attempts < 2) {
 			try {
 				driver.switchTo().activeElement();
 				Actions action = new Actions(driver);
 				WebElement department = driver.findElement(By.xpath("//span[text()='Assignment1']"));
-				action.moveToElement(department).doubleClick().build().perform();
+				action.moveToElement(department).doubleClick(department).build().perform();
 				result = true;
 				break;
 			} catch (StaleElementReferenceException e) {
@@ -508,9 +511,12 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 			attempts++;
 		}
 		return result;
-	}
+	}*/
 
-	public void changeNameAssignment3(String assignment3Name) {
+	public void changeNameAssignment3(String assignment3Name) throws InterruptedException {
+		doubleClickAutoJob1();
+		clickAddAssignment();
+		doubleClickAssignment();
 		WebDriverWait wait = new WebDriverWait(driver, 40);
 		WebElement editDepartment = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Assignment1']")));
@@ -524,15 +530,15 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", ok);
 	}
 
-	public boolean doubleClickAssignmentCode3() throws InterruptedException {
+	/*public boolean doubleClickAssignmentCode3() throws InterruptedException {
 		boolean result = false;
 		int attempts = 0;
-		while (attempts < 4) {
+		while (attempts < 2) {
 			try {
 				driver.switchTo().activeElement();
 				Actions action = new Actions(driver);
 				WebElement code = driver.findElement(By.xpath("//div[contains(text(),'Assignment1')]"));
-				action.moveToElement(code).doubleClick().build().perform();
+				action.moveToElement(code).doubleClick(code).build().perform();
 				result = true;
 				break;
 			} catch (StaleElementReferenceException e) {
@@ -541,8 +547,9 @@ public class LaborStructure_Assignments extends TC_BaseClass {
 		}
 		return result;
 	}
-
-	public void EditAssignmentCode3(String assignment3Code) {
+*/
+	public void EditAssignmentCode3(String assignment3Code) throws InterruptedException {
+		doubleClickAssignmentCode();
 		WebDriverWait wait = new WebDriverWait(driver, 40);
 		WebElement editCode = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Assignment1']")));

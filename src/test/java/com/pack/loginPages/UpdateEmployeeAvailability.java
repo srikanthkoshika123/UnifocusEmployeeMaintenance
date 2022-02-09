@@ -260,7 +260,6 @@ public class UpdateEmployeeAvailability extends TC_BaseClass {
 
 	public boolean retryingFindClick() throws InterruptedException {
 		driver.switchTo().frame(frame);
-		Thread.sleep(6000);
 		boolean result = false;
 		int attempts = 0;
 		while (attempts < 2) {
@@ -268,9 +267,7 @@ public class UpdateEmployeeAvailability extends TC_BaseClass {
 
 				WebDriverWait wait = new WebDriverWait(driver, 120);
 				WebElement ele = wait.until(ExpectedConditions
-						.elementToBeClickable(By.cssSelector("div > div >button.ant-dropdown-trigger:nth-child(2)"))); // div
-																														// >
-				// div >button.ant-dropdown-trigger:nth-child(2)
+						.elementToBeClickable(By.cssSelector("div > div >button.ant-dropdown-trigger:nth-child(2)"))); 
 				((JavascriptExecutor) driver).executeScript("arguments[0].click();", ele);
 				Actions action = new Actions(driver);
 				action.moveToElement(ele).build().perform();

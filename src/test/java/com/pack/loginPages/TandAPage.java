@@ -28,32 +28,22 @@ public class TandAPage extends TC_BaseClass {
 	WebElement unifocus1;
 	@FindBy(xpath = "//span[text()='T&A']")
 	WebElement tANDa1;
-	@FindBy(xpath = "//li[@title='Review Pay Period']")
-	WebElement reviewPayPeriod;
-	@FindBy(xpath = "//li[@title='Who Is In/Out']")
-	WebElement WhoIsInOut;
-	@FindBy(xpath = "//li[@title='Attendance Points and Events']")
-	WebElement AttendancePointsandEvents;
-	@FindBy(xpath = "//li[@title='Benefits']")
-	WebElement Benefits;
-	@FindBy(xpath = "//li[@title='Enter Earnings']")
-	WebElement EnterEarnings;
-	@FindBy(xpath = "//li[@title='Holiday Pay']")
-	WebElement HolidayPay;
-	@FindBy(xpath = "//li[@title='Punch Image Review']")
-	WebElement PunchImageReview;
-	@FindBy(xpath = "//li[@title='Approve Earnings']")
-	WebElement ApproveEarnings;
 	@FindBy(xpath = "//div[@class='ant-tabs-tab-active ant-tabs-tab']//div//i[@aria-label='icon: close']//*[name()='svg']")
 	WebElement close;
 
 	public void clickUnifocus() throws InterruptedException {
-		unifocus1.click();
-		String un = unifocus1.getText();
+		WebDriverWait wait = new WebDriverWait(driver, 40);
+		WebElement unifocus = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='fa fa-bars header-icon']")));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", unifocus);
+		String un = unifocus.getText();
 		System.out.println(un);
-		Assert.assertEquals("UniFocus", un);
-		tANDa1.click();
-		String sc = tANDa1.getText();
+		WebDriverWait wait1 = new WebDriverWait(driver, 40);
+		WebElement tANDa = wait1
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='ant-menu-submenu-title']//span[text()='T&A']")));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", tANDa);
+		tANDa.click();
+		String sc = tANDa.getText();
 		System.out.println(sc);
 		Assert.assertEquals("T&A", sc);
 	}
@@ -94,10 +84,10 @@ public class TandAPage extends TC_BaseClass {
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", whoIsInOut);
 		driver.switchTo().frame(frame);
 
-		WebElement Filter = driver.findElement(By.xpath(
+		/*WebElement Filter = driver.findElement(By.xpath(
 				"//span[@class='ant-input-search ant-input-affix-wrapper']//input[@placeholder='Filter by Name or Emp. Id']"));
 		String view = Filter.getText();
-		System.out.println(view);
+		System.out.println(view);*/
 		WebElement asOf = driver.findElement(By.xpath("//div[contains(text(),'As of: 2/4/22 4:18 AM (CST)')]"));
 		String asof = asOf.getText();
 		System.out.println(asof);

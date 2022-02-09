@@ -13,7 +13,7 @@ import recordingTests.ScreenRecorderUtil;
 
 public class TC_LaborStructure_Assignments extends TC_BaseClass {
 	@Test(dataProvider="LaborStructure")
-	public void updateLaborStructure_Assignments(String divisionName,String divisionCode,String expandDivision,String departmentName,String departmentCode,String expandDepartment,String jobName,String jobCode,String expandJob,String assignment1Name,String assignment1Code,String autoJob1,String assignment2Name,String assignment2Code,String assignment3Name,String assignment3Code) throws Exception {
+	public void updateLaborStructure_Assignments(String divisionName,String divisionCode,String expandDivision,String departmentName,String departmentCode,String expandDepartment,String jobName,String jobCode,String expandJob,String assignment1Name,String assignment1Code,String assignment2Name,String assignment2Code,String assignment3Name,String assignment3Code) throws Exception {
 		  ScreenRecorderUtil.startRecord("LaborStructure_Assignment");
 		  driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		  LaborStructure_Assignments assignments = new LaborStructure_Assignments(driver);
@@ -32,7 +32,7 @@ public class TC_LaborStructure_Assignments extends TC_BaseClass {
 		  assignments.EditDepartmentCode(departmentCode);
 		  assignments.clickAddJob(expandDepartment);
 		  assignments.doubleClickJob();
-		  assignments.changeNameJob(departmentName);
+		  assignments.changeNameJob(jobName);
 		  assignments.doubleClickJobCode();
 		  assignments.EditJobCode(jobCode);
 		  assignments.clickAddAssignment();
@@ -41,16 +41,16 @@ public class TC_LaborStructure_Assignments extends TC_BaseClass {
 		  assignments.changeNameAssignment(assignment1Name);
 		  assignments.doubleClickAssignmentCode();
 		  assignments.EditAssignmentCode(assignment1Code);
-		  assignments.doubleClickAutoJob1(autoJob1);
+		  assignments.doubleClickAutoJob1();
 		  assignments.clickExpandAutoJob1();
 		  assignments.doubleClickAssignment2();
 		  assignments.changeNameAssignment2(assignment2Name);
-		  assignments.doubleClickAssignmentCode2();
+		  //assignments.doubleClickAssignmentCode2();
 		  assignments.EditAssignmentCode2(assignment2Code);
-		  assignments.doubleClickAutoJob2();
-		  assignments.doubleClickAssignment3();
+		  //assignments.doubleClickAutoJob2();
+		  //assignments.doubleClickAssignment3();
 		  assignments.changeNameAssignment3(assignment3Name);
-		  assignments.doubleClickAssignmentCode3();
+		 // assignments.doubleClickAssignmentCode3();
 		  assignments.EditAssignmentCode3(assignment3Code);
 }
 	 @DataProvider(name="LaborStructure")

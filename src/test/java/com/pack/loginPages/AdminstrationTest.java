@@ -1,6 +1,7 @@
 package com.pack.loginPages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -44,19 +45,20 @@ public class AdminstrationTest extends TC_BaseClass {
 	}
 
 	public void audit() throws InterruptedException {
-
-		Audits.click();
+		WebDriverWait wait = new WebDriverWait(driver, 40);
+		WebElement Audits = wait.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("//li[@title='Audits']")));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", Audits);
 		driver.switchTo().frame(frame);
-
-		WebDriverWait wait = new WebDriverWait(driver, 120);
-		WebElement filter = wait.until(ExpectedConditions.visibilityOfElementLocated(
+		WebDriverWait wait1 = new WebDriverWait(driver, 120);
+		WebElement filter = wait1.until(ExpectedConditions.visibilityOfElementLocated(
 				By.xpath("//button[@class='ant-btn audit-main-filter-button ant-btn-primary']")));
 		String un = filter.getText();
 		System.out.println(un);
 		Assert.assertEquals("Filters", un);
 
-		WebDriverWait wait1 = new WebDriverWait(driver, 120);
-		WebElement excel = wait1
+		WebDriverWait wait2 = new WebDriverWait(driver, 120);
+		WebElement excel = wait2
 				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='Export to Excel']")));
 		String ex = excel.getText();
 		System.out.println(ex);
@@ -84,11 +86,47 @@ public class AdminstrationTest extends TC_BaseClass {
 		String ge = general.getText();
 		System.out.println(ge);
 		Assert.assertEquals("General", ge);
-		Thread.sleep(4000);
+		WebDriverWait wait2 = new WebDriverWait(driver, 40);
+		WebElement Audits = wait2.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("//button[@class='ant-btn uf-actionbar-menu-button ant-dropdown-trigger uf-actionbar-dropdown']")));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", Audits);
+		WebDriverWait wait3 = new WebDriverWait(driver, 40);
+		WebElement reconcileEmployees = wait3.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("//li[normalize-space()='Reconcile Employees']")));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", reconcileEmployees);
+		Thread.sleep(18000);
 		driver.switchTo().defaultContent();
 		close.click();
 	}
-
+	public void EditPayRates() throws InterruptedException {
+		driver.switchTo().frame(frame);
+		WebDriverWait wait2 = new WebDriverWait(driver, 40);
+		WebElement Audits = wait2.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("//button[@class='ant-btn uf-actionbar-menu-button ant-dropdown-trigger uf-actionbar-dropdown']")));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", Audits);
+		WebDriverWait wait3 = new WebDriverWait(driver, 40);
+		WebElement reconcileEmployees = wait3.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("//li[normalize-space()='Edit Pay Rates']")));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", reconcileEmployees);
+		Thread.sleep(18000);
+		driver.switchTo().defaultContent();
+		close.click();
+	}
+	public void manageEmployeeBadges() throws InterruptedException {
+		driver.switchTo().frame(frame);
+		WebDriverWait wait2 = new WebDriverWait(driver, 40);
+		WebElement Audits = wait2.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("//button[@class='ant-btn uf-actionbar-menu-button ant-dropdown-trigger uf-actionbar-dropdown']")));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", Audits);
+		WebDriverWait wait3 = new WebDriverWait(driver, 40);
+		WebElement reconcileEmployees = wait3.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("//li[normalize-space()='Manage Employee Badges']")));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", reconcileEmployees);
+		Thread.sleep(18000);
+		driver.switchTo().defaultContent();
+		close.click();
+		close.click();
+	}
 	public void myProcesses() throws InterruptedException {
 		clickUnifocus();
 		MyProcesses.click();
