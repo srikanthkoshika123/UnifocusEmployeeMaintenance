@@ -10,10 +10,13 @@ import com.pack.loginPages.Assignments;
 import com.pack.loginPages.EmployeeMaintenance;
 import com.pack.utils.XLUtils;
 
+import recordingTests.ScreenRecorderUtil;
+
 public class TC_Assignments extends TC_BaseClass {
 	@Test(dataProvider = "Assignments")
 	public void assignments(String eid, String display, String first, String middle, String last, String Email,
 			String hire, String sen, String wc, String tip,String empId) throws Exception {
+		ScreenRecorderUtil.startRecord("Assignments");
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		EmployeeMaintenance employeemaintenance = new EmployeeMaintenance(driver);
 		employeemaintenance.clickUnifocus();

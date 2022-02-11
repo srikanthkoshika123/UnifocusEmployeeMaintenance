@@ -18,6 +18,10 @@ public class TC_AdminstrationTest extends TC_BaseClass{
 		adminstration.employeeMaintenance();
 		adminstration.EditPayRates();
 		adminstration.manageEmployeeBadges();
+		adminstration.useradminstration();
+		adminstration.manageGroup(); 
+		adminstration.taskschedulersetup();
+		adminstration.taskschedulerlog();
 		adminstration.myProcesses();
 		
 	}
