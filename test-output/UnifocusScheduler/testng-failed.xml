@@ -5,12 +5,12 @@
     <listener class-name="com.pack.utils.Reporting"/>
   </listeners>
   <test thread-count="5" name="openShift(failed)">
-    <parameter name="browser" value="firefox"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.pack.testCases.TC_C32968">
         <methods>
+          <include name="Updatecertification" invocation-numbers="1"/>
           <include name="setup"/>
-          <include name="certification"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.pack.testCases.TC_C32968 -->
