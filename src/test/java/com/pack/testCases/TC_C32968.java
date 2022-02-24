@@ -37,9 +37,9 @@ public class TC_C32968 extends TC_BaseClass{
 		 certification.doubleClickJob1(job1);
 		 certification.changeNameJob1(autoJob3);
 		 certification.doubleClickJobCode1(jobCode1);
-		 certification.EditJobCode1(autojob2);
+		 certification.EditJobCode1(autojob3);
 		 certification.doubleClickCertifiction1(cert1);
-		 //certification.selectCheckBox1();
+		 certification.selectCheckBox1();
 	}
 	@DataProvider(name="Certification")
 	   String [][] getData() throws IOException

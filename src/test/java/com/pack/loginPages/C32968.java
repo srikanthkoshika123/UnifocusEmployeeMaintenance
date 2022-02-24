@@ -65,16 +65,18 @@ public class C32968 extends TC_BaseClass {
 	}
 
 	public boolean clickAutocert1(String autoCert1) throws InterruptedException {
-		clickAddRowButton();
 		boolean result = false;
 		int attempts = 0;
 		while (attempts < 2) {
 			try {
-				driver.switchTo().activeElement();
-				WebElement certifictionName = driver
-						.findElement(By.xpath("//div[@row-index='0']//div[@aria-colindex='1']"));
-				certifictionName.sendKeys(autoCert1);
-				certifictionName.sendKeys(Keys.ENTER);
+				Thread.sleep(500);
+				WebElement inputElement=driver.findElement(By.xpath("//div[@row-index='0']//div[@aria-colindex='1']"));
+				String[] digits = autoCert1.split("");
+				for (String digit : digits) {
+				    inputElement.sendKeys(digit);
+				    Thread.sleep(250);
+				}
+				 inputElement.sendKeys(Keys.ENTER);
 				result = true;
 				break;
 			} catch (StaleElementReferenceException e) {
@@ -98,12 +100,14 @@ public class C32968 extends TC_BaseClass {
 		int attempts = 0;
 		while (attempts < 2) {
 			try {
-				driver.switchTo().activeElement();
-				JavascriptExecutor jse = ((JavascriptExecutor) driver);
-				WebElement certifictionName = driver
-						.findElement(By.xpath("//div[@row-index='0']//div[@aria-colindex='1']"));
-				certifictionName.sendKeys(autoCert2);
-				certifictionName.sendKeys(Keys.ENTER);
+				Thread.sleep(500);
+				WebElement inputElement=driver.findElement(By.xpath("//div[@row-index='0']//div[@aria-colindex='1']"));
+				String[] digits = autoCert2.split("");
+				for (String digit : digits) {
+				    inputElement.sendKeys(digit);
+				    Thread.sleep(250);
+				}
+				 inputElement.sendKeys(Keys.ENTER);
 				result = true;
 				break;
 			} catch (StaleElementReferenceException e) {
@@ -418,12 +422,13 @@ public class C32968 extends TC_BaseClass {
 	public void selectCheckBox1() throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, 40);
 		WebElement checkBox = wait
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[2]/div/div/div[2]/div[2]/div/label/span/input")));
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[1]/div[3]/div[2]/div/div/div[2]/div[2]/div/label")));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", checkBox);
 		WebDriverWait wait1 = new WebDriverWait(driver, 40);
 		WebElement ok = wait1
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='ant-btn ant-btn-primary']")));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", ok);
+		Thread.sleep(4000);
 
 	}
 

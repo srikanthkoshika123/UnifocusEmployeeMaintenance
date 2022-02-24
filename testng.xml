@@ -8,7 +8,7 @@
     <parameter name="browser" value="chrome" />
 
        <classes>
-       <class name="com.pack.testCases.TC_C32968"/>
+	       <class name="com.pack.testCases.TC_C27647"/>
        
     </classes>
   </test> <!-- Test -->
