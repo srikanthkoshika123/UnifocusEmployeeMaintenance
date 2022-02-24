@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pack.testCases.TC_CopySchedule">
+      <class name="com.pack.testCases.TC_C27647">
         <methods>
-          <include name="copySchedule"/>
+          <include name="setup2"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.pack.testCases.TC_CopySchedule -->
+      </class> <!-- com.pack.testCases.TC_C27647 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
