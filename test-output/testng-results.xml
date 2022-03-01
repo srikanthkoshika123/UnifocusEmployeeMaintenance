@@ -1,109 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-24T21:33:25 IST" name="Default suite" finished-at="2022-02-24T21:33:25 IST" duration-ms="423">
+  <suite started-at="2022-02-28T15:26:51 IST" name="UnifocusScheduler" finished-at="2022-02-28T15:27:56 IST" duration-ms="64764">
     <groups>
     </groups>
-    <test started-at="2022-02-24T21:33:25 IST" name="Default test" finished-at="2022-02-24T21:33:25 IST" duration-ms="423">
-      <class name="com.pack.testCases.TC_C27647">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.pack.testCases.TC_C27647@f80945f]" started-at="2022-02-24T21:33:25 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1645718605327" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in C:\Users\745 G6\AppData\Local\Temp\testng-eclipse-2082187881\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in C:\Users\745 G6\AppData\Local\Temp\testng-eclipse-2082187881\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test started-at="2022-02-28T15:26:51 IST" name="openShift" finished-at="2022-02-28T15:27:56 IST" duration-ms="64764">
+      <class name="com.pack.testCases.TC_DoubleClick">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.pack.testCases.TC_DoubleClick@628c4ac0]" started-at="2022-02-28T15:26:51 IST" name="setup" finished-at="2022-02-28T15:27:25 IST" duration-ms="33395" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="setup2()[pri:0, instance:com.pack.testCases.TC_C27647@f80945f]" started-at="2022-02-24T21:33:25 IST" name="setup2" finished-at="2022-02-24T21:33:25 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in C:\Users\745 G6\AppData\Local\Temp\testng-eclipse-2082187881\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in C:\Users\745 G6\AppData\Local\Temp\testng-eclipse-2082187881\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="doubleClick()[pri:0, instance:com.pack.testCases.TC_DoubleClick@628c4ac0]" started-at="2022-02-28T15:27:25 IST" name="doubleClick" finished-at="2022-02-28T15:27:55 IST" duration-ms="30427" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pack.testCases.TC_C27647@f80945f]" started-at="2022-02-24T21:33:25 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1645718605646" status="SKIP">
+        </test-method> <!-- doubleClick -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pack.testCases.TC_DoubleClick@628c4ac0]" started-at="2022-02-28T15:27:55 IST" name="tearDown" finished-at="2022-02-28T15:27:56 IST" duration-ms="423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.pack.testCases.TC_C27647 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.pack.testCases.TC_DoubleClick -->
+    </test> <!-- openShift -->
+  </suite> <!-- UnifocusScheduler -->
 </testng-results>

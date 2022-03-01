@@ -23,9 +23,10 @@ public class TC_C28156 extends TC_BaseClass {
 	    driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	    C28156 updateEmp=new C28156(driver);
 	    updateEmp.switchFrame();
-	    updateEmp.UpdateEmployee(empId,address,city,state,zipCode,displayName);
+	    updateEmp.UpdateEmployee(empId,address,city);
+	    updateEmp.SelectZipCode(state, zipCode, displayName);
 	    updateEmp.clickStatus(effectiveDate);
-	   // updateEmp.deleteStatus();
+	    updateEmp.deleteStatus();
 	    
 	    }
 	 @DataProvider(name="StatusData")

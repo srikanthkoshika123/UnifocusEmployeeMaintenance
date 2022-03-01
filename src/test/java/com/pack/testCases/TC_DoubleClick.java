@@ -20,9 +20,10 @@ public class TC_DoubleClick extends TC_BaseClass{
 	   driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	   DoubleClick doubleclick=new DoubleClick(driver);
 	   doubleclick.switchFrame();
-	 //  doubleclick.selectEmployee();
-	   doubleclick.clickJobType();
-	   doubleclick.clickEmptyCell();
+	   doubleclick.selectEmployee();
+	  // doubleclick.clickJobType();
+	   //doubleclick.clickEmptyCell();
+	   
 	}
 
 }

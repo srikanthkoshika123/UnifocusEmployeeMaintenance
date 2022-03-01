@@ -39,23 +39,31 @@ public class DoubleClick extends TC_BaseClass{
 		Thread.sleep(8000);
 		searchEmp.click();
 		searchEmp.clear();
-		searchEmp.sendKeys("987817");
+		searchEmp.sendKeys("Adam");
 		Thread.sleep(6000);
 		empName.click();
 		WebDriverWait wait2 = new WebDriverWait(driver, 40);
-	    WebElement scheduling = wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='Scheduling']"))); 
+	    WebElement scheduling = wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='Certifications']"))); 
 		((JavascriptExecutor)driver).executeScript("arguments[0].click();", scheduling);
+		WebDriverWait wait3 = new WebDriverWait(driver, 40);
+		WebElement addNewCertification = wait3.until(
+				ExpectedConditions.elementToBeClickable(By.xpath("//span[normalize-space()='Add New Certification']")));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", addNewCertification);
 		
 		
 	}
 	public void selectEmployeeType() throws InterruptedException {
 		WebDriverWait wait1 = new WebDriverWait(driver, 40);
-		 WebElement employeeType = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='type']"))); 
+		 WebElement employeeType = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//html/body/div[3]/div/div[2]/div/div[2]/div[2]/div/form/div[2]/div[2]/div/div/div/span/span/span/div"))); 
 		 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", employeeType);
 		
 		WebDriverWait wait2 = new WebDriverWait(driver, 40);
-		 WebElement regular = wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[normalize-space()='Regular']"))); 
+		 WebElement regular = wait2.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'‹')]"))); 
 		 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", regular);
+		 WebDriverWait wait3 = new WebDriverWait(driver, 40);
+		 WebElement jobName = wait3.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(@class,'ant-btn ant-btn-primary')]"))); 
+		 ((JavascriptExecutor)driver).executeScript("arguments[0].click();", jobName);
+		 Thread.sleep(4000);
 }
 	 public boolean clickJobType() throws InterruptedException {
 	        boolean result = false;

@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [UnifocusScheduler]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.pack.utils.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="openShift(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.pack.testCases.TC_C27647">
+      <class name="com.pack.testCases.TC_DoubleClick">
         <methods>
-          <include name="setup2"/>
           <include name="setup"/>
+          <include name="doubleClick"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.pack.testCases.TC_C27647 -->
+      </class> <!-- com.pack.testCases.TC_DoubleClick -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- openShift(failed) -->
+</suite> <!-- Failed suite [UnifocusScheduler] -->

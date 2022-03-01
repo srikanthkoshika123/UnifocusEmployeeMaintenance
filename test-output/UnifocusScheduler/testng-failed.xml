@@ -7,13 +7,13 @@
   <test thread-count="5" name="openShift(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.pack.testCases.TC_C27647">
+      <class name="com.pack.testCases.TC_DoubleClick">
         <methods>
-          <include name="setup2"/>
           <include name="setup"/>
+          <include name="doubleClick"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.pack.testCases.TC_C27647 -->
+      </class> <!-- com.pack.testCases.TC_DoubleClick -->
     </classes>
   </test> <!-- openShift(failed) -->
 </suite> <!-- Failed suite [UnifocusScheduler] -->
