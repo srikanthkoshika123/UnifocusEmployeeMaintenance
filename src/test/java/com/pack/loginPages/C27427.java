@@ -192,7 +192,7 @@ public class C27427 extends TC_BaseClass{
 	         }
 		}	
 	    public void selectWorkingHours() throws InterruptedException {
-		
+	    Thread.sleep(4000);	
 	    save.click();
 	   
 	   }
